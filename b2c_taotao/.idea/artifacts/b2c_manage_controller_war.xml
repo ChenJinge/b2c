@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="b2c-manage-controller:war">
+    <output-path>$PROJECT_DIR$/manage/controller/target</output-path>
+    <root id="archive" name="b2c-parent.war">
+      <element id="artifact" artifact-name="b2c-manage-controller:war exploded" />
+    </root>
+  </artifact>
+</component>
