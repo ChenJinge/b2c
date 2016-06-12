@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.b2c.manage</groupId>
-    <artifactId>b2c-manage-controller</artifactId>
+    <artifactId>b2c-manage-web</artifactId>
     <version>0.1-SNAPSHOT</version>
 
     <dependencies>

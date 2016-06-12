@@ -13,7 +13,7 @@
     <artifactId>b2c-manage</artifactId>
     <version>0.1-SNAPSHOT</version>
     <modules>
-        <module>controller</module>
+        <module>web</module>
         <module>service</module>
         <module>mapper</module>
         <module>pojo</module>
