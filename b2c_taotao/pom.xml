@@ -9,8 +9,8 @@
     <module>common</module>
     <module>manage</module>
   </modules>
-  <name>b2c-parent Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <name>b2c-parent</name>
+
     <!-- 集中定义依赖版本号 -->
     <properties>
         <junit.version>4.12</junit.version>
