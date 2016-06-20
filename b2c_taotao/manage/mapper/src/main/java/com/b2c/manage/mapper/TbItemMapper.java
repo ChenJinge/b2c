@@ -1,7 +1,7 @@
 package com.b2c.manage.mapper;
 
-import com.b2c.pojo.TbItem;
-import com.b2c.pojo.TbItemExample;
+import com.b2c.manage.pojo.TbItem;
+import com.b2c.manage.pojo.TbItemExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
