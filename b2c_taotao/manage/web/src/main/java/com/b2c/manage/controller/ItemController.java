@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.taotao.common.pojo.EUDataGridResult;
-import com.taotao.common.pojo.TaotaoResult;
-import com.taotao.pojo.TbItem;
-import com.taotao.service.ItemService;
+import com.b2c.common.pojo.EUDataGridResult;
+import com.b2c.common.pojo.TaotaoResult;
+import com.b2c.manage.pojo.TbItem;
+import com.b2c.manage.service.ItemService;
 
 /**
  * 商品管理Controller

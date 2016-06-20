@@ -1,8 +1,8 @@
-package com.b2c.service;
+package com.b2c.manage.service;
 
 import com.b2c.common.pojo.EUDataGridResult;
 import com.b2c.common.pojo.TaotaoResult;
-import com.b2c.pojo.TbItem;
+import com.b2c.manage.pojo.TbItem;
 
 public interface ItemService {
 
