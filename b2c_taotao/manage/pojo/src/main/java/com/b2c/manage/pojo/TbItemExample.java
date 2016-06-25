@@ -38,21 +38,6 @@ public class TbItemExample {
     public void or(Criteria criteria) {
         oredCriteria.add(criteria);
     }
-
-    public Criteria or() {
-        Criteria criteria = createCriteriaInternal();
-        oredCriteria.add(criteria);
-        return criteria;
-    }
-
-    public Criteria createCriteria() {
-        Criteria criteria = createCriteriaInternal();
-        if (oredCriteria.size() == 0) {
-            oredCriteria.add(criteria);
-        }
-        return criteria;
-    }
-
     protected Criteria createCriteriaInternal() {
         Criteria criteria = new Criteria();
         return criteria;
@@ -898,4 +883,19 @@ public class TbItemExample {
             this(condition, value, secondValue, null);
         }
     }
+    public Criteria or() {
+        Criteria criteria = createCriteriaInternal();
+        oredCriteria.add(criteria);
+        return criteria;
+    }
+
+    public Criteria createCriteria() {
+        Criteria criteria = createCriteriaInternal();
+        if (oredCriteria.size() == 0) {
+            oredCriteria.add(criteria);
+        }
+        return criteria;
+    }
+
+
 }

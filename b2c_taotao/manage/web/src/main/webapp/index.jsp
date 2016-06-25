@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title></title>
+    <title>欢迎光临</title>
   </head>
   <body>
-
+<h>welcome b2c project!</h>
   </body>
 </html>
