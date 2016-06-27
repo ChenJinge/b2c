@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.b2c.common.pojo.EUDataGridResult;
 import com.b2c.common.pojo.TaotaoResult;
-import com.b2c.manage.pojo.TbItem;
-import com.b2c.manage.service.ItemService;
+import com.b2c.pojo.TbItem;
+import com.b2c.service.ItemService;
 
 /**
  * 商品管理Controller

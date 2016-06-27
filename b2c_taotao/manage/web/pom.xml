@@ -12,6 +12,7 @@
     <groupId>com.b2c.manage</groupId>
     <artifactId>b2c-manage-web</artifactId>
     <version>0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
@@ -19,5 +20,27 @@
             <artifactId>b2c-manage-service</artifactId>
             <version>0.1-SNAPSHOT</version>
         </dependency>
+
+        <!-- JSP相关 -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- 文件上传组件 -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
     </dependencies>
+
 </project>
