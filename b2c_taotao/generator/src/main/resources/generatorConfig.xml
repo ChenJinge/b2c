@@ -57,7 +57,7 @@
                 type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator targetPackage="jake.ssm.mapper" targetProject="src/main/java" type="MIXEDMAPPER">
+        <javaClientGenerator targetPackage="com.b2c.mapper" targetProject="src/main/java" type="MIXEDMAPPER">
             <property name="enableSubPackages" value="true"/>
             <!--
                     定义Maper.java 源代码中的ByExample() 方法的可视性，可选的值有：
@@ -142,7 +142,7 @@
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
         <table tableName="tb_item_desc" domainObjectName="ItemDesc">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+            <generatedKey column="item_id" sqlStatement="MySql" identity="true" />
         </table>
         <table tableName="tb_item_param" domainObjectName="ItemParam">
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
@@ -151,10 +151,10 @@
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
         <table tableName="tb_order" domainObjectName="Order">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+            <generatedKey column="order_id" sqlStatement="MySql" identity="true" />
         </table>
         <table tableName="tb_order_shipping" domainObjectName="OrderShipping">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+            <generatedKey column="order_id" sqlStatement="MySql" identity="true" />
         </table>
         <table tableName="tb_order_item" domainObjectName="OrderItem">
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
