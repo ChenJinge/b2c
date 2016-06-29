@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/page-timeline.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes">
+
+  <title>Timeline - Wrapkit Admin Template</title>
+
+
+  <!-- favicon.ico and apple-touch-icon.png -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+  <link rel="stylesheet" href="styles/dependencies.css">
+
+  <link rel="stylesheet" href="styles/wrapkit.css">
+
+  <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <main class="wrapkit-wrapper" id="wrapper">
+
+    <!-- ============================================
+    HEADER SECTION
+    =============================================== -->
+    <!-- navigation -->
+    <nav class="header navbar">
+      <div class="container-fluid">
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-left">
+          <a class="navbar-brand" href="index.html" role="logo" aria-label="Logo">
+            <img class="logo" src="images/logo/brand-text-dark.png" alt="Brand">
+          </a>
+          <button data-sidebar="toggleVisible" class="btn btn-icon navbar-btn">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-right" role="navigation">
+          <a aria-label="Search" id="brandSearchNav" class="btn btn-icon navbar-btn" href="#"><i class="fa fa-search"></i></a>
+
+          <div class="dropdown-ext">
+            <a aria-label="notifications" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-inbox"></i>
+              <span class="dotted dotted-danger"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-ext dropdown-menu-right" role="menu">
+              <div class="dd-head">
+                <div class="dd-head-actions">
+                  <a href="#" class="btn btn-xs btn-default">Compose</a>
+                </div>
+                <p><a href="#">Inbox (2)</a></p>
+              </div>
+              <div class="dd-body">
+                <ul class="media-list">
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>6m</small></p>
+                        <h4 class="media-heading body-text">Stilearning</h4>
+                        <p>Newest Themes & Templates - Et est, sed mattis, donec hac</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces7.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 03:11am</small></p>
+                        <h4 class="media-heading body-text">Eugene Barnett</h4>
+                        <p>Service Update: added support for Angular - Sed ultricies nibh, in feugiat</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces4.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 02:47am</small></p>
+                        <h4 class="media-heading body-text">bent10@stilearning.com</h4>
+                        <p>Spread the Word & Earn! - Dapibus nec. Integer sed purus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces3.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 11:41pm</small></p>
+                        <h4 class="media-heading body-text">David Lloyd</h4>
+                        <p>Say thanks for your awesome works! - Viverra fermentum ac. Litora mauris elit</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 10:04pm</small></p>
+                        <h4 class="media-heading body-text">Dribbble</h4>
+                        <p>Design brief from Apple - Quis in nonummy. Ut augue, proident habitant</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces16.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 08:55pm</small></p>
+                        <h4 class="media-heading body-text">Olivia Gonzales</h4>
+                        <p>Updating some of the designs! - Commodo non ac, sem netus adipiscing</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces20.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 03:57pm</small></p>
+                        <h4 class="media-heading body-text">Marco Auer</h4>
+                        <p>Request custom designs! - Adipiscing pellentesque cum, proin luctus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                </ul>
+              </div><!-- /.dd-body -->
+            </div><!-- /.dropdown-menu -->
+          </div><!-- /.dropdown -->
+
+          <div class="dropdown">
+            <a aria-label="More" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-ellipsis-v"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="pull-right"><i class="fa fa-user text-muted"></i></span>Profile</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="pull-right"><i class="fa fa-clock-o text-muted"></i></span>Timeline</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="pull-right"><i class="fa fa-question-circle text-muted"></i></span>Help</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="pull-right"><i class="fa fa-lock text-muted"></i></span>Locked</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="pull-right"><i class="fa fa-sign-out text-muted"></i></span> Sign out</a></li>
+            </ul>
+          </div><!-- /.dropdown -->
+        </div><!-- /navigation -->
+
+        <div class="brand-search" id="brandSearchFrm">
+          <form action="#" role="search">
+            <a href="#" class="search-close">&times;</a>
+            <input class="search-field" placeholder="Search for everything you want..." tabindex="-1">
+          </form>
+        </div><!-- /.brand-search -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /navigation -->
+
+
+
+    <!-- ============================================
+    SIDEBAR SECTION
+    =============================================== -->
+    <aside class="sidebar" role="complementary">
+
+      <!-- profile -->
+      <div class="sidebar-block">
+        <div class="media">
+          <div class="media-left">
+            <a href="page-profile.html">
+              <span class="status dotted dotted-primary" data-toggle="tooltip" data-container="body" title="available"></span>
+              <img class="media-object img-circle" src="images/dummy/uifaces14.jpg" alt="photo profile">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Emma Greene</h4>
+            <p class="text-muted">
+              <small>Graphic Designer</small>
+            </p>
+          </div>
+        </div>
+      </div><!-- /.sidebar-block -->
+      <!-- /profile -->
+
+      <!-- /navigation -->
+      <div class="nav-wrapper">
+        <ul class="nav nav-stacked" role="navigation">
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-dashcube"></i></span>
+              <span class="nav-text">Dashboard</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><span class="nav-text">Dashboard 1</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index-2.html"><span class="nav-text">Dashboard 2</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">GET STARTED</li>
+          <li class="nav-item" role="presentation">
+            <a href="layout.html">
+              <span class="nav-icon"><i class="fa fa-object-group"></i></span>
+              <span class="nav-text">Layout</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="ecosystem.html">
+              <span class="nav-icon"><i class="fa fa-cubes"></i></span>
+              <span class="nav-text">Ecosystem</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="panels.html">
+              <span class="nav-icon"><i class="fa fa-puzzle-piece"></i></span>
+              <span class="nav-text">Panels</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+              <span class="nav-text">Level Menu</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Lorem ipsum</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Dolor sit</span></a></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" data-toggle="nav-child" href="#"><span class="nav-text">Node</span></a>
+                <ul class="nav nav-child level-2 nav-stacked nav-pills" role="menu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Consectetur</span></a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Assumenda</span></a></li>
+                </ul>
+              </li> <!-- /node -->
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Amet</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">USER INTERFACES</li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-briefcase"></i></span>
+              <span class="nav-text">Components</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-grid.html"><span class="nav-text">Grids</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-type.html"><span class="nav-text">Type</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-button.html"><span class="nav-text">Buttons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-icons.html"><span class="nav-text">Icons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-modal.html"><span class="nav-text">Modal</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tooltip-popover.html"><span class="nav-text">Tooltips & Popovers</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-alert-callout.html"><span class="nav-text">Alerts & Callout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-progressbar.html"><span class="nav-text">Progress bar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-label-badge.html"><span class="nav-text">Label & Badge</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-navbar.html"><span class="nav-text">Navbar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-nav.html"><span class="nav-text">Nav</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tabs-collapse.html"><span class="nav-text">Tabs & Collapse</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-check-square"></i></span>
+              <span class="nav-text">Forms</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-basic.html"><span class="nav-text">Basic Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-advance.html"><span class="nav-text">Advance Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-uploader.html"><span class="nav-text">Uploader</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-xeditable.html"><span class="nav-text">x-Editable</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-wizard.html"><span class="nav-text">Wizard</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-editor.html"><span class="nav-text">Editor</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-imagecropping.html"><span class="nav-text">Image Cropping</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-validator.html"><span class="nav-text">Validator</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-line-chart"></i></span>
+              <span class="nav-text">Charts</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-js.html"><span class="nav-text">ChartJs</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-morris.html"><span class="nav-text">Morris</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-inline.html"><span class="nav-text">Inline Charts</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-database"></i></span>
+              <span class="nav-text">Tables</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-basic.html"><span class="nav-text">Basic Table</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-datatables.html"><span class="nav-text">DataTables</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">DEVELOPMENT</li>
+          <li class="nav-item" role="presentation">
+            <a href="ui-kits.html">
+              <span class="nav-icon"><i class="fa fa-cube"></i></span>
+              <span class="nav-text">Widgets</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-plug"></i></span>
+              <span class="nav-text">Plugins</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-animate.html"><span class="nav-text">Animated</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-bootbox.html"><span class="nav-text">Bootbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-calendar.html"><span class="nav-text">Calendar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-maps.html"><span class="nav-text">Maps</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-nestable.html"><span class="nav-text">Nestable List</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-session-timeout.html"><span class="nav-text">Session Timeout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-toastr.html"><span class="nav-text">Toastr</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-treeview.html"><span class="nav-text">Tree View</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item open active" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-file-text-o"></i></span>
+              <span class="nav-text">Pages</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="nav-text">Signin</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="nav-text">Lock Screen</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-error.html"><span class="nav-text">Error Page</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="nav-text">Profile</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-inbox.html"><span class="nav-text">Inbox</span></a></li>
+              <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="nav-text">Timeline</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-gallery.html"><span class="nav-text">Gallery</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-pricing.html"><span class="nav-text">Pricing</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-invoice.html"><span class="nav-text">Invoice</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-search.html"><span class="nav-text">Search Result</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="nav-text">Help</span></a></li>
+            </ul>
+          </li>
+          <li class="collapse-item" role="presentation">
+            <a href="#" data-sidebar="toggleCollapse">
+              <i class="fa fa-angle-double-left"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside><!-- /.SIDEBAR -->
+
+
+
+    <!-- ============================================
+    MAIN CONTENT SECTION
+    =============================================== -->
+    <section class="content-wrapper" role="main">
+      <div class="content">
+        <div class="content-hero">
+          <img class="content-hero-embed" src="images/dummy/people5.jpg" alt="cover">
+          <div class="content-hero-overlay bg-grd-blue"></div>
+        </div><!-- /.content-hero -->
+
+        <div class="content-hero content-hero-sm">
+          <div class="row">
+            <div class="col-md-6 col-xs-8">
+              <div class="media">
+                <div class="media-left">
+                  <a class="kit-avatar kit-avatar-64 no-padding border-white hidden-xs" href="#">
+                    <img alt="cover" src="images/dummy/uifaces18.jpg">
+                  </a>
+                  <a class="kit-avatar kit-avatar-42 no-padding border-white visible-xs" href="#">
+                    <img alt="cover" src="images/dummy/uifaces18.jpg">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h2 class="display-name media-heading text-primary hidden-xs">Angela Fowler</h2>
+                  <h3 class="display-name media-heading text-primary visible-xs">Angela Fowler</h3>
+                  <p class="text-muted"><span class="mr-2x">Since April 21, 2010</span> <span><i class="fa fa-skype fa-fw hidden-xs"></i> (+44) 212 008 5656</span></p>
+                </div><!-- /.pull -->
+              </div>
+            </div><!-- /.cols -->
+
+            <div class="col-md-2 col-xs-4 col-md-push-4 text-right">
+              <a href="#" rel="button" data-toggle="tooltip" data-container="body" title="Send a Messege" aria-label="Send a Messege" class="btn btn-sm btn-default"><i class="fa fa-envelope-o"></i></a>
+              <a data-toggle="modal" href="#" data-scripts="_includes/setups.js" data-target="#templateSetup" title="Template Setups" aria-label="template setups" class="btn btn-sm btn-default"><span class="icon-settings fa-lg"></span></a>
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-xs-12 col-md-pull-2 text-center">
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="p-1x">
+                    <span class="headline"><strong>1,5K</strong></span>
+                    <p>Activities</p>
+                  </div>
+                </div><!-- /.cols -->
+                <div class="col-xs-4">
+                  <div class="p-1x">
+                    <span class="headline"><strong>23</strong></span>
+                    <p>Events</p>
+                  </div>
+                </div><!-- /.cols -->
+                <div class="col-xs-4">
+                  <div class="p-1x">
+                    <span class="headline"><strong>2,4K</strong></span>
+                    <p>Followers</p>
+                  </div>
+                </div><!-- /.cols -->
+              </div><!-- /.row -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+        </div><!-- /.content-hero -->
+
+
+        <div class="content-body">
+
+          <!-- TIMELINE
+          ================================================== -->
+          <ul class="timeline">
+            <li class="timeline-line"></li><!-- /.timeline-line -->
+
+            <li class="timeline-group">
+              <a href="#" class="btn btn-default">Today</a>
+            </li><!-- /.timeline-group -->
+          </ul><!-- /.timeline -->
+
+
+          <ul class="timeline">
+            <li class="timeline-line"></li><!-- /.timeline-line -->
+
+            <li class="timeline-item timeline-poster">
+              <div class="timeline-badge">
+                <a class="border-teal" rel="tooltip" title="What will you do?" data-container="body" href="#"></a>
+              </div>
+              <div class="timeline-panel panel" data-fill-color="true">
+                <div class="panel-body">
+                  <ul class="nav nav-tabs nav-contrast-teal">
+                    <li class="active"><a data-toggle="tab" href="#">Status</a></li>
+                    <li><a data-toggle="tab" href="#">Photo</a></li>
+                    <li><a data-toggle="tab" href="#">Place</a></li>
+                    <li><a data-toggle="tab" href="#">Events</a></li>
+                  </ul>
+                  <div class="tab-content pt-1x">
+                    <textarea name="timelinePost" rows="6" class="form-control autogrow no-border no-resize" placeholder="Write in timeline"></textarea>
+                  </div>
+                </div><!-- /.panel-body -->
+                <div class="panel-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-link"><i class="icon-user"></i></button>
+                    <button type="button" class="btn btn-link"><i class="icon-map"></i></button>
+                    <button type="button" class="btn btn-link"><i class="icon-camera"></i></button>
+                    <button type="button" class="btn btn-link"><i class="fa fa-smile-o"></i></button>
+                  </div>
+                  <div class="pull-right">
+                    <button type="submit" class="btn btn-primary">Post</button>
+                  </div>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.timeline-panel.panel -->
+            </li><!-- /.timeline-poster -->
+
+            <li class="timeline-item">
+              <div class="timeline-badge">
+                <a class="border-orange" rel="tooltip" title="Post" data-container="body" href="#"></a>
+              </div>
+              <div class="timeline-panel panel" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="media mb-2x">
+                    <div class="media-left">
+                      <a href="#" class="timeline-avatar kit-avatar kit-avatar-36">
+                        <img class="media-object" src="images/dummy/uifaces18.jpg" alt="">
+                      </a>
+                    </div><!-- /.media-left -->
+                    <div class="media-body">
+                      <div class="timeline-actions pull-right">
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-icon btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-options-vertical text-muted"></i></a>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit Post</a></li>
+                            <li><a href="#">Hide Post</a></li>
+                            <li><a href="#">Mark Post</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="media-heading"><strong>Angela Fowler</strong> <br><small class="text-muted">30 minutes</small></p>
+                    </div><!-- /.media-body -->
+                  </div><!-- /.media -->
+
+                  <p>Assumenda, pariatur repellendus voluptatum eaque sint, quibusdam voluptatem nulla nesciunt placeat sunt tempore ad reiciendis ducimus dicta neque minima debitis delectus ab!</p>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-body timeline-resume">
+                  <div class="pull-right" data-toggle="tooltip" title="in this post">
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces15.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces16.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces17.jpg">
+                    </a>
+                    <a href="#" class="btn btn-xs btn-default btn-circle">+4</a>
+                  </div>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm">+33</a>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm"><span class="fa fa-share fa-fw"></span> 7</a>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-body timeline-livelines">
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces20.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body bordered-bottom">
+                      <p class="media-heading"><strong>Arina Rosetti</strong> Consequuntur illo accusantium, expedita ratione dolorem fuga minima!</p>
+                      <p class="text-muted"><small>22 minutes</small> </p>
+                    </div>
+                  </div><!-- /.media -->
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces19.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body bordered-bottom">
+                      <p class="media-heading"><strong>Júlia Ribeiro</strong> Veritatis aspernatur totam illum quisquam ipsa accusantium, animi voluptatum rem placeat.</p>
+                      <p class="text-muted"><small>18 minutes</small> </p>
+                    </div>
+                  </div><!-- /.media -->
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces21.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Felix Koller</strong> Molestias ipsum hic voluptas soluta expedita, ab, dolorum aperiam neque nesciunt.</p>
+                      <p class="text-muted"><small>10 minutes</small> </p>
+                    </div>
+                  </div><!-- /.media -->
+                </div><!-- /.panel-body -->
+
+                <div class="panel-footer timeline-livelines">
+                  <form action="#">
+                    <a class="kit-avatar kit-avatar-28 no-border pull-left" href="#">
+                      <img class="media-object" src="images/dummy/uifaces18.jpg">
+                    </a>
+                    <div class="input-group input-group-in no-border">
+                      <input class="form-control" placeholder="write comment...">
+                      <div class="input-group-btn">
+                        <button type="submit" class="btn"><i class="fa fa-chevron-circle-right"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.timeline-panel.panel -->
+            </li><!-- /.timeline-item -->
+
+
+            <li class="timeline-item">
+              <div class="timeline-badge">
+                <a class="border-red" rel="tooltip" title="photo" data-container="body" href="#"></a>
+              </div>
+              <div class="timeline-panel panel" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="media mb-1x">
+                    <div class="media-left">
+                      <a href="#" class="timeline-avatar kit-avatar kit-avatar-36">
+                        <img src="images/dummy/uifaces18.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <div class="timeline-actions pull-right">
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-icon btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-options-vertical text-muted"></i></a>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Hide</a></li>
+                            <li><a href="#">Mark</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div><!-- /.timeline-actions -->
+                      <p class="media-heading"><strong>Angela Fowler</strong><br><small class="text-muted">Share photo about 2 hours</small></p>
+                    </div><!-- /.media-body -->
+                  </div><!-- /.media -->
+
+                  <p>Quia laboriosam architecto est quisquam cumque obcaecati quasi voluptas saepe minus nam.</p>
+                </div><!-- /.panel-body -->
+
+                <a href="#" class="embed-responsive embed-responsive-16by9">
+                  <img src="images/dummy/people1.jpg" alt="embed image" class="embed-responsive-item">
+                </a>
+
+                <div class="panel-body">
+                  <div class="pull-right" data-toggle="tooltip" title="in this post">
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces5.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces6.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces7.jpg">
+                    </a>
+                    <a href="#" class="btn btn-xs btn-default btn-circle">+4</a>
+                  </div>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm">+12</a>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm"><span class="fa fa-share fa-fw"></span> 7</a>
+                </div><!-- /.timeline-resume -->
+
+                <div class="panel-body timeline-liveliness">
+                  <a href="#" class="btn btn-default btn-icon"><small><i class="fa fa-comment-o fa-fw"></i> View comments (34)</small></a>
+                </div><!-- /.timeline-liveliness -->
+              </div><!-- /.timeline-panel -->
+            </li><!-- /.timeline-item -->
+
+
+            <li class="timeline-item">
+              <div class="timeline-badge">
+                <a class="border-blue" rel="tooltip" title="link media" data-container="body" href="#"></a>
+              </div>
+              <div class="timeline-panel panel" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#" class="timeline-avatar kit-avatar kit-avatar-36">
+                        <img src="images/dummy/uifaces18.jpg" alt="avatar">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <div class="timeline-actions pull-right">
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-icon btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-options-vertical text-muted"></i></a>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Hide</a></li>
+                            <li><a href="#">Mark</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div><!-- /.timeline-actions -->
+                      <p class="media-heading"><strong>Angela Fowler</strong><br><small class="text-muted">share a video about 8 hours ago</small></p>
+                    </div><!-- /.media-body -->
+                  </div><!-- /.media -->
+                </div><!-- /.panel-body -->
+
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/g0w8ouP_Rro" frameborder="0" allowfullscreen=""></iframe>
+                </div><!-- /.timeline-embed -->
+
+                <div class="panel-body">
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-icon btn-default btn-sm"><i class="fa fa-comment-o fa-fw"></i> View 49 more comments</a>
+                  </div>
+                  <a href="#" class="btn btn-default btn-bordered btn-sm">+52</a>
+                  <a href="#" class="btn btn-default btn-bordered btn-sm"><span class="fa fa-share fa-fw"></span> 176</a>
+                </div><!-- /.timeline-resume -->
+
+                <div class="panel-body timeline-liveliness">
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32 pull-left" href="#">
+                        <img class="media-object" src="images/dummy/uifaces5.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Jack Vink</strong> Eveniet magnam aliquam nobis quo, quisquam voluptates enim distinctio labore</p>
+                      <p class="text-muted"><small>56 minutes</small> </p>
+                    </div>
+                  </div><!-- /.media -->
+                </div><!-- /.timeline-liveliness -->
+
+                <div class="panel-footer timeline-liveliness">
+                  <form action="#">
+                    <a class="timeline-avatar kit-avatar kit-avatar-28 pull-left" href="#">
+                      <img class="media-object" src="images/dummy/uifaces18.jpg">
+                    </a>
+                    <div class="input-group input-group-in no-border">
+                      <input class="form-control" placeholder="write comment...">
+                      <div class="input-group-btn">
+                        <button type="submit" class="btn"><i class="fa fa-chevron-circle-right"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div><!-- /.timeline-liveliness -->
+              </div><!-- /.timeline-panel -->
+            </li><!-- /.timeline-item -->
+
+
+            <li class="timeline-item">
+              <div class="timeline-badge">
+                <a class="border-cyan" rel="tooltip" title="link file" data-container="body" href="#"></a>
+              </div>
+              <div class="timeline-panel panel" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#" class="timeline-avatar kit-avatar kit-avatar-36">
+                        <img src="images/dummy/uifaces18.jpg" alt="avatar">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <div class="timeline-actions pull-right">
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-icon btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-options-vertical text-muted"></i></a>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Hide</a></li>
+                            <li><a href="#">Mark</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div><!-- /.timeline-actions -->
+                      <p class="media-heading"><strong>Angela Fowler</strong><br><small class="text-muted">10 hours ago</small></p>
+                    </div><!-- /.media-body -->
+                  </div><!-- /.media -->
+
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-zip-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                      <p>wrapkit_build-1209.zip <br> <small class="text-muted">Latest production of wrapkit</small></p>
+                    </div>
+                  </div><!-- /.media -->
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-zip-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                      <p>wrapkit_design-brief.zip <br> <small class="text-muted">Latest version of wrapkit</small></p>
+                    </div>
+                  </div><!-- /.media -->
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-pdf-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                      <p>Usulan Beasiswa Tahun 2014.pdf <br> <small class="text-muted">Latest update by Bent</small></p>
+                    </div>
+                  </div><!-- /.media -->
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-excel-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                      <p>Daftar Peserta Ujian.xlsx <br> <small class="text-muted">Latest update by Bent</small></p>
+                    </div>
+                  </div><!-- /.media -->
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-excel-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                      <p>data_not_verified.xlsx <br> <small class="text-muted">Latest update by Iin</small></p>
+                    </div>
+                  </div><!-- /.media -->
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-zip-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                      <p>mockup-presentation.zip <br> <small class="text-muted">Heh! nganggo iki bae ndes</small></p>
+                    </div>
+                  </div><!-- /.media -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.timeline-panel -->
+            </li><!-- /.timeline-item -->
+          </ul><!-- /.timeline -->
+
+
+          <ul class="timeline">
+            <li class="timeline-line"></li><!-- /.timeline-line -->
+            <li class="timeline-group">
+              <a href="#" class="btn btn-default">Yesterday</a>
+            </li>
+          </ul><!-- /.timeline-group -->
+
+
+          <ul class="timeline">
+            <li class="timeline-line"></li><!-- /.timeline-line -->
+
+            <li class="timeline-item block">
+              <div class="timeline-badge">
+                <a class="border-teal" rel="tooltip" data-container="body" href="#" title="Post"></a>
+              </div>
+              <div class="timeline-panel panel" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="media mb-1x">
+                    <div class="media-left">
+                      <a href="#" class="timeline-avatar kit-avatar kit-avatar-36">
+                        <img src="images/dummy/uifaces18.jpg" alt="avatar">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <div class="timeline-actions pull-right">
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-icon btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-options-vertical text-muted"></i></a>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Hide</a></li>
+                            <li><a href="#">Mark</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div><!-- /.timeline-actions -->
+                      <p class="media-heading"><strong>Angela Fowler</strong><br><small class="text-muted">Yesterday at 09:34 PM</small></p>
+                    </div><!-- /.media-body -->
+                  </div><!-- /.media -->
+
+                  <p>Highlight! Facere, ad, enim. Voluptatum accusantium repellendus ipsam ratione, blanditiis, nihil ipsum, voluptates nesciunt similique aperiam nemo natus quo animi unde minus illo.</p>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-body">
+                  <div class="pull-right" data-toggle="tooltip" title="" data-original-title="in this post">
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces5.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces6.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces7.jpg">
+                    </a>
+                    <a href="#" class="btn btn-xs btn-default btn-circle">+99</a>
+                  </div>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm">+16</a>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm"><span class="fa fa-share fa-fw"></span> 216</a>
+                </div><!-- /.timeline-resume -->
+
+                <div class="panel-footer timeline-livelines">
+                  <form action="#">
+                    <a class="kit-avatar kit-avatar-28 no-border pull-left" href="#">
+                      <img class="media-object" src="images/dummy/uifaces18.jpg">
+                    </a>
+                    <div class="input-group input-group-in no-border">
+                      <input class="form-control" placeholder="write comment...">
+                      <div class="input-group-btn">
+                        <button type="submit" class="btn"><i class="fa fa-chevron-circle-right"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div><!-- /.timeline-liveliness -->
+              </div><!-- /.timeline-panel -->
+            </li><!-- /.timeline-item -->
+          </ul><!-- /.timeline-group -->
+
+
+          <ul class="timeline">
+            <li class="timeline-line"></li><!-- /.timeline-line -->
+
+            <li class="timeline-item">
+              <div class="timeline-badge">
+                <a class="border-orange" rel="tooltip" data-container="body" href="#" title="Post"></a>
+              </div>
+              <div class="timeline-panel panel" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="media mb-1x">
+                    <div class="media-left">
+                      <a href="#" class="timeline-avatar kit-avatar kit-avatar-36">
+                        <img src="images/dummy/uifaces18.jpg" alt="avatar">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <div class="timeline-actions pull-right">
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-icon btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-options-vertical text-muted"></i></a>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Hide</a></li>
+                            <li><a href="#">Mark</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div><!-- /.timeline-actions -->
+                      <p class="media-heading"><strong>Angela Fowler</strong><br><small class="text-muted">Yesterday at 03:56 PM</small></p>
+                    </div><!-- /.media-body -->
+                  </div><!-- /.media -->
+
+                  <p>Dolorum minima animi in asperiores. Nostrum amet explicabo, suscipit sapiente cupiditate optio asperiores, fugit dolorum sit magni et quam perferendis, cum quibusdam.</p>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-body panel-resume">
+                  <div class="pull-right" data-toggle="tooltip" title="" data-original-title="in this post">
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces5.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces6.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces7.jpg">
+                    </a>
+                    <a href="#" class="btn btn-xs btn-default btn-circle">+21</a>
+                  </div>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm">+45</a>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm"><span class="fa fa-share fa-fw"></span> 21</a>
+                </div><!-- /.timeline-resume -->
+
+                <div class="panel-body timeline-liveliness">
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces7.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Phillip Schneider</strong> Eveniet magnam aliquam nobis quo, quisquam voluptates enim distinctio labore</p>
+                      <p class="text-muted"><small>Yesterday at 10:03 PM</small> </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces18.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Angela Fowler</strong> Quam necessitatibus, quidem doloribus sapiente amet explicabo quae, tempora laboriosam</p>
+                      <p class="text-muted"><small>Yesterday at 11:14 PM</small> </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces8.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Fabiola Anaya</strong> Molestias, magnam. Sit sapiente ea vitae modi porro, odit totam</p>
+                      <p class="text-muted"><small>Yesterday at 11:44 PM</small> </p>
+                    </div>
+                  </div>
+                </div><!-- /.timeline-livelines -->
+
+                <div class="panel-footer timeline-livelines">
+                  <form action="#">
+                    <a class="kit-avatar kit-avatar-28 no-border pull-left" href="#">
+                      <img class="media-object" src="images/dummy/uifaces18.jpg">
+                    </a>
+                    <div class="input-group input-group-in no-border">
+                      <input class="form-control" placeholder="write comment...">
+                      <div class="input-group-btn">
+                        <button type="submit" class="btn"><i class="fa fa-chevron-circle-right"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div><!-- /.timeline-liveliness -->
+              </div><!-- /.timeline-panel -->
+            </li><!-- /.timeline-item -->
+
+            <li class="timeline-item">
+              <div class="timeline-badge">
+                <a class="border-red" rel="tooltip" data-container="body" href="#" title="photo"></a>
+              </div>
+              <div class="timeline-panel panel" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="media mb-1x">
+                    <div class="media-left">
+                      <a href="#" class="timeline-avatar kit-avatar kit-avatar-36">
+                        <img src="images/dummy/uifaces18.jpg" alt="avatar">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <div class="timeline-actions pull-right">
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-icon btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-options-vertical text-muted"></i></a>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Hide</a></li>
+                            <li><a href="#">Mark</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div><!-- /.timeline-actions -->
+                      <p class="media-heading"><strong>Angela Fowler</strong><br><small class="text-muted">Yesterday at 11:22 AM</small></p>
+                    </div><!-- /.media-body -->
+                  </div><!-- /.media -->
+
+                  <p>Et, asperiores, doloremque! Ab ea at, molestiae officia soluta, id fuga. Hic, laboriosam quasi repellendus! Tempora laboriosam dolorum ipsa explicabo sed architecto.</p>
+                  <div class="row">
+                    <div class="col-xs-12 mb-2x">
+                      <a href="#" class="embed-responsive embed-responsive-16by9">
+                        <img src="images/dummy/people5.jpg" alt="embed image" class="embed-responsive-item">
+                      </a>
+                    </div><!-- /.cols -->
+                    <div class="col-xs-6 mb-2x">
+                      <a href="#" class="embed-responsive embed-responsive-16by9">
+                        <img src="images/dummy/people4.jpg" alt="embed image" class="embed-responsive-item">
+                      </a>
+                    </div><!-- /.cols -->
+                    <div class="col-xs-6 mb-2x">
+                      <a href="#" class="embed-responsive embed-responsive-16by9">
+                        <img src="images/dummy/people3.jpg" alt="embed image" class="embed-responsive-item">
+                      </a>
+                    </div><!-- /.cols -->
+                  </div><!-- /.row -->
+                </div><!-- /.panel-body -->
+
+                <div class="panel-body">
+                  <div class="pull-right" data-toggle="tooltip" title="" data-original-title="in this post">
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces8.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces9.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-28 align-middle no-border" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces10.jpg">
+                    </a>
+                    <a href="#" class="btn btn-xs btn-default btn-circle">+99</a>
+                  </div>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm">+16</a>
+                  <a href="#" class="btn btn-bordered btn-default btn-sm"><span class="fa fa-share fa-fw"></span> 216</a>
+                </div><!-- /.timeline-resume -->
+
+                <div class="panel-footer timeline-livelines">
+                  <form action="#">
+                    <a class="kit-avatar kit-avatar-28 no-border pull-left" href="#">
+                      <img class="media-object" src="images/dummy/uifaces18.jpg">
+                    </a>
+                    <div class="input-group input-group-in no-border">
+                      <input class="form-control" placeholder="write comment...">
+                      <div class="input-group-btn">
+                        <button type="submit" class="btn"><i class="fa fa-chevron-circle-right"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div><!-- /.timeline-liveliness -->
+              </div><!-- /.timeline-panel -->
+            </li><!-- /.timeline-item -->
+          </ul><!-- /.timeline -->
+
+
+          <ul class="timeline">
+            <li class="timeline-line"></li><!-- /.timeline-line -->
+            <li class="timeline-group">
+              <a href="#" class="btn btn-default">June 2014</a>
+            </li>
+          </ul><!-- /.timeline -->
+
+
+          <ul class="timeline">
+            <li class="timeline-line"></li><!-- /.timeline-line -->
+            <li class="timeline-group">
+              <a href="#" class="btn btn-default">May 2014</a>
+            </li>
+          </ul><!-- /.timeline -->
+
+
+          <ul class="timeline">
+            <li class="timeline-line"></li><!-- /.timeline-line -->
+            <li class="timeline-group">
+              <a href="#" class="btn btn-default">December 2013</a>
+            </li>
+          </ul><!-- /.timeline -->
+
+
+          <ul class="timeline">
+            <li class="timeline-line"></li><!-- /.timeline-line -->
+
+            <li class="timeline-item block">
+              <div class="timeline-badge">
+                <a class="border-teal" rel="tooltip" data-container="body" href="#" title="Joined"></a>
+              </div>
+              <div class="timeline-panel panel" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="text-center">
+                    <p>
+                      <a href="#" class="kit-avatar kit-avatar-64">
+                        <img src="images/dummy/uifaces18.jpg" alt="avatar">
+                      </a>
+                    </p>
+                    <p class="lead">Angela Fowler</p>
+                    <p class="text-muted">Joining Wrapkit - December 10, 2013</p>
+                  </div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.timeline-panel -->
+            </li><!-- /.timeline-item -->
+          </ul><!-- /.timeline -->
+
+
+
+        </div><!-- /.content-body -->
+
+
+        <!-- Template Setups -->
+        <div class="modal fade" id="templateSetup">
+          <div class="modal-dialog">
+            <!-- modal-content -->
+            <div class="modal-content"></div>
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.templateSetup -->
+
+      </div><!-- /.content -->
+    </section><!-- /MAIN -->
+
+
+
+    <!-- ============================================
+    FOOTER SECTION
+    =============================================== -->
+    <footer class="footer-wrapper" role="contentinfo">
+      <div class="footer">
+        <div class="pull-right text-muted"><small>Currently v1.2</small></div>
+        <div>Wrapkit Template  &copy; 2015</div>
+      </div>
+    </footer><!-- /.FOOTER -->
+
+  </main><!-- /#MAIN -->
+
+
+  <!-- VENDORS : jQuery & Bootstrap -->
+  <script src="scripts/vendor.js"></script>
+  <!-- END VENDORS -->
+
+  <!-- DEPENDENCIES : Required plugins -->
+  <script src="scripts/dependencies.js"></script>
+  <!-- END DEPENDENCIES -->
+
+  <!-- WRAPKIT -->
+  <script src="scripts/wrapkit.js"></script>
+  <!-- END WRAPKIT -->
+
+  <!-- WRAPKIT SETUPS -->
+  <script src="scripts/wrapkit-setup.js"></script>
+  <!-- end WRAPKIT SETUPS -->
+
+  <!-- PLUGIN SETUPS: vendors & dependencies setups -->
+  <script src="scripts/plugin-setups.js"></script>
+  <!-- END PLUGIN SETUPS -->
+
+
+  <!-- Google Analytics: change UA-48454066-1 to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='../../../../../www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-48454066-1');ga('send','pageview');
+  </script>
+</body>
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/page-timeline.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:04 GMT -->
+</html>

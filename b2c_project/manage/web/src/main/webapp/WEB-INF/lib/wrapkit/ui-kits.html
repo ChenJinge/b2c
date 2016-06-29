@@ -1,0 +1,2326 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/ui-kits.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes">
+
+  <title>UI Kit - Wrapkit Admin Template</title>
+
+
+  <!-- favicon.ico and apple-touch-icon.png -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+  <link rel="stylesheet" href="styles/dependencies.css">
+
+  <link rel="stylesheet" href="styles/wrapkit.css">
+
+  <link rel="stylesheet" href="styles/demo.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <main class="wrapkit-wrapper" id="wrapper">
+
+    <!-- ============================================
+    HEADER SECTION
+    =============================================== -->
+    <!-- navigation -->
+    <nav class="header navbar">
+      <div class="container-fluid">
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-left">
+          <a class="navbar-brand" href="index.html" role="logo" aria-label="Logo">
+            <img class="logo" src="images/logo/brand-text-dark.png" alt="Brand">
+          </a>
+          <button data-sidebar="toggleVisible" class="btn btn-icon navbar-btn">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-right" role="navigation">
+          <a aria-label="Search" id="brandSearchNav" class="btn btn-icon navbar-btn" href="#"><i class="fa fa-search"></i></a>
+
+          <div class="dropdown-ext">
+            <a aria-label="notifications" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-inbox"></i>
+              <span class="dotted dotted-danger"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-ext dropdown-menu-right" role="menu">
+              <div class="dd-head">
+                <div class="dd-head-actions">
+                  <a href="#" class="btn btn-xs btn-default">Compose</a>
+                </div>
+                <p><a href="#">Inbox (2)</a></p>
+              </div>
+              <div class="dd-body">
+                <ul class="media-list">
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>6m</small></p>
+                        <h4 class="media-heading body-text">Stilearning</h4>
+                        <p>Newest Themes & Templates - Et est, sed mattis, donec hac</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces7.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 03:11am</small></p>
+                        <h4 class="media-heading body-text">Eugene Barnett</h4>
+                        <p>Service Update: added support for Angular - Sed ultricies nibh, in feugiat</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces4.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 02:47am</small></p>
+                        <h4 class="media-heading body-text">bent10@stilearning.com</h4>
+                        <p>Spread the Word & Earn! - Dapibus nec. Integer sed purus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces3.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 11:41pm</small></p>
+                        <h4 class="media-heading body-text">David Lloyd</h4>
+                        <p>Say thanks for your awesome works! - Viverra fermentum ac. Litora mauris elit</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 10:04pm</small></p>
+                        <h4 class="media-heading body-text">Dribbble</h4>
+                        <p>Design brief from Apple - Quis in nonummy. Ut augue, proident habitant</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces16.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 08:55pm</small></p>
+                        <h4 class="media-heading body-text">Olivia Gonzales</h4>
+                        <p>Updating some of the designs! - Commodo non ac, sem netus adipiscing</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces20.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 03:57pm</small></p>
+                        <h4 class="media-heading body-text">Marco Auer</h4>
+                        <p>Request custom designs! - Adipiscing pellentesque cum, proin luctus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                </ul>
+              </div><!-- /.dd-body -->
+            </div><!-- /.dropdown-menu -->
+          </div><!-- /.dropdown -->
+
+          <div class="dropdown">
+            <a aria-label="More" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-ellipsis-v"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="pull-right"><i class="fa fa-user text-muted"></i></span>Profile</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="pull-right"><i class="fa fa-clock-o text-muted"></i></span>Timeline</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="pull-right"><i class="fa fa-question-circle text-muted"></i></span>Help</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="pull-right"><i class="fa fa-lock text-muted"></i></span>Locked</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="pull-right"><i class="fa fa-sign-out text-muted"></i></span> Sign out</a></li>
+            </ul>
+          </div><!-- /.dropdown -->
+        </div><!-- /navigation -->
+
+        <div class="brand-search" id="brandSearchFrm">
+          <form action="#" role="search">
+            <a href="#" class="search-close">&times;</a>
+            <input class="search-field" placeholder="Search for everything you want..." tabindex="-1">
+          </form>
+        </div><!-- /.brand-search -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /navigation -->
+
+
+
+    <!-- ============================================
+    SIDEBAR SECTION
+    =============================================== -->
+    <aside class="sidebar" role="complementary">
+
+      <!-- profile -->
+      <div class="sidebar-block">
+        <div class="media">
+          <div class="media-left">
+            <a href="page-profile.html">
+              <span class="status dotted dotted-primary" data-toggle="tooltip" data-container="body" title="available"></span>
+              <img class="media-object img-circle" src="images/dummy/uifaces14.jpg" alt="photo profile">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Emma Greene</h4>
+            <p class="text-muted">
+              <small>Graphic Designer</small>
+            </p>
+          </div>
+        </div>
+      </div><!-- /.sidebar-block -->
+      <!-- /profile -->
+
+      <!-- /navigation -->
+      <div class="nav-wrapper">
+        <ul class="nav nav-stacked" role="navigation">
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-dashcube"></i></span>
+              <span class="nav-text">Dashboard</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><span class="nav-text">Dashboard 1</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index-2.html"><span class="nav-text">Dashboard 2</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">GET STARTED</li>
+          <li class="nav-item" role="presentation">
+            <a href="layout.html">
+              <span class="nav-icon"><i class="fa fa-object-group"></i></span>
+              <span class="nav-text">Layout</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="ecosystem.html">
+              <span class="nav-icon"><i class="fa fa-cubes"></i></span>
+              <span class="nav-text">Ecosystem</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="panels.html">
+              <span class="nav-icon"><i class="fa fa-puzzle-piece"></i></span>
+              <span class="nav-text">Panels</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+              <span class="nav-text">Level Menu</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Lorem ipsum</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Dolor sit</span></a></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" data-toggle="nav-child" href="#"><span class="nav-text">Node</span></a>
+                <ul class="nav nav-child level-2 nav-stacked nav-pills" role="menu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Consectetur</span></a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Assumenda</span></a></li>
+                </ul>
+              </li> <!-- /node -->
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Amet</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">USER INTERFACES</li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-briefcase"></i></span>
+              <span class="nav-text">Components</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-grid.html"><span class="nav-text">Grids</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-type.html"><span class="nav-text">Type</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-button.html"><span class="nav-text">Buttons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-icons.html"><span class="nav-text">Icons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-modal.html"><span class="nav-text">Modal</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tooltip-popover.html"><span class="nav-text">Tooltips & Popovers</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-alert-callout.html"><span class="nav-text">Alerts & Callout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-progressbar.html"><span class="nav-text">Progress bar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-label-badge.html"><span class="nav-text">Label & Badge</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-navbar.html"><span class="nav-text">Navbar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-nav.html"><span class="nav-text">Nav</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tabs-collapse.html"><span class="nav-text">Tabs & Collapse</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-check-square"></i></span>
+              <span class="nav-text">Forms</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-basic.html"><span class="nav-text">Basic Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-advance.html"><span class="nav-text">Advance Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-uploader.html"><span class="nav-text">Uploader</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-xeditable.html"><span class="nav-text">x-Editable</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-wizard.html"><span class="nav-text">Wizard</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-editor.html"><span class="nav-text">Editor</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-imagecropping.html"><span class="nav-text">Image Cropping</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-validator.html"><span class="nav-text">Validator</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-line-chart"></i></span>
+              <span class="nav-text">Charts</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-js.html"><span class="nav-text">ChartJs</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-morris.html"><span class="nav-text">Morris</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-inline.html"><span class="nav-text">Inline Charts</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-database"></i></span>
+              <span class="nav-text">Tables</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-basic.html"><span class="nav-text">Basic Table</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-datatables.html"><span class="nav-text">DataTables</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">DEVELOPMENT</li>
+          <li class="nav-item active" role="presentation">
+            <a href="ui-kits.html">
+              <span class="nav-icon"><i class="fa fa-cube"></i></span>
+              <span class="nav-text">Widgets</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-plug"></i></span>
+              <span class="nav-text">Plugins</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-animate.html"><span class="nav-text">Animated</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-bootbox.html"><span class="nav-text">Bootbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-calendar.html"><span class="nav-text">Calendar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-maps.html"><span class="nav-text">Maps</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-nestable.html"><span class="nav-text">Nestable List</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-session-timeout.html"><span class="nav-text">Session Timeout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-toastr.html"><span class="nav-text">Toastr</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-treeview.html"><span class="nav-text">Tree View</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-file-text-o"></i></span>
+              <span class="nav-text">Pages</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="nav-text">Signin</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="nav-text">Lock Screen</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-error.html"><span class="nav-text">Error Page</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="nav-text">Profile</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-inbox.html"><span class="nav-text">Inbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="nav-text">Timeline</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-gallery.html"><span class="nav-text">Gallery</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-pricing.html"><span class="nav-text">Pricing</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-invoice.html"><span class="nav-text">Invoice</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-search.html"><span class="nav-text">Search Result</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="nav-text">Help</span></a></li>
+            </ul>
+          </li>
+          <li class="collapse-item" role="presentation">
+            <a href="#" data-sidebar="toggleCollapse">
+              <i class="fa fa-angle-double-left"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside><!-- /.SIDEBAR -->
+
+
+
+    <!-- ============================================
+    MAIN CONTENT SECTION
+    =============================================== -->
+    <section class="content-wrapper" role="main">
+      <div class="content">
+        <div class="content-bar">
+          <div class="pull-right" role="group">
+            <a data-toggle="modal" href="#" data-scripts="_includes/setups.js" data-target="#templateSetup" title="Template Setups" aria-label="template setups" class="btn btn-nofill btn-sm btn-default" href="#"><span class="icon-settings fa-lg text-muted"></span></a>
+          </div>
+          <ul class="breadcrumb breadcrumb-angle">
+            <li><a href="#" aria-label="home"><i class="fa fa-home"></i></a></li>
+            <li class="active">UI Kits</li>
+          </ul>
+        </div><!-- /.content-bar -->
+
+
+        <div class="content-body">
+
+          <!-- ============================================
+          FORM SECTION
+          =============================================== -->
+          <h2>Form</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <!--SIGNIN FORM #1-->
+              <div class="panel">
+                <div class="panel-body">
+                  <h3 class="text-center mt-1x">Signin</h3>
+                  <form action="#">
+                    <div class="form-group">
+                      <div class="input-group input-group-in no-border">
+                        <div class="input-group-addon"><i class="icon-user text-muted"></i></div>
+                        <input class="form-control" placeholder="Username">
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="input-group input-group-in no-border">
+                        <div class="input-group-addon"><i class="icon-lock text-muted"></i></div>
+                        <input type="password" class="form-control" placeholder="Password">
+                        <div class="input-group-addon"><small><a href="#">Forgot?</a></small></div>
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="nice-checkbox nice-checkbox-inline">
+                            <input type="checkbox" name="rememberSignIn1" id="rememberSignIn1">
+                            <label for="rememberSignIn1">Remember</label>
+                          </div>
+                        </div><!-- /.cols -->
+                        <div class="col-xs-6">
+                          <button type="submit" class="btn btn-sm btn-block btn-primary mt-1x">SIGNIN</button>
+                        </div><!-- /.cols -->
+                      </div><!-- /.row -->
+                    </div><!-- /.form-group -->
+                  </form><!-- /form -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!--END SIGNIN FORM #1-->
+
+              <!--SIGNIN FORM #2-->
+              <div class="panel">
+                <div class="panel-body">
+                  <h3 class="text-center mt-1x">Signin</h3>
+                  <form action="#">
+                    <div class="form-group">
+                      <div class="input-group input-group-in no-border no-radius bordered-bottom">
+                        <div class="input-group-addon"><i class="icon-user text-muted"></i></div>
+                        <input class="form-control" placeholder="Username">
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="input-group input-group-in no-border no-radius bordered-bottom">
+                        <div class="input-group-addon"><i class="icon-lock text-muted"></i></div>
+                        <input type="password" class="form-control" placeholder="Password">
+                        <div class="input-group-addon"><small><a href="#">Forgot?</a></small></div>
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="nice-checkbox nice-checkbox-inline">
+                            <input type="checkbox" name="rememberSignIn2" id="rememberSignIn2">
+                            <label for="rememberSignIn2">Remember</label>
+                          </div>
+                        </div><!-- /.cols -->
+                        <div class="col-xs-6">
+                          <button type="submit" class="btn btn-sm btn-block btn-primary mt-1x">SIGNIN</button>
+                        </div><!-- /.cols -->
+                      </div><!-- /.row -->
+                    </div><!-- /.form-group -->
+                  </form><!-- /form -->
+                </div><!-- /.panel-body -->
+                <div class="btn-group btn-group-justified">
+                  <a rel="tooltip" data-container="body" title="Sign in via Twitter" href="#" class="btn btn-info no-corner corner-bl"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+                  <a rel="tooltip" data-container="body" title="Sign in via Facebook" href="#" class="btn btn-success no-corner corner-br"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+                </div><!-- /.panel-group -->
+              </div><!-- /.panel -->
+              <!--END SIGNIN FORM #2-->
+
+              <!--REGISTER FORM-->
+              <div class="panel">
+                <div class="panel-body">
+                  <h3 class="text-center">REGISTER</h3>
+                  <p class="clearfix"></p>
+                  <form action="#">
+                    <div class="form-group">
+                      <input class="form-control no-padding bg-none no-border no-corner bordered-bottom" placeholder="Username" value="Constantin Predescu">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <input type="password" class="form-control no-padding bg-none no-border no-corner bordered-bottom" placeholder="Password" value="Password">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <input type="password" class="form-control no-padding bg-none no-border no-corner bordered-bottom" placeholder="Confirm" value="Password">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <input type="email" class="form-control no-padding bg-none no-border no-corner bordered-bottom" placeholder="Email" value="predescu@gmail.com">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="nice-radio nice-radio-inline">
+                        <input type="radio" name="gender" id="gmale" checked="checked">
+                        <label for="gmale">Male</label>
+                      </div>
+                      <div class="nice-radio nice-radio-inline">
+                        <input type="radio" name="gender" id="gfemale">
+                        <label for="gfemale">Female</label>
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <button class="btn btn-block btn-primary">REGISTER</button>
+                      <div class="nice-checkbox">
+                        <input type="checkbox" id="newsletter" checked="checked">
+                        <label for="newsletter text-light">Send me weekly newsletter</label>
+                      </div>
+                    </div><!-- /.form-group -->
+                  </form><!-- /form -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- /END REGISTER FORM-->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <!--REGISTER FORM #2-->
+              <div class="panel">
+                <div class="panel-body">
+                  <h3 class="text-center mb-4x"><i class="icon-cloud-upload"></i> Register</h3>
+                  <form action="#">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="input-group input-group-in">
+                            <input class="form-control" placeholder="First Name">
+                            <span class="input-group-addon"><span class="dotted"></span></span>
+                          </div>
+                        </div><!-- /.cols -->
+                        <div class="col-xs-6">
+                          <input class="form-control" placeholder="Last Name">
+                        </div><!-- /.cols -->
+                      </div><!-- /.row -->
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="input-group input-group-in">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <span class="input-group-addon"><span class="dotted"></span></span>
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="input-group input-group-in">
+                        <input type="password" class="form-control" placeholder="Password">
+                        <span class="input-group-addon"><span class="dotted"></span></span>
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="input-group input-group-in">
+                        <input type="password" class="form-control" placeholder="Repeat Password">
+                        <span class="input-group-addon"><span class="dotted"></span></span>
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-block btn-primary" value="SIGN UP">
+                    </div><!-- /.form-group -->
+                    <p class="help-block text-center">Already have an account? <a href="#">Signin</a></p>
+                  </form><!-- /form -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- /END REGISTER FORM #2-->
+
+              <!-- QUESTION FORM-->
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <p class="title">Ask a Question</p>
+                  <form action="#">
+                    <div class="form-group">
+                      <input class="form-control" placeholder="Name">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <textarea class="form-control" rows="9" placeholder="Question"></textarea>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <button class="btn btn-primary" type="submit">Send question</button>
+                    </div><!-- /.form-group -->
+                  </form><!-- /form -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- END QUESTION FORM-->
+
+              <!--NEWSLETTER FORM-->
+              <div class="panel" data-fill-color="true" data-context="teal">
+                <div class="panel-body">
+                  <form action="#">
+                    <div class="form-group">
+                      <label for="subcribeNewsletter" class="control-label">NEWSLETTER <br> <small>Consectetur adipisicing elit</small></label>
+                      <div class="input-group input-group-in input-group-sm no-border">
+                        <div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
+                        <input class="form-control" id="subcribeNewsletter" placeholder="johndoe@mail.com">
+                        <div class="input-group-btn">
+                          <button class="btn btn-default"><strong>OK</strong></button>
+                        </div>
+                      </div>
+                    </div><!-- /.form-group -->
+                  </form><!-- /form -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!--/END NEWSLETTER FORM-->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <!-- FEED FEEL FORM-->
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <p class="title">If you enjoy our website?</p>
+                  <form action="#">
+                    <div class="form-group text-center">
+                      <span class="nice-radio help-inline mr-2x">
+                        <input id="feed-feel1" type="radio" name="feedFeel">
+                        <label for="feed-feel1">
+                          <span class="fa fa-4x fa-meh-o text-muted"></span>
+                        </label>
+                      </span>
+                      <span class="nice-radio help-inline mr-2x">
+                        <input id="feed-feel2" type="radio" name="feedFeel">
+                        <label for="feed-feel2">
+                          <span class="fa fa-4x fa-frown-o text-muted"></span>
+                        </label>
+                      </span>
+                      <span class="nice-radio help-inline">
+                        <input id="feed-feel3" type="radio" name="feedFeel">
+                        <label for="feed-feel3">
+                          <span class="fa fa-4x fa-smile-o text-muted"></span>
+                        </label>
+                      </span>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <button class="btn btn-block btn-primary btn-lg" type="submit">Submit Feedback</button>
+                    </div><!-- /.form-group -->
+                  </form><!-- /form -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- END FEED FEEL FORM-->
+
+              <!-- PAYMENT FORM-->
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <p class="title">Payment Details</p>
+                  <form action="#">
+                    <div class="form-group bordered-top bordered-bottom no-margin">
+                      <div class="input-group input-group-in no-border bordered-right bordered-left no-radius">
+                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                        <input class="form-control" placeholder="Card Number">
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group bordered-bottom">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group input-group-in no-border bordered-left no-radius">
+                            <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                            <input class="form-control" placeholder="MM/YY">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group input-group-in no-border bordered-right bordered-left no-radius">
+                            <span class="input-group-addon"><i class="icon-lock"></i></span>
+                            <input class="form-control" placeholder="CVC">
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- /.form-group -->
+                    <div class="form-group clearfix">
+                      <button type="button" class="btn btn-primary pull-right">Continue <i class="fa fa-arrow-circle-right"></i></button>
+                      <button type="button" class="btn btn-default">Or buy using Paypal</button>
+                    </div><!-- /.form-group -->
+                  </form><!-- /form -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- END PAYMENT FORM-->
+
+              <!-- CONTACT FORM-->
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <p class="title">Shoot Us an Email</p>
+                  <form action="#">
+                    <div class="form-group">
+                      <label>Contact</label>
+                      <input type="email" class="form-control" placeholder="johndoe@mail.com">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <label>Subject</label>
+                      <input class="form-control" placeholder="Type a subject">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <label>Message</label>
+                      <textarea class="form-control" rows="10" placeholder="Type your message"></textarea>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <button class="btn btn-primary pull-right" type="submit">Send mail</button>
+                      <div class="help-block">
+                        <span class="nice-checkbox">
+                          <input type="checkbox" id="ctxCopy" checked="checked">
+                          <label for="ctxCopy">Save a copy</label>
+                        </span>
+                      </div>
+                    </div><!-- /.form-group -->
+                  </form><!-- /form -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- END CONTACT FORM-->
+            </div><!-- /.cols -->
+
+          </div><!-- /.row -->
+
+
+
+          <!-- ============================================
+          PROFILE BLOCK SECTION
+          =============================================== -->
+          <h2>Profile Block</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel" style="background-image: url(images/dummy/trianglify1.svg)" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="pull-left mr-2x">
+                    <span class="kit-avatar kit-avatar-64 no-border">
+                      <img class="media-object" src="images/dummy/uifaces11.jpg" alt="photo profile">
+                    </span>
+                  </div>
+                  <h3 class="no-vmargin">Elizabeth Salazar</h3>
+                  <p>Senior UI Designer</p>
+                  <div class="clearfix"></div>
+                  <div class="help-block">
+                    <p>Power</p>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width:62%"></div>
+                    </div>
+                    <p>Activity</p>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-warning" style="width:86%"></div>
+                    </div>
+                    <p>Productivity</p>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar" style="width:75%"></div>
+                    </div>
+                    <p>Strength</p>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-success" style="width:55%"></div>
+                    </div>
+                  </div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel bg-grd-light" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="pull-left mr-2x">
+                    <span class="kit-avatar kit-avatar-64">
+                      <img class="media-object" src="images/dummy/uifaces15.jpg" alt="photo profile">
+                    </span>
+                  </div>
+                  <p class="lead mb-1x">Arthur Cook</p>
+                  <p class="text-muted"><i class="fa fa-map-marker fa-fw"></i> Pekalongan, Jawa Tengah</p>
+                  <div class="clearfix"></div>
+                  <p class="text-center">
+                    <a href="#" class="btn btn-sm btn-info">Edit</a>
+                    <a href="#" class="btn btn-sm btn-primary">Add New</a>
+                  </p>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+
+              <div class="panel" style="background-image: url(images/dummy/trianglify6.svg)" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="pull-left mr-2x">
+                    <span class="kit-avatar kit-avatar-64">
+                      <img class="media-object" src="images/dummy/uifaces5.jpg" alt="photo profile">
+                    </span>
+                  </div>
+                  <h3 class="no-vmargin">Christopher Duncan</h3>
+                  <p class="text-red">Senior UI Designer</p>
+                  <div class="clearfix"></div>
+                  <div class="row text-center">
+                    <div class="col-xs-4 p-2x"><i class="fa fa-heart fa-lg text-red fa-fw"></i> <br>645 Likes</div>
+                    <div class="col-xs-4 p-2x"><i class="fa fa-trophy fa-lg text-orange fa-fw"></i> <br>8 Project</div>
+                    <div class="col-xs-4 p-2x"><i class="fa fa-user-plus fa-lg text-blue fa-fw"></i> <br>846 Follower</div>
+                  </div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel bg-grd-dark text-light" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="pull-left mr-2x">
+                    <span class="kit-avatar kit-avatar-64 kit-avatar-square no-border">
+                      <img class="media-object" src="images/dummy/uifaces9.jpg" alt="photo profile">
+                    </span>
+                  </div>
+                  <p class="lead mb-1x">Christina Martinez</p>
+                  <div class="progress progress-xs no-margin">
+                    <div class="progress-bar" style="width:60%"></div>
+                  </div>
+                  <p>
+                    <small class="pull-left">1.6 Gb</small>
+                    <small class="pull-right">3 Gb</small>
+                  </p>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+
+              <div class="panel" style="background-image: url(images/dummy/trianglify5.svg)" data-fill-color="true">
+                <div class="panel-body text-center">
+                  <div class="help-block">
+                    <span class="kit-avatar kit-avatar-64 kit-avatar-square no-border">
+                      <img class="media-object" src="images/dummy/uifaces4.jpg" alt="photo profile">
+                    </span>
+                  </div>
+                  <p class="lead mb-1x">Donald Rodriguez</p>
+                  <p><i class="fa fa-map-marker fa-fw"></i>San Francisco</p>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+
+
+          <!-- ============================================
+          SOCIAL SECTION
+          =============================================== -->
+          <h2>Social</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="embed-responsive embed-responsive-16by9 corner-top">
+                  <img class="embed-responsive-item" src="images/dummy/people5.jpg" alt="cover">
+                  <div class="embed-badge embed-badge-right">
+                    <div class="embed-badge-bg bg-blue"></div>
+                    <a href="#" class="embed-badge-content"><i class="fa fa-facebook"></i></a>
+                  </div>
+                </div><!-- /.embed -->
+
+                <div class="embed-extend-item bg-blue">
+                  <a href="#" class="kit-avatar kit-avatar-96 border-transparent pull-left">
+                    <img src="images/dummy/uifaces10.jpg" alt="avatar">
+                  </a>
+                  <h3 class="subhead"><a href="#">Bent Smith</a> <small>@bents</small></h3>
+                </div><!-- /.embed-extend -->
+
+                <div class="panel-body bg-blue corner-bottom">
+                  <p>
+                    <strong>1,8K</strong>
+                    <small>people like bent</small>
+                  </p>
+                  <div class="help-block">
+                    <a rel="tooltip" href="#" class="kit-avatar kit-avatar-24 kit-avatar-square no-border" title="Laura Papură">
+                      <img src="images/dummy/uifaces1.jpg" alt="">
+                    </a>
+                    <a rel="tooltip" href="#" class="kit-avatar kit-avatar-24 kit-avatar-square no-border" title="Sara Cárdenas">
+                      <img src="images/dummy/uifaces2.jpg" alt="">
+                    </a>
+                    <a rel="tooltip" href="#" class="kit-avatar kit-avatar-24 kit-avatar-square no-border" title="Adam Fletcher">
+                      <img src="images/dummy/uifaces3.jpg" alt="">
+                    </a>
+                    <a rel="tooltip" href="#" class="kit-avatar kit-avatar-24 kit-avatar-square no-border" title="Santiago Ribeiro">
+                      <img src="images/dummy/uifaces4.jpg" alt="">
+                    </a>
+                    <a rel="tooltip" href="#" class="kit-avatar kit-avatar-24 kit-avatar-square no-border" title="Costel Morar">
+                      <img src="images/dummy/uifaces5.jpg" alt="">
+                    </a>
+                    <a rel="tooltip" href="#" class="kit-avatar kit-avatar-24 kit-avatar-square no-border" title="Tamás Halász">
+                      <img src="images/dummy/uifaces6.jpg" alt="">
+                    </a>
+                  </div><!-- /.help-block -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+
+              <div class="panel">
+                <div class="panel-body">
+                  <a href="#" class="kit-avatar kit-avatar-36 pull-left kit-avatar-fw">
+                    <img src="images/dummy/uifaces21.jpg" alt="">
+                  </a>
+                  <p>
+                    <a href="#"><strong>Bent Smith</strong></a>
+                    <br>
+                    <small class="text-muted">Share a Post at 7:16 AM</small>
+                  </p>
+                </div><!-- /.panel-body -->
+
+                <div class="embed-responsive embed-responsive-16by9 text-light">
+                  <img class="embed-responsive-item" src="images/dummy/desk3.jpg" alt="cover">
+                  <div class="embed-overlay bg-grd-dark"></div>
+                  <div class="embed-content">
+                    <p class="lead"><a href="#">Technology Tools: Web 2.0 in the Classroom</a></p>
+                  </div>
+                  <div class="embed-bar embed-bar-bottom">
+                    <div class="pull-right">
+                      <i class="icon-eye fa-fw"></i> 639 Readers
+                    </div>
+                    <div>
+                      <a href="#" class="mr-1x"><i class="icon-share fa-fw"></i> Share</a>
+                      <a href="#"><i class="icon-star fa-fw"></i> Favourites</a>
+                    </div>
+                  </div>
+                </div><!-- /.embed -->
+
+                <div class="panel-body">
+                  <p>Quos voluptate laborum porro consequuntur necessitatibus, fugiat nam quibusdam voluptatum itaque. A, enim! Deleniti maiores repellat suscipit obcaecati asperiores sapiente neque expedita.</p>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-icon btn-xs btn-primary"><i class="icon-bubbles fa-fw"></i> 27</a>
+                    <a href="#" class="btn btn-icon btn-xs btn-danger"><i class="icon-heart fa-fw"></i> 53</a>
+                  </div>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-footer">
+                  <form action="#">
+                    <a href="#" class="pull-left kit-avatar kit-avatar-24 kit-avatar-fw">
+                      <img src="images/dummy/profile.jpg" alt="avatar">
+                    </a><!-- /.kit-avatar -->
+                    <div class="input-group input-group-in input-group-sm">
+                      <input class="form-control" placeholder="Write a comment...">
+                      <div class="input-group-btn">
+                        <button class="btn"><i class="fa fa-chevron-circle-right"></i></button>
+                      </div>
+                    </div><!-- /.input-group -->
+                  </form><!-- /.form -->
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="embed-responsive embed-responsive-16by9 corner-top">
+                  <img class="embed-responsive-item" src="images/dummy/people1.jpg" alt="cover">
+                  <div class="embed-overlay bg-grd-dark"></div>
+                  <div class="embed-badge">
+                    <div class="embed-badge-bg bg-teal"></div>
+                    <a rel="tooltip" data-container="body" title="" href="#" class="embed-badge-content" data-original-title="Elite User"><i class="icon-badge"></i></a>
+                  </div>
+                </div><!-- /.embed -->
+
+                <div class="embed-extend-item">
+                  <a href="#" class="kit-avatar kit-avatar-96 border-white pull-left">
+                    <img src="images/dummy/uifaces14.jpg" alt="avatar">
+                  </a>
+                  <h3 class="subhead"><a href="#">Maribel Padilla</a> <small>@mpadilla</small></h3>
+                </div><!-- /.kit-cover-headline -->
+
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-xs-4 bordered-right">
+                      <h5 class="text-center"><small>POSTS</small><br><strong>184</strong></h5>
+                    </div><!-- /.cols -->
+                    <div class="col-xs-4 bordered-right">
+                      <h5 class="text-center"><small>FOLLOWERS</small><br><strong>1,294</strong></h5>
+                    </div><!-- /.cols -->
+                    <div class="col-xs-4">
+                      <h5 class="text-center"><small>SALES</small><br><strong>24,170</strong></h5>
+                    </div><!-- /.cols -->
+                  </div><!-- /.row -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body text-center">
+                  <p class="headline">Connect with us</p>
+                  <p>
+                    <button type="button" class="btn btn-danger btn-circle" aria-label="google plus"><i class="fa fa-lg fa-google-plus"></i></button>
+                    <button type="button" class="btn btn-primary btn-circle ml-1x" aria-label="instagram"><i class="fa fa-lg fa-instagram"></i></button>
+                    <button type="button" class="btn btn-info btn-circle ml-1x" aria-label="twitter"><i class="fa fa-lg fa-twitter"></i></button>
+                    <button type="button" class="btn btn-success btn-circle ml-1x" aria-label="facebook"><i class="fa fa-lg fa-facebook"></i></button>
+                  </p>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+
+              <div class="panel" data-context="cyan" data-fill-color="true">
+                <div class="panel-body">
+                  <p class="pull-right"><i class="icon-social-twitter fa-lg"></i></p>
+                  <p class="title">Latest Tweet</p>
+                  <blockquote class="no-hpadding no-border">
+                    <p class="lead">Molestiae itaque alias repellat iusto, soluta reprehenderit tempore, impedit ab consequatur iste assumenda optio reiciendis totam ipsam consectetur odit dolorum illo corrupti!</p>
+                    <footer>Brenda Montgomery <span class="dotted align-middle dotted-sm dotted-success"></span> <cite title="time">10 minutes ago</cite></footer>
+                  </blockquote>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="embed-responsive embed-responsive-16by9 corner-top">
+                  <img class="embed-responsive-item" src="images/dummy/people6.jpg" alt="cover">
+                  <div class="embed-overlay bg-grd-violet"></div>
+                </div><!-- /.embed -->
+
+                <div class="embed-extend-item">
+                  <a href="#" class="kit-avatar kit-avatar-96 center border-white">
+                    <img src="images/dummy/uifaces11.jpg" alt="avatar">
+                  </a>
+                  <div class="text-center">
+                    <h4 class="title pb-1x"><a href="#">Catherine Aubry</a></h4>
+                    <p class="text-muted">Et cumque repellat assumenda at, expedita voluptatem placeat. Hic atque vitae nesciunt exercitationem quisquam!</p>
+                  </div>
+                </div><!-- /.embed-extend -->
+
+                <div class="panel-body text-center">
+                  <div class="row">
+                    <div class="col-xs-4 bordered-right">
+                      <p class="text-muted"><small>POSTS</small></p>
+                      <h4><strong>184</strong></h4>
+                    </div><!-- /.cols -->
+                    <div class="col-xs-4 bordered-right">
+                      <p class="text-muted"><small>FOLLOWERS</small></p>
+                      <h4><strong>2,197</strong></h4>
+                    </div><!-- /.cols -->
+                    <div class="col-xs-4">
+                      <p class="text-muted"><small>SALES</small></p>
+                      <h4><strong>18,072</strong></h4>
+                    </div><!-- /.cols -->
+
+                    <div class="clearfix"></div>
+                    <br>
+
+                    <div class="col-xs-8 col-xs-offset-2">
+                      <p><a href="#" class="btn btn-block btn-primary">View Profile</a></p>
+                    </div>
+                  </div><!-- /.row -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <p class="headline">Connect with us</p>
+                  <div class="help-block"><a href="#" class="btn btn-danger"><i class="fa fa-fw fa-google-plus"></i> Follow on Google+</a></div>
+                  <div class="help-block"><a href="#" class="btn btn-success"><i class="fa fa-fw fa-instagram"></i> Follow on Instagram</a></div>
+                  <div class="help-block"><a href="#" class="btn btn-info"><i class="fa fa-fw fa-twitter"></i> Follow on Twitter</a></div>
+                  <div class="help-block"><a href="#" class="btn btn-primary"><i class="fa fa-fw fa-facebook"></i> Like on Facebook</a></div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+          </div><!-- /.row -->
+
+
+
+          <!-- ============================================
+          BLOG ARTICLE ELEMENTS SECTION
+          =============================================== -->
+          <h2>Blog & Article</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true">
+                <div class="panel-heading p-2x">
+                  <a href="#" class="kit-avatar kit-avatar-36 pull-left kit-avatar-fw">
+                    <img src="images/dummy/uifaces11.jpg" alt="avatar">
+                  </a>
+                  <p>
+                    <a href="#" class="text-dark"><strong>Marta Fjodorov</strong></a>
+                    <br>
+                    <small class="text-muted">News | at 9:16 AM</small>
+                  </p>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-body">
+                  <h4 class="headline">Saudis: 107 dead in crane collapse at Mecca's Grand Mosque</h4>
+                  <p>Quos voluptate laborum porro consequuntur necessitatibus, fugiat nam quibusdam voluptatum itaque. A, enim! Deleniti maiores repellat suscipit obcaecati asperiores sapiente neque expedita.</p>
+                  <div class="help-block text-center">
+                    <a href="#" class="btn btn-icon btn-default" title="Read more">
+                      <span class="dotted"></span>
+                      <span class="dotted"></span>
+                      <span class="dotted"></span>
+                    </a>
+                  </div>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-footer">
+                  <div class="btn-group btn-group-justified">
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-eyeglass fa-fw"></i> 628</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-bubbles fa-fw"></i> 156</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-share fa-fw"></i> 473</span>
+                  </div>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+              <!-- /SINGLE POST/ARTICLE KIT -->
+
+              <div class="panel">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <img class="embed-responsive-item" src="images/dummy/people5.jpg" alt="cover">
+                  <div class="embed-overlay"></div>
+                  <div class="embed-bar embed-bar-bottom">
+                    <div class="pull-right">
+                      <i class="icon-calendar fa-fw"></i> Sep 12, 2015
+                    </div>
+                    <div>
+                      <a href="#" class="mr-1x"><i class="icon-share fa-fw"></i> Share</a>
+                      <a href="#"><i class="icon-star fa-fw"></i> Favourites</a>
+                    </div>
+                  </div>
+                </div><!-- /.embed -->
+
+                <div class="panel-body">
+                  <h4><strong>ORTIZ REACHES 500 HOMERS, RED SOX BEAT RAYS 10-4</strong></h4>
+                  <p class="help-block"><small>by: <a href="#" class="mr-2x">Gary Jenkins</a> - <span class="ml-2x"><i class="fa fa-tag fa-fw"></i> Sport</span></small></p>
+                  <p>Nesciunt numquam dolore, iste perspiciatis, similique totam a mollitia dolor non obcaecati quis ullam voluptates quod nobis.</p>
+                  <a href="#" class="btn btn-sm btn-link text-dark"><i class="fa fa-long-arrow-right fa-fw"></i> READ MORE</a>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- /END SINGLE POST/ARTICLE KIT -->
+
+              <div class="panel">
+                <div class="panel-body">
+                  <a href="#" class="kit-avatar kit-avatar-36 pull-left kit-avatar-fw">
+                    <img src="images/dummy/uifaces19.jpg" alt="avatar">
+                  </a>
+                  <p>
+                    <a href="#" class="text-dark"><strong>Rogelio Paredes</strong></a>
+                    <br>
+                    <small class="text-muted">Photography | Sep 12, 2015</small>
+                  </p>
+                </div><!-- /.panel-body -->
+
+                <div class="embed-responsive embed-responsive-16by9 text-light">
+                  <img class="embed-responsive-item" src="images/dummy/desk2.jpg" alt="cover">
+                  <div class="embed-overlay bg-grd-dark"></div>
+                  <div class="embed-bar embed-bar-bottom">
+                    <p class="text-right"><small>photo by: REFERENCE</small></p>
+                  </div>
+                </div><!-- /.embed -->
+
+                <div class="panel-body">
+                  <h4 class="lead">Designing our Work Room</h4>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-footer">
+                  <div class="btn-group btn-group-justified">
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-eyeglass fa-fw"></i> 145</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-bubbles fa-fw"></i> 35</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-share fa-fw"></i> 88</span>
+                  </div>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+              <!-- /SINGLE POST/ARTICLE KIT -->
+
+              <div class="panel">
+                <div class="panel-body">
+                  <p><a href="#"><small><i class="fa fa-comment-o fa-fw"></i> View 4 more comments</small></a></p>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces1.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Arina Rosetti</strong> Consequuntur illo accusantium, expedita ratione dolorem fuga minima!</p>
+                      <p class="text-muted"><small>22 minutes</small> </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces2.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Júlia Ribeiro</strong> Veritatis aspernatur totam illum quisquam ipsa accusantium, animi voluptatum rem placeat.</p>
+                      <p class="text-muted"><small>18 minutes</small> </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces3.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Felix Koller</strong> Molestias ipsum hic voluptas soluta expedita, ab, dolorum aperiam neque nesciunt.</p>
+                      <p class="text-muted"><small>10 minutes</small> </p>
+                    </div>
+                  </div><!-- /.media -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- / POST/ARTICLE COMMENTS KIT -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="panel-body">
+                  <a href="#" class="kit-avatar kit-avatar-36 pull-left kit-avatar-fw">
+                    <img src="images/dummy/uifaces12.jpg" alt="avatar">
+                  </a>
+                  <p>
+                    <a href="#" class="text-dark"><strong>Julia Schneider</strong></a>
+                    <br>
+                    <small class="text-muted">Money | Sep 12, 2015</small>
+                  </p>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-body">
+                  <h4 class="headline">Mark Your Calendars: Economists See Next U.S. Recession in 2018</h4>
+                  <p>Quos voluptate laborum porro consequuntur necessitatibus, fugiat nam quibusdam voluptatum itaque. A, enim! Deleniti maiores repellat suscipit obcaecati asperiores sapiente neque expedita.</p>
+                  <div class="help-block text-center">
+                    <a href="#" class="btn btn-icon btn-default" title="Read more">
+                      <span class="dotted"></span>
+                      <span class="dotted"></span>
+                      <span class="dotted"></span>
+                    </a>
+                  </div>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-footer">
+                  <div class="btn-group btn-group-justified">
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-eyeglass fa-fw"></i> 763</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-bubbles fa-fw"></i> 162</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-share fa-fw"></i> 691</span>
+                  </div>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+              <!-- /SINGLE POST/ARTICLE KIT -->
+
+              <div class="panel">
+                <div class="panel-body">
+                  <div class="embed-responsive embed-responsive-4by3 text-light">
+                    <img class="embed-responsive-item" src="images/dummy/people2.jpg" alt="cover">
+                    <div class="embed-overlay"></div>
+                    <div class="embed-bar embed-bar-bottom">
+                      <div class="pull-right">
+                        <i class="icon-calendar fa-fw"></i> Sep 12, 2015
+                      </div>
+                      <div>
+                        <a href="#" class="mr-1x"><i class="icon-share fa-fw"></i> Share</a>
+                        <a href="#"><i class="icon-star fa-fw"></i> Favourites</a>
+                      </div>
+                    </div>
+                  </div><!-- /.embed -->
+
+                  <h4><strong>GOOGLE THINK LOS ANGELES IS UNDERWATER</strong></h4>
+                  <p class="help-block"><small>by: <a href="#" class="mr-2x">Julie Webb</a> - <span class="ml-2x"><i class="fa fa-tag fa-fw"></i> Technologhy, News</span></small></p>
+                  <p>Nesciunt numquam dolore, iste perspiciatis, similique totam a mollitia dolor non obcaecati quis ullam voluptates quod nobis deserunt doloribus nam, beatae in.</p>
+                  <a href="#" class="btn btn-sm btn-link text-dark"><i class="fa fa-long-arrow-right fa-fw"></i> READ MORE</a>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- /END SINGLE POST/ARTICLE KIT -->
+
+              <div class="panel">
+                <div class="panel-body">
+                  <a href="#" class="kit-avatar kit-avatar-36 pull-left kit-avatar-fw">
+                    <img src="images/dummy/uifaces18.jpg" alt="avatar">
+                  </a>
+                  <p>
+                    <a href="#" class="text-dark"><strong>Julie Brown</strong></a>
+                    <br>
+                    <small class="text-muted">Video | Sep 12, 2015</small>
+                  </p>
+                </div><!-- /.panel-body -->
+
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/g0w8ouP_Rro"></iframe>
+                </div><!-- /.embed -->
+
+                <div class="panel-body">
+                  <h4 class="lead">New Cover Aurora Jacuzzy</h4>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-footer">
+                  <div class="btn-group btn-group-justified">
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-eyeglass fa-fw"></i> 145</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-bubbles fa-fw"></i> 35</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-share fa-fw"></i> 88</span>
+                  </div>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+              <!-- /SINGLE POST/ARTICLE KIT -->
+
+              <div class="panel">
+                <div class="panel-body">
+                  <p><a href="#"><small><i class="fa fa-comment-o fa-fw"></i> View 4 more comments</small></a></p>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces4.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body bordered-bottom">
+                      <p class="media-heading"><strong>John White</strong> Consequuntur illo accusantium, expedita ratione dolorem fuga minima!</p>
+                      <p class="text-muted"><small>22 minutes</small> </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces5.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body bordered-bottom">
+                      <p class="media-heading"><strong>Justin Reed</strong> Veritatis aspernatur totam illum quisquam ipsa accusantium, animi voluptatum rem placeat.</p>
+                      <p class="text-muted"><small>18 minutes</small> </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces6.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Roger Phillips</strong> Molestias ipsum hic voluptas soluta expedita, ab, dolorum aperiam neque nesciunt.</p>
+                      <p class="text-muted"><small>10 minutes</small> </p>
+                    </div>
+                  </div><!-- /.media -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- / POST/ARTICLE COMMENTS KIT -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="headline">Tom Cruise flew same path across Andes just before crash</h4>
+                  <p class="help-block"><i class="icon-calendar fa-fw"></i> Sep 12, 2015</p>
+                  <p>Libero dignissimos tempore id expedita repellat corrupti error consequatur cumque, tempora. Possimus quisquam necessitatibus, tenetur veniam vero maxime tempora laudantium sed quod eum mollitia nam, nemo, repellat facere eius repudiandae.</p>
+                  <div class="help-block text-center">
+                    <a href="#" class="btn btn-icon btn-default" title="Read more">
+                      <span class="dotted"></span>
+                      <span class="dotted"></span>
+                      <span class="dotted"></span>
+                    </a>
+                  </div>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-body">
+                  <div class="pull-right">
+                    <span class="btn btn-icon btn-link"><i class="icon-bubbles fa-2x text-muted"></i></span>
+                    <span class="btn btn-icon btn-link"><i class="icon-share fa-2x text-muted"></i></span>
+                  </div>
+                  <div>
+                    <a href="#" class="kit-avatar kit-avatar-36 pull-left kit-avatar-fw">
+                      <img src="images/dummy/uifaces20.jpg" alt="avatar">
+                    </a>
+                    <p>
+                      <a href="#" class="text-dark"><strong>Andrea George</strong></a>
+                      <br>
+                      <small class="text-muted">on Movie</small>
+                    </p>
+                  </div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+
+              <!-- /SINGLE POST/ARTICLE KIT -->
+              <div class="panel">
+                <div class="embed-responsive embed-responsive-4by3 text-light corner-top">
+                  <img class="embed-responsive-item" src="images/dummy/people5.jpg" alt="cover">
+                  <div class="embed-overlay bg-grd-blue"></div>
+                  <div class="embed-bar">
+                    <span class="kit-avatar kit-avatar-36 no-border">
+                      <img src="images/dummy/uifaces15.jpg" alt="avatar">
+                      <h5 class="help-inline mr-1x ml-1x"><a href="#"><strong>Joshua Taylor</strong></a></h5>
+                    </span>
+                  </div>
+                  <div class="embed-bar embed-bar-bottom">
+                    <div class="pull-right">
+                      <i class="icon-calendar fa-fw"></i> Sep 12, 2015
+                    </div>
+                    <div>
+                      <a href="#" class="mr-1x"><i class="icon-share fa-fw"></i> Share</a>
+                      <a href="#"><i class="icon-star fa-fw"></i> Favourites</a>
+                    </div>
+                  </div>
+                </div><!-- /.embed -->
+
+                <div class="panel-body">
+                  <h4 class="headline"><a href="#" class="text-dark">The Ideas to Become a Creative Professionals</a></h4>
+                  <p>Porro modi, voluptatum magni, incidunt maiores tempore nostrum voluptates repellat dolore veritatis maxime minus.</p>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-footer">
+                  <div class="btn-group btn-group-justified">
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-eyeglass fa-fw"></i> 1.285</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-bubbles fa-fw"></i> 644</span>
+                    <span class="btn btn-lg btn-icon btn-link"><i class="icon-share fa-fw"></i> 967</span>
+                  </div>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+              <!-- /END SINGLE POST/ARTICLE KIT -->
+
+              <!-- /SINGLE POST/ARTICLE KIT -->
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <p class="title">Archive</p>
+                  <a class="help-block well well-sm mb-1x text-muted" href="#">
+                    <span class="pull-right">79</span>
+                    <span>June</span>
+                  </a>
+                  <a class="help-block well well-sm mb-1x text-muted" href="#">
+                    <span class="pull-right">44</span>
+                    <span>May</span>
+                  </a>
+                  <a class="help-block well well-sm mb-1x text-muted" href="#">
+                    <span class="pull-right">52</span>
+                    <span>April</span>
+                  </a>
+                  <a class="help-block well well-sm mb-1x text-muted" href="#">
+                    <span class="pull-right">77</span>
+                    <span>March</span>
+                  </a>
+                  <a class="help-block well well-sm mb-1x text-muted" href="#">
+                    <span class="pull-right">21</span>
+                    <span>February</span>
+                  </a>
+                  <a class="help-block well well-sm mb-1x text-muted" href="#">
+                    <span class="pull-right">61</span>
+                    <span>January</span>
+                  </a>
+                  <a class="help-block well well-sm mb-1x text-muted" href="#">
+                    <span>2014</span>
+                  </a>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- /END ARCHIVE POST/ARTICLE KIT -->
+
+              <div class="panel">
+                <div class="panel-body">
+                  <p><a href="#"><small><i class="fa fa-comment-o fa-fw"></i> View 4 more comments</small></a></p>
+                  <div class="media bordered-bottom">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces7.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Paul Carter</strong> Consequuntur illo accusantium, expedita ratione dolorem fuga minima!</p>
+                      <p class="text-muted"><small>22 minutes</small> </p>
+                    </div>
+                  </div>
+                  <div class="media bordered-bottom">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces8.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Rebecca Castro</strong> Veritatis aspernatur totam illum quisquam ipsa accusantium, animi voluptatum rem placeat.</p>
+                      <p class="text-muted"><small>18 minutes</small> </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-32" href="#">
+                        <img class="media-object" src="images/dummy/uifaces9.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Jacqueline Long</strong> Molestias ipsum hic voluptas soluta expedita, ab, dolorum aperiam neque nesciunt.</p>
+                      <p class="text-muted"><small>10 minutes</small> </p>
+                    </div>
+                  </div><!-- /.media -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+              <!-- / POST/ARTICLE COMMENTS KIT -->
+            </div><!-- /.cols -->
+
+          </div><!-- /.row -->
+
+
+          <!-- ============================================
+          MISC ELEMENTS SECTION
+          =============================================== -->
+          <h2>Misc Elements</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <h4>Upload</h4>
+                  <div class="progress progress-lg no-margin">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100" style="width: 54%">
+                      <span class="sr-only">54% Complete</span>
+                    </div>
+                  </div><!-- /.progress -->
+                  <small class="pull-right">100 Gb</small>
+                  <small>54%</small>
+
+                  <h4>Download</h4>
+                  <div class="progress progress-lg no-margin">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+                      <span class="sr-only">87% Complete</span>
+                    </div>
+                  </div><!-- /.progress -->
+                  <small class="pull-right">100 Gb</small>
+                  <small>87%</small>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <h4>Upload</h4>
+                  <div class="progress progress-lg no-margin">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100" style="width: 54%">
+                      <span class="sr-only">54% Complete</span>
+                    </div>
+                  </div><!-- /.progress -->
+                  <small class="pull-right">100 Gb</small>
+                  <small>54%</small>
+
+                  <h4>Download</h4>
+                  <div class="progress progress-lg no-margin">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+                      <span class="sr-only">87% Complete</span>
+                    </div>
+                  </div><!-- /.progress -->
+                  <small class="pull-right">100 Gb</small>
+                  <small>87%</small>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <h4>Upload</h4>
+                  <div class="progress progress-lg no-margin">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100" style="width: 54%">
+                      <span class="sr-only">54% Complete</span>
+                    </div>
+                  </div><!-- /.progress -->
+                  <small class="pull-right">100 Gb</small>
+                  <small>54%</small>
+
+                  <h4>Download</h4>
+                  <div class="progress progress-lg no-margin">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+                      <span class="sr-only">87% Complete</span>
+                    </div>
+                  </div><!-- /.progress -->
+                  <small class="pull-right">100 Gb</small>
+                  <small>87%</small>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body text-center">
+                  <a href="#" class="btn btn-icon btn-sm pull-left"><i class="icon-arrow-left"></i></a>
+                  <a href="#" class="btn btn-icon btn-sm pull-right"><i class="icon-arrow-right"></i></a>
+                  <span class="title">12 September 2015</span>
+                </div><!-- /.panel-body -->
+                <div class="panel-body">
+                  <div class="text-center p-4x">
+                    <p>Cloudy Skies</p>
+                    <h1><span class="wi wi-day-cloudy fa-3x m-4x"></span></h1>
+                    <p class="subhead"><strong>32&deg;C</strong> <br><small>San Francisco, CA</small></p>
+                    <div>
+                      <span class="dotted"></span>
+                      <span class="dotted"></span>
+                      <span class="dotted"></span>
+                    </div>
+                  </div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel bg-grd-teal" data-fill-color="true">
+                <div class="panel-body">
+                  <h1>
+                    <span class="pull-right text-muted"><i class="wi wi-day-sunny fa-2x"></i></span>
+                    <span class="fa-2x">92&deg;F</span> <br><small>San Francisco</small>
+                  </h1>
+                  <p class="subhead"></p>
+                  <hr class="mb-4x">
+                  <div class="row text-center">
+                    <span class="col-xs-4">
+                      <i class="wi wi-thermometer fa-2x"></i>
+                      <p>20%</p>
+                    </span>
+                    <span class="col-xs-4">
+                      <i class="icon-compass fa-2x"></i>
+                      <p>Easterly</p>
+                    </span>
+                    <span class="col-xs-4">
+                      <i class="wi wi-strong-wind fa-2x"></i>
+                      <p>7 mph</p>
+                    </span>
+                  </div>
+                </div><!-- /.panel-body -->
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="pull-right text-right"><strong>90&deg;F</strong><br><small>Mosly Sunny</small></span>
+                    <span class="help-block"><strong>Now</strong></span>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="pull-right text-right"><strong>88&deg;F</strong><br><small>Mosly Sunny</small></span>
+                    <span class="help-block"><strong>2 AM</strong></span>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="pull-right text-right"><strong>72&deg;F</strong><br><small>Sunny</small></span>
+                    <span class="help-block"><strong>4 AM</strong></span>
+                  </li>
+                </ul><!-- /.list-group -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="panel-body">
+                  <h5 class="headline">File lists</h5>
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-zip-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div>
+                        <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                        <strong>wrapkit_build-1209.zip</strong>
+                      </div>
+                      <div class="text-muted"><small>Latest production of wrapkit</small></div>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-zip-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div>
+                        <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                        <strong>wrapkit_design-brief.zip</strong>
+                      </div>
+                      <div class="text-muted"><small>Latest version of wrapki</small></div>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-pdf-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div>
+                        <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                        <strong>Usulan Beasiswa Tahun 2014.pdf</strong>
+                      </div>
+                      <div class="text-muted"><small>Latest update by Bent</small></div>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-excel-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div>
+                        <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                        <strong>Daftar Peserta Ujian.xlsx</strong>
+                      </div>
+                      <div class="text-muted"><small>Latest update by Bent</small></div>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-excel-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div>
+                        <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                        <strong>data_not_verified.xlsx</strong>
+                      </div>
+                      <div class="text-muted"><small>Latest update by Iin</small></div>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="pull-left text-muted">
+                      <i class="fa fa-file-zip-o fa-2x"></i>
+                    </div>
+                    <div class="media-body">
+                      <div>
+                        <div class="pull-right"><a href="#" class="btn btn-default btn-xs">Download</a></div>
+                        <strong>mockup-presentation.zip</strong>
+                      </div>
+                      <div class="text-muted"><small>Heh! nganggo iki bae ndes</small></div>
+                    </div>
+                  </div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="panel-body">
+                  <p class="pull-right">
+                    <a href="#" class="dotted dotted-lg active"></a>
+                    <a href="#" class="dotted dotted-lg"></a>
+                    <a href="#" class="dotted dotted-lg"></a>
+                    <a href="#" class="dotted dotted-lg"></a>
+                  </p>
+                  <p class="title">Latest News</p>
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-64 kit-avatar-square no-border" href="#">
+                        <img class="media-object" src="images/dummy/people3.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><a href="#">Technology Tools: Web 2.0 in the Classroom</a></p>
+                      <p class="text-muted"><small>By John White</small></p>
+                    </div>
+                  </div><!-- /.media -->
+                  <div class="media">
+                    <div class="media-left">
+                      <a class="kit-avatar kit-avatar-64 kit-avatar-square no-border" href="#">
+                        <img class="media-object" src="images/dummy/people4.jpg">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><a href="#">The Ideas to Become a Creative Professionals</a></p>
+                      <p class="text-muted"><small>By Joshua Taylor</small></p>
+                    </div>
+                  </div><!-- /.media -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="panel-body">
+                  <p class="pull-right">
+                    <a href="#" class="btn btn-danger btn-bordered btn-circle btn-xs">6</a>
+                  </p>
+                  <p class="title">Notifications</p>
+                  <a href="#" class="media">
+                    <div class="media-left">
+                      <i class="fa fa-envelope-o fa-2x text-muted"></i>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Vero quos</strong> ipsam voluptates magnam unde consequuntur</p>
+                      <p class="text-muted"><small>Just Now</small></p>
+                    </div>
+                  </a><!-- /.media -->
+                  <a href="#" class="media">
+                    <div class="media-left">
+                      <i class="icon-speech fa-2x text-muted"></i>
+                    </div>
+                    <div class="media-body">
+                      <p class="media-heading"><strong>Harum hic dolor</strong> temporibus vero neque accusantium</p>
+                      <p class="text-muted"><small>About a minute ago</small></p>
+                    </div>
+                  </a><!-- /.media -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="panel-body">
+                  <p class="title">New Friends</p>
+                  <div>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces10.jpg">
+                      <span class="status dotted dotted-success"></span>
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces11.jpg">
+                      <span class="status dotted"></span>
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces12.jpg">
+                      <span class="status dotted dotted-primary"></span>
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces13.jpg">
+                      <span class="status dotted dotted-success"></span>
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces14.jpg">
+                      <span class="status dotted dotted-danger"></span>
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces15.jpg">
+                      <span class="status dotted dotted-success"></span>
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces16.jpg">
+                      <span class="status dotted dotted-warning"></span>
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces17.jpg">
+                      <span class="status dotted dotted-success"></span>
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces18.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces19.jpg">
+                    </a>
+                    <a class="kit-avatar kit-avatar-36 align-middle no-border mb-1x" href="#">
+                      <img alt="avatar" title="friend name" src="images/dummy/uifaces20.jpg">
+                    </a>
+                    <a href="#" class="btn btn-sm btn-default btn-circle mb-1x"><i class="icon-options"></i></a>
+                  </div>
+                </div><!-- /.panel-body -->
+                <div class="panel-footer">
+                  <div class="input-group input-group-in no-border">
+                    <span class="input-group-addon"><i class="icon-user-follow text-muted"></i></span>
+                    <input class="form-control" placeholder="Invite people">
+                  </div>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="list-group">
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left">
+                        <div class="kit-avatar kit-avatar-28 no-border mr-1x">
+                          <img class="media-object" src="images/dummy/uifaces5.jpg">
+                        </div>
+                      </div>
+                      <div class="media-body media-middle">
+                        <div class="dropdown pull-right">
+                          <button class="btn btn-xs btn-default btn-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Move to</a></li>
+                            <li><a href="#">Remove from contact</a></li>
+                          </ul>
+                        </div>
+                        <p class="media-heading"><strong>David Bowman</strong></p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left">
+                        <div class="kit-avatar kit-avatar-28 no-border mr-1x">
+                          <img class="media-object" src="images/dummy/uifaces6.jpg">
+                        </div>
+                      </div>
+                      <div class="media-body media-middle">
+                        <div class="dropdown pull-right">
+                          <button class="btn btn-xs btn-default btn-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Move to</a></li>
+                            <li><a href="#">Remove from contact</a></li>
+                          </ul>
+                        </div>
+                        <p class="media-heading"><strong>Phillip Myers</strong></p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left">
+                        <div class="kit-avatar kit-avatar-28 no-border mr-1x">
+                          <img class="media-object" src="images/dummy/uifaces7.jpg">
+                        </div>
+                      </div>
+                      <div class="media-body media-middle">
+                        <div class="dropdown pull-right">
+                          <button class="btn btn-xs btn-default btn-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Move to</a></li>
+                            <li><a href="#">Remove from contact</a></li>
+                          </ul>
+                        </div>
+                        <p class="media-heading"><strong>Carl Walsh</strong></p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left">
+                        <div class="kit-avatar kit-avatar-28 no-border mr-1x">
+                          <img class="media-object" src="images/dummy/uifaces8.jpg">
+                        </div>
+                      </div>
+                      <div class="media-body media-middle">
+                        <div class="dropup pull-right">
+                          <button class="btn btn-xs btn-default btn-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Move to</a></li>
+                            <li><a href="#">Remove from contact</a></li>
+                          </ul>
+                        </div>
+                        <p class="media-heading"><strong>Theresa Ramirez</strong></p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left">
+                        <div class="kit-avatar kit-avatar-28 no-border mr-1x">
+                          <img class="media-object" src="images/dummy/uifaces9.jpg">
+                        </div>
+                      </div>
+                      <div class="media-body media-middle">
+                        <div class="dropup pull-right">
+                          <button class="btn btn-xs btn-default btn-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Move to</a></li>
+                            <li><a href="#">Remove from contact</a></li>
+                          </ul>
+                        </div>
+                        <p class="media-heading"><strong>Margaret Wells</strong></p>
+                      </div><!-- /.media -body-->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                </div><!-- /.list-group -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel">
+                <div class="panel-body">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="kit-avatar kit-avatar-42 kit-avatar-square no-border">
+                        <img class="media-object" src="images/logo/brand.png" alt="project brand">
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <h3 class="media-heading">Wrapkit Admin Template</h3>
+                      <p class="help-block">Progress in 72% - Last update 8h</p>
+                    </div><!-- /.media -body-->
+                  </div><!-- /.media -->
+                </div><!-- /.panel-body -->
+
+                <div class="progress progress-xs no-radius no-margin">
+                  <div class="progress-bar bg-grd-teal" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%">
+                    <span class="sr-only">72% Complete</span>
+                  </div>
+                </div><!-- /.progress -->
+
+                <div class="panel-body">
+                  <h4 class="title">Contributors</h4>
+                  <div class="help-block">
+                    <a href="#" class="kit-avatar kit-avatar-42 align-middle no-border">
+                      <img alt="avatar" rel="tooltip" data-container="body" title="@bent (owner)" src="images/dummy/uifaces22.jpg">
+                    </a>
+                    <a href="#" class="kit-avatar kit-avatar-42 align-middle no-border">
+                      <img alt="avatar" rel="tooltip" data-container="body" title="@nicholas" src="images/dummy/uifaces21.jpg">
+                    </a>
+                    <a href="#" class="kit-avatar kit-avatar-42 align-middle no-border">
+                      <img alt="avatar" rel="tooltip" data-container="body" title="@katherine" src="images/dummy/uifaces20.jpg">
+                    </a>
+                    <a href="#" class="kit-avatar kit-avatar-42 align-middle no-border">
+                      <img alt="avatar" rel="tooltip" data-container="body" title="@eric" src="images/dummy/uifaces19.jpg">
+                    </a>
+                    <a href="#" class="kit-avatar kit-avatar-42 align-middle no-border">
+                      <img alt="avatar" rel="tooltip" data-container="body" title="@karen" src="images/dummy/uifaces18.jpg">
+                    </a>
+                    <a href="#" rel="tooltip" data-container="body" title="more" class="btn btn-default btn-circle"><span class="fa-lg">+3</span></a>
+                  </div>
+                </div><!-- /.panel-body -->
+
+                <div class="panel-footer">
+                  <div class="btn-group btn-group-justified">
+                    <a href="#" class="btn btn-icon btn-link">Todos <small class="text-muted">(21)</small></a>
+                    <a href="#" class="btn btn-icon btn-link">Branches <small class="text-muted">(4)</small></a>
+                    <a href="#" class="btn btn-icon btn-link">Issues <small class="text-muted">(16)</small></a>
+                  </div>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <h4 class="title">Happy Clients</h4>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="hc1">
+                      <blockquote class="no-hpadding no-border">
+                        <p class="lead"><i class="fa fa-quote-right fa-fw text-muted"></i> Dolore, natus, ab. Commodi ab quia eaque earum optio voluptate minima beatae. <i class="fa fa-quote-right text-muted"></i></p>
+                        <footer>Emily Crawford</footer>
+                      </blockquote>
+                    </div>
+                    <div class="tab-pane fade" id="hc2">
+                      <blockquote class="no-hpadding no-border">
+                        <p class="lead"><i class="fa fa-quote-right fa-fw text-muted"></i> Assumenda adipisci velit fugit necessitatibus cum quo, quis amet rem. Sequi, nobis. <i class="fa fa-quote-right text-muted"></i></p>
+                        <footer>Ronald Price</footer>
+                      </blockquote>
+                    </div>
+                    <div class="tab-pane fade" id="hc3">
+                      <blockquote class="no-hpadding no-border">
+                        <p class="lead"><i class="fa fa-quote-right fa-fw text-muted"></i> Dolore, natus, ab. Commodi ab quia eaque earum optio voluptate minima beatae. <i class="fa fa-quote-right text-muted"></i></p>
+                        <footer>Russell Contreras</footer>
+                      </blockquote>
+                    </div>
+                    <div class="tab-pane fade" id="hc4">
+                      <blockquote class="no-hpadding no-border">
+                        <p class="lead"><i class="fa fa-quote-right fa-fw text-muted"></i> Assumenda adipisci velit fugit necessitatibus cum quo, quis amet rem. Sequi, nobis. <i class="fa fa-quote-right text-muted"></i></p>
+                        <footer>Donna Alvarado</footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <ul class="list-inline text-center">
+                    <li class="active"><a href="#hc1" class="dotted dotted-lg" aria-controls="hc1" role="tab" data-toggle="tab"></a></li>
+                    <li><a href="#hc2" class="dotted dotted-lg" aria-controls="hc2" role="tab" data-toggle="tab"></a></li>
+                    <li><a href="#hc3" class="dotted dotted-lg" aria-controls="hc3" role="tab" data-toggle="tab"></a></li>
+                    <li><a href="#hc4" class="dotted dotted-lg" aria-controls="hc4" role="tab" data-toggle="tab"></a></li>
+                  </ul>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-4">
+              <div class="panel" data-context="minimalize" data-fill-color="true">
+                <div class="panel-body border-red">
+                  <div class="chat-heading clearfix">
+                    <div class="right-control pull-right align-middle">
+                      <div class="dropdown">
+                        <button class="btn btn-xs btn-default btn-circle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#" data-toggle="panel-expand">Expand</a></li>
+                          <li><a href="#" data-toggle="panel-hide">Remove chat</a></li>
+                        </ul>
+                      </div>
+                    </div><!-- /.right-control -->
+                    <div class="left-control help-inline align-middle">
+                      <a href="#" class="btn btn-xs btn-circle btn-nofill btn-default"><i class="icon-arrow-left"></i></a>
+                      <span class="kit-avatar kit-avatar-28 no-border mr-1x">
+                        <img src="images/dummy/uifaces5.jpg">
+                        <span class="status dotted dotted-danger"></span>
+                      </span>
+                    </div><!-- /.left-control -->
+                    <h5 class="chat-participant help-inline no-margin"><strong>Justin Hudson</strong></h5><!-- /.chat-participant -->
+                  </div><!-- /.chat-heading -->
+
+                  <div class="chat-body p-4x">
+                    <div class="pull-left self">
+                      <p class="well well-sm bg-white bordered">hey! Feugiat ultrices</p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="pull-right other">
+                      <p class="well well-sm">platea erat tristique, nisl purus cursus?</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pull-right other">
+                      <p class="well well-sm">Turpis a condimentum nisl!</p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="pull-left self">
+                      <p class="well well-sm bg-white bordered">Metus lacus enim aliquam, hendrerit eu in mollis</p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="pull-right other">
+                      <p class="well well-sm">Quod, asperiores, accusamus</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pull-right other">
+                      <p class="well well-sm no-vpadding"><i class="icon-options text-muted"></i></p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div><!-- /.chat-body -->
+
+                  <div class="chat-form">
+                    <div class="input-group input-group-in no-border">
+                      <span class="input-group-btn">
+                      </span>
+                      <input class="form-control" placeholder="Type your message...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-icon btn-default"><i class="icon-picture"></i></button>
+                        <button class="btn btn-icon btn-default"><i class="fa fa-smile-o"></i></button>
+                        <button class="btn btn-icon btn-default"><i class="fa fa-paper-plane-o"></i></button>
+                      </span>
+                    </div>
+                  </div><!-- /.chat-form -->
+                </div><!-- /.panel-body -->
+                <div class="show-on-expand">
+                  <div class="bordered-top"></div>
+                </div><!-- /expand helper: give divider on panel expand -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel" data-context="minimalize" data-fill-color="true">
+                <div class="panel-body border-teal">
+                  <div class="chat-heading clearfix">
+                    <div class="right-control pull-right align-middle">
+                      <div class="dropdown">
+                        <button class="btn btn-xs btn-default btn-circle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#" data-toggle="panel-expand">Expand</a></li>
+                          <li><a href="#" data-toggle="panel-hide">Remove chat</a></li>
+                        </ul>
+                      </div>
+                    </div><!-- /.right-control -->
+                    <div class="left-control help-inline align-middle">
+                      <a href="#" class="btn btn-xs btn-circle btn-nofill btn-default"><i class="icon-arrow-left"></i></a>
+                      <span class="kit-avatar kit-avatar-28 no-border mr-1x">
+                        <img src="images/dummy/uifaces11.jpg">
+                        <span class="status dotted dotted-primary"></span>
+                      </span>
+                    </div><!-- /.left-control -->
+                    <h5 class="chat-participant help-inline no-margin"><strong>Sandra Morrison</strong></h5><!-- /.chat-participant -->
+                  </div><!-- /.chat-heading -->
+
+                  <div class="chat-body p-4x">
+                    <div class="pull-left self">
+                      <p class="well well-sm">hey! Feugiat ultrices</p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="pull-right other">
+                      <p class="well well-sm bg-teal">platea erat tristique, nisl purus cursus?</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pull-right other">
+                      <p class="well well-sm bg-teal">Turpis a condimentum nisl!</p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="pull-left self">
+                      <p class="well well-sm">Metus lacus enim aliquam, hendrerit eu in mollis</p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="pull-right other">
+                      <p class="well well-sm bg-teal">Quod, asperiores, accusamus</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pull-right other">
+                      <p class="text-muted"><i class="icon-options fa-2x"></i></p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div><!-- /.chat-body -->
+
+                  <div class="chat-form">
+                    <div class="input-group input-group-in no-border">
+                      <span class="input-group-btn">
+                        <button class="btn btn-icon btn-default"><i class="fa fa-smile-o"></i></button>
+                      </span>
+                      <input class="form-control" placeholder="Type your message...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-icon btn-default"><i class="icon-picture"></i></button>
+                        <button class="btn btn-icon btn-default"><i class="fa fa-paper-plane-o"></i></button>
+                      </span>
+                    </div>
+                  </div><!-- /.chat-form -->
+                </div><!-- /.panel-body -->
+                <div class="show-on-expand">
+                  <div class="bordered-top"></div>
+                </div><!-- /expand helper: give divider on panel expand -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true">
+                <div class="embed-responsive embed-responsive-16by9 corner-top">
+                  <img class="embed-responsive-item" src="images/dummy/people5.jpg" alt="cover">
+                  <div class="embed-overlay bg-grd-dark"></div>
+                  <div class="embed-bar text-light">
+                    <h1>Todo Lists</h1>
+                    <p class="mt-4x">
+                      <a href="#" class="btn btn-icon btn-bordered btn-default border-light text-light mr-1x">11 <br>Business</a>
+                      <a href="#" class="btn btn-icon btn-bordered btn-default border-light text-light">6 <br>Personal</a>
+                    </p>
+                  </div>
+                  <div class="embed-badge embed-badge-right">
+                    <div class="embed-badge-bg bg-red"></div>
+                    <a href="#" class="embed-badge-content" rel="tooltip" title="Today tasks" data-container="body"><strong>+5</strong></a>
+                  </div>
+                  <div class="embed-bar embed-bar-bottom text-light">
+                    <span class="pull-right">Sep 12, 2015</span>
+                  </div>
+                </div><!-- /.embed -->
+                <div class="list-group">
+                  <div class="list-group-item no-border bordered-left bordered-4x border-red">
+                    <div class="todo-action pull-right">
+                      <span class="label label-default">1:00 am</span>
+                      <button class="btn btn-circle btn-nofill btn-default"><i class="icon_close"></i></button>
+                    </div>
+                    <div class="nice-checkbox help-inline">
+                      <input type="checkbox" id="todo1" checked="checked" disabled="disabled">
+                      <label for="todo1"><span class="pl-2x"><strike class="text-muted">Achive sales quota</strike></span></label>
+                    </div>
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item no-border bordered-left bordered-4x border-yellow">
+                    <div class="todo-action pull-right">
+                      <span class="label label-default">3:30 am</span>
+                      <button class="btn btn-circle btn-nofill btn-default"><i class="icon-pencil"></i></button>
+                    </div>
+                    <div class="nice-checkbox help-inline">
+                      <input type="checkbox" id="todo2">
+                      <label for="todo2"><span class="pl-2x">Achive sales quota</span></label>
+                    </div>
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item no-border bordered-left bordered-4x border-teal">
+                    <div class="todo-action pull-right">
+                      <span class="label label-default">5:00 am</span>
+                      <button class="btn btn-circle btn-nofill btn-default"><i class="icon-pencil"></i></button>
+                    </div>
+                    <div class="nice-checkbox help-inline">
+                      <input type="checkbox" id="todo3">
+                      <label for="todo3"><span class="pl-2x">Achive sales quota</span></label>
+                    </div>
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item no-border bordered-left bordered-4x border-blue">
+                    <div class="todo-action pull-right">
+                      <span class="label label-default">tommorow</span>
+                      <button class="btn btn-circle btn-nofill btn-default"><i class="icon-pencil"></i></button>
+                    </div>
+                    <div class="nice-checkbox help-inline">
+                      <input type="checkbox" id="todo4">
+                      <label for="todo4"><span class="pl-2x">Achive sales quota</span></label>
+                    </div>
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item no-border bordered-left bordered-4x border-violet">
+                    <div class="todo-action pull-right">
+                      <span class="label label-default">tommorow</span>
+                      <button class="btn btn-circle btn-nofill btn-default"><i class="icon-pencil"></i></button>
+                    </div>
+                    <div class="nice-checkbox help-inline">
+                      <input type="checkbox" id="todo5">
+                      <label for="todo5"><span class="pl-2x">Achive sales quota</span></label>
+                    </div>
+                  </div><!-- /.list-group-item -->
+                  <button type="button" class="list-group-item"><i class="fa fa-plus ml-1x mr-2x"></i> Add New List</button><!-- /.list-group-item -->
+                </div><!-- /.panel-group -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+          </div><!-- /.row -->
+
+        </div><!-- /.content-body -->
+
+
+        <!-- Template Setups -->
+        <div class="modal fade" id="templateSetup">
+          <div class="modal-dialog">
+            <!-- modal-content -->
+            <div class="modal-content"></div>
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.templateSetup -->
+
+      </div><!-- /.content -->
+    </section><!-- /MAIN -->
+
+
+
+    <!-- ============================================
+    FOOTER SECTION
+    =============================================== -->
+    <footer class="footer-wrapper" role="contentinfo">
+      <div class="footer">
+        <div class="pull-right text-muted"><small>Currently v1.2</small></div>
+        <div>Wrapkit Template  &copy; 2015</div>
+      </div>
+    </footer><!-- /.FOOTER -->
+
+  </main><!-- /#MAIN -->
+
+
+  <!-- VENDORS : jQuery & Bootstrap -->
+  <script src="scripts/vendor.js"></script>
+  <!-- END VENDORS -->
+
+  <!-- DEPENDENCIES : Required plugins -->
+  <script src="scripts/dependencies.js"></script>
+  <!-- END DEPENDENCIES -->
+
+  <!-- WRAPKIT -->
+  <script src="scripts/wrapkit.js"></script>
+  <!-- END WRAPKIT -->
+
+  <!-- WRAPKIT SETUPS -->
+  <script src="scripts/wrapkit-setup.js"></script>
+  <!-- end WRAPKIT SETUPS -->
+
+  <!-- PLUGIN SETUPS: vendors & dependencies setups -->
+  <script src="scripts/plugin-setups.js"></script>
+  <!-- END PLUGIN SETUPS -->
+
+
+  <!-- Google Analytics: change UA-48454066-1 to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='../../../../../www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-48454066-1');ga('send','pageview');
+  </script>
+</body>
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/ui-kits.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:51 GMT -->
+</html>
