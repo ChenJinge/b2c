@@ -6,6 +6,7 @@ public class EUDataGridResult {
 
 	private long total;
 	private List<?> rows;
+
 	public long getTotal() {
 		return total;
 	}
