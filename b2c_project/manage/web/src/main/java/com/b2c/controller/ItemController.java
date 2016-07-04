@@ -26,8 +26,8 @@ public class ItemController {
 
     @RequestMapping("/item/list")
     @ResponseBody
-    public EUDataGridResult getItemList(Integer pageNum, Integer pageSize) {
-        EUDataGridResult result = itemService.getItemList(pageNum, pageSize);
+    public EUDataGridResult getItemList(Integer page, Integer rows) {
+        EUDataGridResult result = itemService.getItemList(page, rows);
         return result;
     }
 
