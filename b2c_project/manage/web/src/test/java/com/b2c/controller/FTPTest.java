@@ -15,14 +15,14 @@ public class FTPTest {
 		//创建一个FtpClient对象
 		FTPClient ftpClient = new FTPClient();
 		//创建ftp连接。默认是21端口
-		ftpClient.connect("192.168.25.133", 21);
+		ftpClient.connect("192.168.0.108", 21);
 		//登录ftp服务器，使用用户名和密码
-		ftpClient.login("ftpuser", "ftpuser");
+		ftpClient.login("jake", "7");
 		//上传文件。
 		//读取本地文件
-		FileInputStream inputStream = new FileInputStream(new File("D:\\Documents\\Pictures\\images\\2010101415583352_S.jpg"));
+		FileInputStream inputStream = new FileInputStream(new File("C:\\Users\\Jake\\Pictures\\Chrysanthemum.jpg"));
 		//设置上传的路径
-		ftpClient.changeWorkingDirectory("/home/ftpuser/www/images");
+		ftpClient.changeWorkingDirectory("/home/jake/images");
 		//修改上传文件的格式
 		ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
 		//第一个参数：服务器端文档名
@@ -35,8 +35,8 @@ public class FTPTest {
 	
 	@Test
 	public void testFtpUtil() throws Exception {
-		FileInputStream inputStream = new FileInputStream(new File("D:\\Documents\\Pictures\\images\\2010101415583352_S.jpg"));
-		FtpUtil.uploadFile("192.168.25.133", 21, "ftpuser", "ftpuser", "/home/ftpuser/www/images", "/2015/09/04", "hello.jpg", inputStream);
+		FileInputStream inputStream = new FileInputStream(new File("C:\\Users\\Jake\\Pictures\\Chrysanthemum.jpg"));
+		FtpUtil.uploadFile("192.168.0.108", 21, "jake", "7", "/home/jake/images", "/2015/09/04", "hello.jpg", inputStream);
 		
 	}
 }
