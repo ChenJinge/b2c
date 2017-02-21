@@ -1,3 +1,4 @@
+/*
 package com.b2c.controller;
 
 import java.util.ArrayList;
@@ -98,3 +99,4 @@ public class HttpClientTest {
 		httpClient.close();
 	}
 }
+*/

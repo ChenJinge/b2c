@@ -1,3 +1,4 @@
+/*
 package com.b2c.controller;
 
 import java.util.List;
@@ -35,4 +36,4 @@ public class TestPageHelper {
 		System.out.println("共有商品："+ total);
 		
 	}
-}
+}*/

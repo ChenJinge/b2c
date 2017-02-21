@@ -1,3 +1,4 @@
+/*
 package com.b2c.rest.solrj;
 
 import org.apache.solr.client.solrj.SolrQuery;
@@ -58,3 +59,4 @@ public class SolrJTest {
 		}
 	}
 }
+*/

@@ -29,9 +29,9 @@
             targetPackage     指定生成的model生成所在的包名
             targetProject     指定在该项目下所在的路径
         -->
-        <javaModelGenerator targetPackage="com.b2c.pojo" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.bdtrip.mobile.activity.entity" targetProject="src/main/java">
             <!-- 是否对model添加 构造函数 -->
-            <property name="constructorBased" value="true"/>
+            <property name="constructorBased" value="false"/>
 
             <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
             <property name="enableSubPackages" value="false"/>
@@ -43,11 +43,11 @@
             <!--<property name="rootClass" value="com.foo.louis.Hello"/>-->
 
             <!-- 是否对类CHAR类型的列的数据进行trim操作 -->
-            <property name="trimStrings" value="true"/>
+            <property name="trimStrings" value="false"/>
         </javaModelGenerator>
 
         <!--Mapper映射文件生成所在的目录 为每一个数据库的表生成对应的SqlMap文件 -->
-        <sqlMapGenerator targetPackage="com.b2c.mapper" targetProject="src/main/resources">
+        <sqlMapGenerator targetPackage="com.bdtrip.mobile.activity.dao" targetProject="src/main/resources">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
@@ -57,7 +57,7 @@
                 type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator targetPackage="com.b2c.mapper" targetProject="src/main/java" type="MIXEDMAPPER">
+        <javaClientGenerator targetPackage="com.bdtrip.mobile.activity.dao" targetProject="src/main/java" type="MIXEDMAPPER">
             <property name="enableSubPackages" value="true"/>
             <!--
                     定义Maper.java 源代码中的ByExample() 方法的可视性，可选的值有：
@@ -83,7 +83,7 @@
 
         </javaClientGenerator>
 
-        <table tableName="tb_content" domainObjectName="Content">
+        <!--<table tableName="tb_content" domainObjectName="Content">-->
 
             <!-- optional   , only for mybatis3 runtime
             自动生成的键值（identity,或者序列值）
@@ -100,7 +100,7 @@
             SYBASE: 	SELECT @@IDENTITY
             JDBC:		This will configure MBG to generate code for MyBatis3 suport of JDBC standard generated keys. This is a database independent method of obtaining the value from identity columns.
             identity: 自增主键  If true, then the column is flagged as an identity column and the generated <selectKey> element will be placed after the insert (for an identity column). If false, then the generated <selectKey> will be placed before the insert (typically for a sequence).-->
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
             <!-- optional.
                      列的命名规则：
                      MBG使用 <columnRenamingRule> 元素在计算列名的对应 名称之前，先对列名进行重命名，
@@ -131,36 +131,20 @@
             -->
             <!--<columnOverride column="" javaType=""	jdbcType=""	typeHandler=""	delimitedColumnName="" />-->
 
+        <!--</table>-->
+        <table tableName="bd_activity_info" domainObjectName="ActivityInfoEntity">
+            <generatedKey column="activity_id" sqlStatement="MySql" identity="true" />
         </table>
-        <table tableName="tb_content_category" domainObjectName="ContentCategory">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+
+        <table tableName="bd_activity_screen" domainObjectName="ActivityScreenEntity">
+            <generatedKey column="screen_id" sqlStatement="MySql" identity="true" />
         </table>
-        <table tableName="tb_item" domainObjectName="Item">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        <table tableName="bd_activity_content" domainObjectName="ActivityContentEntity">
+            <generatedKey column="content_id" sqlStatement="MySql" identity="true" />
         </table>
-        <table tableName="tb_item_cat" domainObjectName="ItemCat">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        <table tableName="bd_activity_content_pictrue" domainObjectName="ContentPictrueEntity">
+            <generatedKey column="picture_id" sqlStatement="MySql" identity="true" />
         </table>
-        <table tableName="tb_item_desc" domainObjectName="ItemDesc">
-            <generatedKey column="item_id" sqlStatement="MySql" identity="true" />
-        </table>
-        <table tableName="tb_item_param" domainObjectName="ItemParam">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
-        </table>
-        <table tableName="tb_item_param_item" domainObjectName="ItemParamItem">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
-        </table>
-        <table tableName="tb_order" domainObjectName="Order">
-            <generatedKey column="order_id" sqlStatement="MySql" identity="true" />
-        </table>
-        <table tableName="tb_order_shipping" domainObjectName="OrderShipping">
-            <generatedKey column="order_id" sqlStatement="MySql" identity="true" />
-        </table>
-        <table tableName="tb_order_item" domainObjectName="OrderItem">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
-        </table>
-        <table tableName="tb_user" domainObjectName="User">
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
-        </table>
+
     </context>
 </generatorConfiguration>
