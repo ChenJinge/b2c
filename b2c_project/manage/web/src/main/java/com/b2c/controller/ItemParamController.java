@@ -15,8 +15,6 @@ import com.b2c.service.ItemParamService;
  * <p>Title: ItemParamController</p>
  * <p>Description: </p>
  * <p>Company: www.itcast.com</p> 
- * @author	入云龙
- * @date	2015年9月5日下午2:40:46
  * @version 1.0
  */
 @Controller

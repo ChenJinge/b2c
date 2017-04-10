@@ -1,3 +1,4 @@
+/*
 package com.b2c.rest.jedis;
 
 import org.junit.Test;
@@ -28,9 +29,11 @@ public class JedisTest {
 		jedis.close();
 	}
 	
-	/**
+	*/
+/**
 	 * 使用连接池
-	 */
+	 *//*
+
 	@Test
 	public void testJedisPool() {
 		//创建jedis连接池
@@ -44,11 +47,13 @@ public class JedisTest {
 		pool.close();
 	}
 	
-	/**
+	*/
+/**
 	 * 集群版测试
 	 * <p>Title: testJedisCluster</p>
 	 * <p>Description: </p>
-	 */
+	 *//*
+
 	@Test
 	public void testJedisCluster() {
 		LOGGER.debug("调用redisCluster开始");
@@ -75,11 +80,13 @@ public class JedisTest {
 		}
 	}
 	
-	/**
+	*/
+/**
 	 * 单机版测试
 	 * <p>Title: testSpringJedisSingle</p>
 	 * <p>Description: </p>
-	 */
+	 *//*
+
 	@Test
 	public void testSpringJedisSingle() {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-*.xml");
@@ -100,3 +107,4 @@ public class JedisTest {
 		jedisCluster.close();
 	}
 }
+*/

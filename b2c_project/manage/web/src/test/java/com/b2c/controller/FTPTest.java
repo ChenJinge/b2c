@@ -1,3 +1,4 @@
+/*
 package com.b2c.controller;
 
 import com.b2c.common.utils.FtpUtil;
@@ -40,3 +41,4 @@ public class FTPTest {
 		
 	}
 }
+*/
