@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bargains.dao.BargainsDao">
+
+    <insert id="applyBargains" parameterType="bargainsEntity">
+
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into
+        bargainsEntity(productId,title,picture,bargainsPrice,originalPrice,merchantId,ApplyDate,auditStatus,startTime,endTime,count,stock,description)
+        value(#{productId},#{title},#{picture},#{bargainsPrice},#{originalPrice},#{merchantId},#{ApplyDate},#{auditStatus},#{startTime},#{endTime},#{count},#{stock},#{description})
+    </insert>
+
+    <sql id="customBargainsSql">
+        <if test="customBargains != null">
+            <if test="customBargains.productId!=null and customBargains.productId!=''">
+                and productId = "${customBargains.productId}"
+            </if>
+            <if test="customBargains.title!=null and customBargains.title!='' ">
+                and title like "%${customBargains.title}%"
+            </if>
+            <if test="customBargains.startBargainsPrice!=null and customBargains.startBargainsPrice!='' ">
+                and bargainsPrice <![CDATA[ >= ]]> "${customBargains.startBargainsPrice}"
+            </if>
+            <if test="customBargains.endBargainsPrice!=null and customBargains.endBargainsPrice!='' ">
+                and bargainsPrice <![CDATA[ <= ]]> "${customBargains.endBargainsPrice}"
+            </if>
+            <if test="customBargains.startOriginalPrice!=null and customBargains.startOriginalPrice!='' ">
+                and originalPrice <![CDATA[ >= ]]> "${customBargains.startOriginalPrice}"
+            </if>
+            <if test="customBargains.endOriginalPrice!=null and customBargains.endOriginalPrice!='' ">
+                and originalPrice <![CDATA[ <= ]]> "${customBargains.endOriginalPrice}"
+            </if>
+            <if test="customBargains.endStock!=null and customBargains.endStock!='' ">
+                and stock <![CDATA[ <= ]]> "${customBargains.endStock}"
+            </if>
+            <if test="customBargains.description!=null and customBargains.description!=''">
+                and description like "%${customBargains.description}%"
+            </if>
+            <if test="customBargains.endApplyDate!=null and customBargains.endApplyDate!='' ">
+                and applyDate <![CDATA[ <= ]]> STR_TO_DATE(#{customBargains.endApplyDate},'%Y-%m-%d %H:%i:%S')
+            </if>
+
+            <if test="customBargains.endAuditdate!=null and customBargains.endAuditdate!='' ">
+                and auditDate <![CDATA[ <= ]]> STR_TO_DATE(#{customBargains.endAuditdate},'%Y-%m-%d %H:%i:%S')
+            </if>
+            <if test="customBargains.startApplyDate!=null and customBargains.startApplyDate!='' ">
+                and applyDate <![CDATA[ >= ]]> STR_TO_DATE(#{customUser.startApplyDate},'%Y-%m-%d %H:%i:%S')
+            </if>
+            <if test="customBargains.startAuditDate!=null and customBargains.startAuditDate!='' ">
+                and auditDate <![CDATA[ >= ]]> STR_TO_DATE(#{customBargains.startAuditDate},'%Y-%m-%d %H:%i:%S')
+            </if>
+            <if test="customBargains.auditStatus!=null and customBargains.auditStatus!='' ">
+                and auditStatus = "${customBargains.auditStatus}"
+            </if>
+            <if test="customBargains.startStartTime!=null and customBargains.startStartTime!='' ">
+                and startTime <![CDATA[ >= ]]> STR_TO_DATE(#{customBargains.startStartTime},'%Y-%m-%d %H:%i:%S')
+            </if>
+            <if test="customBargains.endStartTime!=null and customBargains.endStartTime!='' ">
+                and startTime <![CDATA[ <= ]]> STR_TO_DATE(#{customBargains.endStartTime},'%Y-%m-%d %H:%i:%S')
+            </if>
+            <if test="customBargains.startEndTime!=null and customBargains.startEndTime!='' ">
+                and endTime <![CDATA[ >= ]]> STR_TO_DATE(#{customBargains.startEndTime},'%Y-%m-%d %H:%i:%S')
+
+            </if>
+            <if test="customBargains.endEndTime!=null and customBargains.endEndTime!='' ">
+                and endTime <![CDATA[ <= ]]>  STR_TO_DATE(#{customBargains.endEndTime},'%Y-%m-%d %H:%i:%S')
+            </if>
+            <if test="customBargains.startCount!=null and customBargains.startCount!='' ">
+                and count <![CDATA[ >= ]]> "${customBargains.startCount}"
+            </if>
+            <if test="customBargains.endCount!=null and customBargains.endCount!='' ">
+                and count <![CDATA[ <= ]]> "${customBargains.endCount}"
+            </if>
+            <if test="customBargains.startStock!=null and customBargains.startStock!='' ">
+                and stock <![CDATA[ >= ]]> "${customBargains.startstock}"
+            </if>
+            <if test="customBargains.endStock!=null and customBargains.endStock!='' ">
+                and stock <![CDATA[ <= ]]> "${customBargains.endStock}"
+            </if>
+        </if>
+    </sql>
+
+    <select id="listBargains" parameterType="bargainsVo" resultType="bargainsEntity">
+        select * from bargainsEntity
+        <where>
+            <include refid="customBargainsSql"></include>
+        </where>
+    </select>
+
+    <delete id="deleteBargainsById" parameterType="int">
+        delete from bargainsEntity where id = #{id}
+    </delete>
+
+    <update id="updateBargains" parameterType="bargainsEntity">
+        update bargainsEntity set
+        title=#{title},picture=#{picture},bargainsPrice=#{bargainsPrice},originalPrice=#{originalPrice},startTime=#{startTime},endTime=#{endTime},count=#{count},count=#{count},stock=#{stock},description=#{description}
+        where id=#{id}
+    </update>
+
+    <update id="updateBargainsStatus" parameterType="bargainsVo">
+        update bargainsEntity set auditStatus=#{customBargains.auditStatus} where id=#{customBargains.id}
+    </update>
+
+    <select id="queryBargainsById" parameterType="int" resultType="bargainsEntity">
+        select * from bargainsEntity where id = #{value}
+    </select>
+
+</mapper>

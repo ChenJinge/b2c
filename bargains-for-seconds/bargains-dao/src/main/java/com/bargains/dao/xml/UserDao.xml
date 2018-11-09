@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bargains.dao.UserDao">
+
+    <select id="queryMsuserByid" parameterType="int" resultType="userEntity">
+        select * from userEntity where id = #{value}
+    </select>
+
+    <insert id="insertUser" parameterType="userEntity">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into userEntity(name,account,password,sex,age,address,email)
+        value(#{name},#{account},#{password},#{sex},#{age},#{address},#{email})
+    </insert>
+
+    <delete id="deleteUserById" parameterType="int">
+        delete from userEntity where id = #{id}
+    </delete>
+
+    <update id="updateUser" parameterType="merchantEntity">
+        update userEntity set
+        name=#{name},account=#{account},password=#{password},sex=#{sex},age=#{age},address=#{address},email=#{email}
+        where id=#{id}
+    </update>
+
+    <sql id="consutomsql">
+        <if test="customUser != null">
+            <if test="customUser.name!=null and customUser.name!=''">
+                and name = "${customUser.name}"
+            </if>
+            <if test="customUser.account!=null and customUser.account!='' ">
+                and account = "${customUser.account}"
+            </if>
+            <if test="customUser.password!=null and customUser.password!='' ">
+                and password = "${customUser.password}"
+            </if>
+            <if test="customUser.sex!=null and customUser.sex!='' ">
+                and sex = "${customUser.sex}"
+            </if>
+            <if test="customUser.age!=null and customUser.age!='' ">
+                and age = "${customUser.age}"
+            </if>
+            <if test="customUser.address!=null and customUser.address!='' ">
+                and address = "${customUser.address}"
+            </if>
+            <if test="customUser.email!=null and customUser.email!='' ">
+                and email = "${customUser.email}"
+            </if>
+        </if>
+    </sql>
+
+    <select id="queryUserByVo" parameterType="userVo" resultType="userEntity">
+        select * from userEntity
+        <where>
+            <include refid="consutomsql"></include>
+        </where>
+    </select>
+
+    <select id="queryUserByAccount" parameterType="java.lang.String" resultType="userEntity">
+        select * from userEntity where account = #{value}
+    </select>
+
+</mapper>

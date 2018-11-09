@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <typeAliases>
+        <!-- 别名定义 -->
+        <typeAlias type="com.bargains.enity.test.Person" alias="person"/>
+
+        <!-- 秒杀商家 -->
+        <typeAlias type="com.bargains.enity.MerchantEntity" alias="merchantEntity"/>
+        <typeAlias type="com.bargains.vo.merchantEntity.MsmerchantVo" alias="merchantVo"/>
+
+        <!-- 秒杀用户 -->
+        <typeAlias type="com.bargains.enity.UserEntity" alias="userEntity"/>
+        <typeAlias type="com.bargains.vo.userEntity.MsuserVo" alias="userVo"/>
+
+        <!-- 秒杀商品-->
+        <typeAlias type="com.bargains.enity.BargainsEntity" alias="bargainsEntity"/>
+        <typeAlias type="com.bargains.vo.bargainsEntity.MsProductVo" alias="bargainsVo"/>
+
+        <!-- 秒杀商品详情-->
+        <typeAlias type="com.bargains.enity.ProductEntity" alias="productEntity"/>
+
+        <!-- 秒杀订单-->
+        <typeAlias type="com.bargains.enity.OrderEntity" alias="orderEntity"/>
+        <typeAlias type="com.bargains.vo.order.OrderVo" alias="orderVo"/>
+    </typeAliases>
+
+</configuration>

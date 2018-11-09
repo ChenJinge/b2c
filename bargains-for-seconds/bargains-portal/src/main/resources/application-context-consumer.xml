@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <dubbo:application name="YF_MS_WEB"/>
+    <dubbo:registry address="zookeeper://192.168.253.142:2181"/>
+
+    <dubbo:reference id="merchantService" interface="com.bargains.service.MerchantService"/>
+    <dubbo:reference id="orderService" interface="com.bargains.service.OrderService"/>
+    <dubbo:reference id="productService" interface="com.bargains.service.ProductService"/>
+    <dubbo:reference id="bargainsService" interface="com.bargains.service.BargainsService"/>
+    <dubbo:reference id="userService" interface="com.bargains.service.UserService"/>
+    <dubbo:reference id="weChatPay" interface="com.bargains.service.pay.WeChatPay"/>
+    <dubbo:reference id="unionPay" interface="com.bargains.service.pay.UnionPay"/>
+    <dubbo:reference id="aliPay" interface="com.bargains.service.pay.AliPay"/>
+
+    <dubbo:reference id="productRedisService" interface="com.bargains.service.redis.ProductRedisService"/>
+    <dubbo:reference id="bargainsRedisService" interface="com.bargains.service.redis.BargainsRedisService"/>
+    <dubbo:reference id="orderRedisService" interface="com.bargains.service.redis.OrderRedisService"/>
+</beans>

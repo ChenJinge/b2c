@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:protocol name="dubbo" port="20881"></dubbo:protocol>
+    <dubbo:application name="YF_MS_CACHE"/>
+
+    <dubbo:registry address="zookeeper://192.168.253.142:2181"/>
+
+    <dubbo:service interface="com.bargains.service.cache.ProductCacheService"
+                   ref="msproductDetailCacheServiceImpl"/>
+    <bean id="msproductDetailCacheServiceImpl" class="com.bargains.service.ProductCacheServiceImpl"/>
+
+    <dubbo:service interface="com.bargains.service.cache.BargainsCacheService" ref="msproductCacheServiceImpl"/>
+    <bean id="msproductCacheServiceImpl" class="com.bargains.service.BargainsCacheServiceImpl"/>
+
+    <dubbo:reference id="msproductDetailService" interface="com.bargains.service.ProductService"/>
+    <dubbo:reference id="msproductService" interface="com.bargains.service.BargainsService"/>
+
+
+</beans>

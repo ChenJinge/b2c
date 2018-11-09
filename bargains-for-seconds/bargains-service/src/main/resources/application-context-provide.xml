@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
+
+    <dubbo:application name="YF_MS_SERVICE"/>
+    <dubbo:registry address="zookeeper://192.168.253.142:2181"/>
+
+    <dubbo:service interface="com.bargains.service.MerchantService" ref="msmerchantServiceImpl"/>
+    <bean id="msmerchantServiceImpl" class="com.bargains.service.MerchantServiceImpl"/>
+
+    <dubbo:service interface="com.bargains.service.OrderService" ref="msoderServiceImpl"/>
+    <bean id="msoderServiceImpl" class="com.bargains.service.OrderServiceImpl"/>
+
+    <dubbo:service interface="com.bargains.service.ProductService" ref="msproductDetailServiceImpl"/>
+    <bean id="msproductDetailServiceImpl" class="com.bargains.service.ProductServiceImpl"/>
+
+    <dubbo:service interface="com.bargains.service.BargainsService" ref="msproductServiceImpl"/>
+    <bean id="msproductServicempl" class="com.bargains.service.BargainsServiceImpl"/>
+
+    <dubbo:service interface="com.bargains.service.UserService" ref="msUserServiceImpl"/>
+    <bean id="msUserServiceImpl" class="com.bargains.service.UserServiceImpl"/>
+
+    <dubbo:service interface="com.bargains.service.test.PersonService" ref="personServiceImpl"/>
+    <bean id="personServiceImpl" class="com.bargains.service.test.PersonServiceImpl"/>
+
+    <dubbo:service interface="com.bargains.service.pay.WeChatPay" ref="weixinPayImpl"/>
+    <bean id="weixinPayImpl" class="com.bargains.service.pay.WeChatPayImpl"/>
+
+    <dubbo:service interface="com.bargains.service.pay.UnionPay" ref="yinghangkapayImpl"/>
+    <bean id="yinghangkapayImpl" class="com.bargains.service.pay.UnionPayImpl"/>
+
+    <dubbo:service interface="com.bargains.service.pay.AliPay" ref="zhifubaoPayImpl"/>
+    <bean id="zhifubaoPayImpl" class="com.bargains.service.pay.AliPayImpl"/>
+
+</beans>
