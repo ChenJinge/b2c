@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/panels.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes">
+
+  <title>Panel - Wrapkit Admin Template</title>
+
+
+  <!-- favicon.ico and apple-touch-icon.png -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+  <link rel="stylesheet" href="styles/dependencies.css">
+
+  <link rel="stylesheet" href="styles/wrapkit.css">
+
+  <link rel="stylesheet" href="styles/demo.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+  <main class="wrapkit-wrapper" id="wrapper">
+
+    <!-- ============================================
+    HEADER SECTION
+    =============================================== -->
+    <!-- navigation -->
+    <nav class="header navbar">
+      <div class="container-fluid">
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-left">
+          <a class="navbar-brand" href="index.html" role="logo" aria-label="Logo">
+            <img class="logo" src="images/logo/brand-text-dark.png" alt="Brand">
+          </a>
+          <button data-sidebar="toggleVisible" class="btn btn-icon navbar-btn">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-right" role="navigation">
+          <a aria-label="Search" id="brandSearchNav" class="btn btn-icon navbar-btn" href="#"><i class="fa fa-search"></i></a>
+
+          <div class="dropdown-ext">
+            <a aria-label="notifications" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-inbox"></i>
+              <span class="dotted dotted-danger"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-ext dropdown-menu-right" role="menu">
+              <div class="dd-head">
+                <div class="dd-head-actions">
+                  <a href="#" class="btn btn-xs btn-default">Compose</a>
+                </div>
+                <p><a href="#">Inbox (2)</a></p>
+              </div>
+              <div class="dd-body">
+                <ul class="media-list">
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>6m</small></p>
+                        <h4 class="media-heading body-text">Stilearning</h4>
+                        <p>Newest Themes & Templates - Et est, sed mattis, donec hac</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces7.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 03:11am</small></p>
+                        <h4 class="media-heading body-text">Eugene Barnett</h4>
+                        <p>Service Update: added support for Angular - Sed ultricies nibh, in feugiat</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces4.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 02:47am</small></p>
+                        <h4 class="media-heading body-text">bent10@stilearning.com</h4>
+                        <p>Spread the Word & Earn! - Dapibus nec. Integer sed purus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces3.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 11:41pm</small></p>
+                        <h4 class="media-heading body-text">David Lloyd</h4>
+                        <p>Say thanks for your awesome works! - Viverra fermentum ac. Litora mauris elit</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 10:04pm</small></p>
+                        <h4 class="media-heading body-text">Dribbble</h4>
+                        <p>Design brief from Apple - Quis in nonummy. Ut augue, proident habitant</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces16.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 08:55pm</small></p>
+                        <h4 class="media-heading body-text">Olivia Gonzales</h4>
+                        <p>Updating some of the designs! - Commodo non ac, sem netus adipiscing</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces20.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 03:57pm</small></p>
+                        <h4 class="media-heading body-text">Marco Auer</h4>
+                        <p>Request custom designs! - Adipiscing pellentesque cum, proin luctus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                </ul>
+              </div><!-- /.dd-body -->
+            </div><!-- /.dropdown-menu -->
+          </div><!-- /.dropdown -->
+
+          <div class="dropdown">
+            <a aria-label="More" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-ellipsis-v"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="pull-right"><i class="fa fa-user text-muted"></i></span>Profile</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="pull-right"><i class="fa fa-clock-o text-muted"></i></span>Timeline</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="pull-right"><i class="fa fa-question-circle text-muted"></i></span>Help</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="pull-right"><i class="fa fa-lock text-muted"></i></span>Locked</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="pull-right"><i class="fa fa-sign-out text-muted"></i></span> Sign out</a></li>
+            </ul>
+          </div><!-- /.dropdown -->
+        </div><!-- /navigation -->
+
+        <div class="brand-search" id="brandSearchFrm">
+          <form action="#" role="search">
+            <a href="#" class="search-close">&times;</a>
+            <input class="search-field" placeholder="Search for everything you want..." tabindex="-1">
+          </form>
+        </div><!-- /.brand-search -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /navigation -->
+
+
+
+    <!-- ============================================
+    SIDEBAR SECTION
+    =============================================== -->
+    <aside class="sidebar" role="complementary">
+
+      <!-- profile -->
+      <div class="sidebar-block">
+        <div class="media">
+          <div class="media-left">
+            <a href="page-profile.html">
+              <span class="status dotted dotted-primary" data-toggle="tooltip" data-container="body" title="available"></span>
+              <img class="media-object img-circle" src="images/dummy/uifaces14.jpg" alt="photo profile">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Emma Greene</h4>
+            <p class="text-muted">
+              <small>Graphic Designer</small>
+            </p>
+          </div>
+        </div>
+      </div><!-- /.sidebar-block -->
+      <!-- /profile -->
+
+      <!-- /navigation -->
+      <div class="nav-wrapper">
+        <ul class="nav nav-stacked" role="navigation">
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-dashcube"></i></span>
+              <span class="nav-text">Dashboard</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><span class="nav-text">Dashboard 1</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index-2.html"><span class="nav-text">Dashboard 2</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">GET STARTED</li>
+          <li class="nav-item" role="presentation">
+            <a href="layout.html">
+              <span class="nav-icon"><i class="fa fa-object-group"></i></span>
+              <span class="nav-text">Layout</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="ecosystem.html">
+              <span class="nav-icon"><i class="fa fa-cubes"></i></span>
+              <span class="nav-text">Ecosystem</span>
+            </a>
+          </li>
+          <li class="nav-item active" role="presentation">
+            <a href="panels.html">
+              <span class="nav-icon"><i class="fa fa-puzzle-piece"></i></span>
+              <span class="nav-text">Panels</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+              <span class="nav-text">Level Menu</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Lorem ipsum</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Dolor sit</span></a></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" data-toggle="nav-child" href="#"><span class="nav-text">Node</span></a>
+                <ul class="nav nav-child level-2 nav-stacked nav-pills" role="menu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Consectetur</span></a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Assumenda</span></a></li>
+                </ul>
+              </li> <!-- /node -->
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Amet</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">USER INTERFACES</li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-briefcase"></i></span>
+              <span class="nav-text">Components</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-grid.html"><span class="nav-text">Grids</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-type.html"><span class="nav-text">Type</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-button.html"><span class="nav-text">Buttons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-icons.html"><span class="nav-text">Icons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-modal.html"><span class="nav-text">Modal</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tooltip-popover.html"><span class="nav-text">Tooltips & Popovers</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-alert-callout.html"><span class="nav-text">Alerts & Callout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-progressbar.html"><span class="nav-text">Progress bar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-label-badge.html"><span class="nav-text">Label & Badge</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-navbar.html"><span class="nav-text">Navbar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-nav.html"><span class="nav-text">Nav</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tabs-collapse.html"><span class="nav-text">Tabs & Collapse</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-check-square"></i></span>
+              <span class="nav-text">Forms</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-basic.html"><span class="nav-text">Basic Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-advance.html"><span class="nav-text">Advance Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-uploader.html"><span class="nav-text">Uploader</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-xeditable.html"><span class="nav-text">x-Editable</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-wizard.html"><span class="nav-text">Wizard</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-editor.html"><span class="nav-text">Editor</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-imagecropping.html"><span class="nav-text">Image Cropping</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-validator.html"><span class="nav-text">Validator</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-line-chart"></i></span>
+              <span class="nav-text">Charts</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-js.html"><span class="nav-text">ChartJs</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-morris.html"><span class="nav-text">Morris</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-inline.html"><span class="nav-text">Inline Charts</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-database"></i></span>
+              <span class="nav-text">Tables</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-basic.html"><span class="nav-text">Basic Table</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-datatables.html"><span class="nav-text">DataTables</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">DEVELOPMENT</li>
+          <li class="nav-item" role="presentation">
+            <a href="ui-kits.html">
+              <span class="nav-icon"><i class="fa fa-cube"></i></span>
+              <span class="nav-text">Widgets</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-plug"></i></span>
+              <span class="nav-text">Plugins</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-animate.html"><span class="nav-text">Animated</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-bootbox.html"><span class="nav-text">Bootbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-calendar.html"><span class="nav-text">Calendar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-maps.html"><span class="nav-text">Maps</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-nestable.html"><span class="nav-text">Nestable List</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-session-timeout.html"><span class="nav-text">Session Timeout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-toastr.html"><span class="nav-text">Toastr</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-treeview.html"><span class="nav-text">Tree View</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-file-text-o"></i></span>
+              <span class="nav-text">Pages</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="nav-text">Signin</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="nav-text">Lock Screen</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-error.html"><span class="nav-text">Error Page</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="nav-text">Profile</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-inbox.html"><span class="nav-text">Inbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="nav-text">Timeline</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-gallery.html"><span class="nav-text">Gallery</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-pricing.html"><span class="nav-text">Pricing</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-invoice.html"><span class="nav-text">Invoice</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-search.html"><span class="nav-text">Search Result</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="nav-text">Help</span></a></li>
+            </ul>
+          </li>
+          <li class="collapse-item" role="presentation">
+            <a href="#" data-sidebar="toggleCollapse">
+              <i class="fa fa-angle-double-left"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside><!-- /.SIDEBAR -->
+
+
+
+    <!-- ============================================
+    MAIN CONTENT SECTION
+    =============================================== -->
+    <section class="content-wrapper" role="main">
+      <div class="content">
+        <div class="content-bar">
+          <div class="pull-right" role="group">
+            <a data-toggle="modal" href="#" data-scripts="_includes/setups.js" data-target="#templateSetup" title="Template Setups" aria-label="template setups" class="btn btn-nofill btn-sm btn-default" href="#"><span class="icon-settings fa-lg text-muted"></span></a>
+          </div>
+          <ul class="breadcrumb breadcrumb-angle">
+            <li><a href="#" aria-label="home"><i class="fa fa-home"></i></a></li>
+            <li class="active">Panels</li>
+          </ul>
+        </div><!-- /.content-bar -->
+
+
+        <div class="content-body">
+
+          <p class="lead">Sometimes you need to put your DOM in a box. For those situations, try the panel component.</p>
+          <div class="panel">
+            <div class="panel-body">
+              Basic panel example
+            </div><!-- /.panel-body -->
+          </div><!-- /.panel -->
+
+
+          <!-- PANEL WITH HEADING -->
+          <h2>Panel with heading</h2>
+          <p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code>h1</code> - <code>h6</code> with a <code>.panel-title</code> class to add a pre-styled heading.</p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel" data-loader-color="blue">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-collapse" rel="tooltip" data-placement="bottom" title="collapse"><i class="icon_minus_alt2"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-hide" rel="tooltip" data-placement="bottom" title="hide"><i class="icon-close"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel heading</h3>
+                </div>
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, asperiores, accusamus, explicabo, pariatur at voluptate error voluptas quaerat reiciendis excepturi quasi quae quia provident. Tenetur est impedit sit labore molestiae.
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right" id="demoBtn">
+                    <a href="#" class="btn btn-primary btn-nofill" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-success btn-nofill" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                    <a href="#" class="btn btn-warning btn-nofill" data-toggle="panel-collapse" rel="tooltip" data-placement="bottom" title="collapse"><i class="icon_minus_alt2"></i></a>
+                    <a href="#" class="btn btn-danger btn-nofill" data-toggle="panel-hide" rel="tooltip" data-placement="bottom" title="hide"><i class="icon-close"></i></a>
+                  </div>
+                  <h3 class="panel-title"><i class="icon-puzzle fa-fw"></i> Alternative button</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  <p class="lead">Lets play with panel button controls</p>
+                  <a href="#" class="btn btn-default btn-sm demo-panel-btn" data-btn="icon">Icon</a>
+                  <a href="#" class="btn btn-default btn-sm demo-panel-btn" data-btn="nope">Fill</a>
+                  <a href="#" class="btn btn-default btn-sm demo-panel-btn" data-btn="nofill">No Fill</a>
+                  <a href="#" class="btn btn-default btn-sm demo-panel-btn" data-btn="bordered">Bordered</a>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel" id="panelEventDemo" data-collapse="true">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-collapse" rel="tooltip" data-placement="bottom" title="collapse"><i class="icon_minus_alt2"></i></a>
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-hide" rel="tooltip" data-placement="bottom" title="hide"><i class="icon-close"></i></a>
+                  </div>
+                  <h3 class="panel-title">Default Collapsed</h3>
+                </div><!-- /.panel-heading -->
+                <div class="alert alert-info collapse-el no-margin">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <p><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</p>
+                </div>
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, accusantium quod soluta et nostrum rerum dolor incidunt corrupti harum assumenda perspiciatis magnam numquam nulla minus dolorum deleniti earum! Quos culpa odio non pariatur minus voluptatem.
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right dropdown">
+                    <a href="#" class="btn btn-default btn-icon dropdown-toggle" data-toggle="dropdown">Toggle <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li role="presentation"><a role="menuitem" data-toggle="panel-collapse" tabindex="-1" href="#">Collapse</a></li>
+                      <li role="presentation"><a role="menuitem" data-toggle="panel-expand" tabindex="-1" href="#">Expand</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" data-toggle="panel-hide" tabindex="-1" href="#">Close</a></li>
+                    </ul>
+                  </div>
+                  <h3 class="panel-title">With dropdown <small>Subtitle type here...</small></h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  <div class="alert alert-info">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    <p><strong>Warning!</strong> Better check yourself, you're not looking too good.</p>
+                  </div>
+                  <p class="hide-on-expand">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, quasi minima incidunt non deserunt eum, <i class="text-info">this text hide on expand.</i></p>
+
+                  <!-- Button trigger modal -->
+                  <p class="show-on-expand">
+                    <button class="btn btn-default" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+                  </p>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+          <!-- Modal demo (!dummy) -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Modal on panel expand</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-nofill btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-nofill btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- /#myModal -->
+
+          <!-- PANEL WITH FOOTER -->
+          <h2>Panel with footer</h2>
+          <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers <strong>do not</strong> inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <ul class="panel-control pull-right">
+                    <li class="dropdown">
+                      <a href="#" class="btn btn-icon btn-default dropdown-toggle" data-toggle="dropdown"><i class="arrow_carrot-down_alt2"></i></a>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h5>Panel content</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut consequuntur assumenda cumque amet laborum quasi sequi tempora, excepturi deserunt minus officia veritatis.</p>
+                </div><!-- /.panel-body -->
+                <div class="panel-footer">
+                  <p>Panel footer</p>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-control-input pull-right" style="width:200px">
+                    <form class="form-inline" role="form">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon2"><i class="icon-user-follow"></i></span>
+                          <input class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <h3 class="panel-title">With form inline</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut consequuntur assumenda cumque amet laborum quasi sequi tempora, excepturi deserunt minus officia veritatis.</p>
+                </div><!-- /.panel-body -->
+                <div class="panel-footer">
+                  <div class="panel-control-input">
+                    <form role="form">
+                      <div class="form-group">
+                        <div class="input-group input-group-in">
+                          <input class="form-control" placeholder="Type messege here..." aria-describedby="basic-addon2">
+                          <span class="input-group-btn no-border">
+                            <button class="btn btn-primary" type="button"><i class="icon-arrow-right"></i></button>
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div><!-- /.panel-footer -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-12">
+              <div class="panel" data-context="dark" data-fill-color="true">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-collapse" rel="tooltip" data-placement="bottom" title="collapse"><i class="icon_minus_alt2"></i></a>
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-hide" rel="tooltip" data-placement="bottom" title="hide"><i class="icon-close"></i></a>
+                  </div>
+                  <h3 class="panel-title">Nestable</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, laudantium, explicabo, dicta, ullam odit voluptate voluptatem deserunt numquam animi sunt facilis voluptatum obcaecati quis recusandae non praesentium iure ut amet.</p>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="panel" data-context="minimalize">
+                        <div class="panel-heading">
+                          <div class="panel-control pull-right">
+                            <span class="label label-success">Label</span>
+                            <span class="badge badge-info">12</span>
+                          </div>
+                          <h3 class="panel-title">
+                            Panel1
+                          </h3>
+                        </div><!-- /.panel-heading -->
+                        <div class="panel-body border-teal">
+                          <div data-toggle="slimScroll" style="height:100px" data-color="#48CFAD" data-rail-color="#48CFAD" data-allow-page-scroll="false" data-rail-visible="true">
+                            <p><strong>Auto hide nice scroll,</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, asperiores, accusamus, explicabo, pariatur at voluptate error voluptas quaerat reiciendis excepturi quasi quae quia provident. Tenetur est impedit sit labore molestiae.</p>
+                            <p>Enim, dicta, eos, numquam rem reiciendis ab necessitatibus vel tenetur voluptas porro praesentium perspiciatis voluptatibus beatae totam ducimus dolorem nulla explicabo? Distinctio.</p>
+                          </div>
+                        </div><!-- /.panel-body -->
+                      </div><!-- /.panel -->
+                    </div><!-- /.cols -->
+
+                    <div class="col-md-4">
+                      <div class="panel" data-context="minimalize">
+                        <div class="panel-heading">
+                          <div class="panel-control-input pull-right">
+                            <form class="form-inline" role="form">
+                              <div class="form-group">
+                                <button type="button" class="btn btn-bordered btn-warning"><i class="icon-note fa-fw"></i> Edit</button>
+                                <button type="button" class="btn btn-bordered btn-primary"><i class="icon-plus fa-fw"></i> Add</button>
+                              </div>
+                            </form>
+                          </div>
+                          <h3 class="panel-title">Panel2</h3>
+                        </div><!-- /.panel-heading -->
+                        <div class="panel-body border-blue">
+                          <div data-toggle="slimScroll" style="height:100px" data-color="#5D9CEC" data-allow-page-scroll="false">
+                            <p><strong>Auto hide nice scroll,</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, asperiores, accusamus, explicabo, pariatur at voluptate error voluptas quaerat reiciendis excepturi quasi quae quia provident. Tenetur est impedit sit labore molestiae.</p>
+                            <p>Enim, dicta, eos, numquam rem reiciendis ab necessitatibus vel tenetur voluptas porro praesentium perspiciatis voluptatibus beatae totam ducimus dolorem nulla explicabo? Distinctio.</p>
+                          </div>
+                        </div><!-- /.panel-body -->
+                      </div><!-- /.panel -->
+                    </div><!-- /.cols -->
+
+                    <div class="col-md-4">
+                      <div class="panel" data-context="minimalize">
+                        <div class="panel-heading">
+                          <div class="panel-control-input pull-right">
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                <span class="sr-only">60% Complete</span>
+                              </div>
+                            </div>
+                          </div>
+                          <h3 class="panel-title">Panel3</h3>
+                        </div><!-- /.panel-heading -->
+                        <div class="panel-body border-red">
+                          <div data-toggle="slimScroll" style="height:100px" data-color="#ED5565" data-allow-page-scroll="false">
+                            <p><strong>Auto hide scroll,</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, asperiores, accusamus, explicabo, pariatur at voluptate error voluptas quaerat reiciendis excepturi quasi quae quia provident. Tenetur est impedit sit labore molestiae.</p>
+                            <p>Enim, dicta, eos, numquam rem reiciendis ab necessitatibus vel tenetur voluptas porro praesentium perspiciatis voluptatibus beatae totam ducimus dolorem nulla explicabo? Distinctio.</p>
+                          </div>
+                        </div><!-- /.panel-body -->
+                      </div><!-- /.panel -->
+                    </div><!-- /.cols -->
+                  </div><!-- /.row -->
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+
+
+          <!-- PANEL WITH CONTEXTS -->
+          <h2>Contextual alternatives</h2>
+          <p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="primary">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-collapse" rel="tooltip" data-placement="bottom" title="collapse"><i class="icon_minus_alt2"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel primary</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  Panel content
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="dark">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                    <a href="#" class="btn btn-default btn-icon" data-toggle="panel-collapse" rel="tooltip" data-placement="bottom" title="collapse"><i class="icon_minus_alt2"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel Dark</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  Panel content
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="success">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel success</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  Panel content
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="info">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel info</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  Panel content
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="warning">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel warning</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  Panel content
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="danger">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel danger</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  Panel content
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel" data-context="cyan">
+                <div class="panel-heading">
+                  <div class="panel-control dropdown pull-right">
+                    <a href="#" class="btn btn-icon btn-default dropdown-toggle" data-toggle="dropdown" title="Change color"><i class="fa fa-tint"></i></a>
+                    <ul id="contextLists" class="dropdown-menu dropdown-inline color-lists dropdown-menu-right" role="menu">
+                      <li><a href="#" class="bg-dark" data-toggle="panel-context" data-context="dark" rel="tooltip" title="dark"></a></li>
+                      <li><a href="#" class="bg-light" data-toggle="panel-context" data-context="light" rel="tooltip" title="light"></a></li>
+                      <li><a href="#" class="bg-red" data-toggle="panel-context" data-context="red" rel="tooltip" title="red"></a></li>
+                      <li><a href="#" class="bg-orange" data-toggle="panel-context" data-context="orange" rel="tooltip" title="orange"></a></li>
+                      <li><a href="#" class="bg-yellow" data-toggle="panel-context" data-context="yellow" rel="tooltip" title="yellow"></a></li>
+                      <li><a href="#" class="bg-green" data-toggle="panel-context" data-context="green" rel="tooltip" title="green"></a></li>
+                      <li><a href="#" class="bg-teal" data-toggle="panel-context" data-context="teal" rel="tooltip" title="teal"></a></li>
+                      <li><a href="#" class="bg-cyan" data-toggle="panel-context" data-context="cyan" rel="tooltip" title="cyan"></a></li>
+                      <li><a href="#" class="bg-blue" data-toggle="panel-context" data-context="blue" rel="tooltip" title="blue"></a></li>
+                      <li><a href="#" class="bg-violet" data-toggle="panel-context" data-context="violet" rel="tooltip" title="violet"></a></li>
+                    </ul>
+                  </div>
+                  <h3 class="panel-title"><input id="demoFillPanel" data-toggle="panel-fill" type="checkbox" class="js-switch" data-class-name="switchery switchery-alt" data-color="#16181B"> Use fill color</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel panel-default" data-context="cyan">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <ul class="nav nav-tabs nav-contrast-dark">
+                      <li class="active"><a href="#tab1" data-toggle="tab">Home</a></li>
+                      <li><a href="#tab2" data-toggle="tab">Profile</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accounts <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                          <li><a href="#tab3" tabindex="-1" data-toggle="tab">@bent</a></li>
+                          <li><a href="#tab4" tabindex="-1" data-toggle="tab">@iin</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3 class="panel-title">With Tabs</h3>
+                </div><!-- /.panel-heading -->
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab1">
+                      <strong>Tab 1</strong>, Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                    </div>
+                    <div class="tab-pane fade" id="tab2">
+                      <strong>Tab 2</strong>, Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                    </div>
+                    <div class="tab-pane fade" id="tab3">
+                      <strong>Tab 3</strong>, Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                    </div>
+                    <div class="tab-pane fade" id="tab4">
+                      <strong>Tab 4</strong>, Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                    </div>
+                  </div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+
+            <div class="clearfix"></div>
+
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="violet" data-fill-color="true" data-loader-color="light">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel Filled</h3>
+                </div>
+                <div class="panel-body">
+                  <p class="lead text-center"><i class="icon-drop text-muted"></i> <br> Look! I'm filled</p>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="blue" data-fill-color="true" data-loader-color="light">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel Filled</h3>
+                </div>
+                <div class="panel-body">
+                  <p class="lead text-center"><i class="icon-drop text-muted"></i> <br> Look! I'm filled</p>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="cyan" data-fill-color="true" data-loader-color="light">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel Filled</h3>
+                </div>
+                <div class="panel-body">
+                  <p class="lead text-center"><i class="icon-drop text-muted"></i> <br> Look! I'm filled</p>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="teal" data-fill-color="true" data-loader-color="light">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel Filled</h3>
+                </div>
+                <div class="panel-body">
+                  <p class="lead text-center"><i class="icon-drop text-muted"></i> <br> Look! I'm filled</p>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+
+            <div class="clearfix"></div>
+
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="minimalize" data-loader-color="violet">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel Minimalize</h3>
+                </div>
+                <div class="panel-body border-violet">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti labore eum, laudantium in id autem perspiciatis magnam cumque suscipit, ab!</p>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="minimalize" data-loader-color="blue">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel Minimalize</h3>
+                </div>
+                <div class="panel-body border-blue">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit, minima architecto. Nemo, laboriosam sint sed placeat amet quod reprehenderit.</p>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="minimalize" data-loader-color="cyan">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel Minimalize</h3>
+                </div>
+                <div class="panel-body border-cyan">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis esse aliquam facilis sequi iure ratione possimus porro expedita omnis?</p>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="panel" data-context="minimalize" data-loader-color="teal">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel Minimalize</h3>
+                </div>
+                <div class="panel-body border-teal">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sequi adipisci repellat labore architecto quod quae commodi ad, eum iste.</p>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+          </div><!-- /.row -->
+
+
+
+          <!-- PANEL WITH TABLE -->
+          <h2>With tables</h2>
+          <p>Add any non-bordered <code>.table</code> within a panel for a seamless design. If there is a <code>.panel-body</code>, we add an extra border to the top of the table for separation.</p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-primary btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                    <a href="#" class="btn btn-success btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                    <a href="#" class="btn btn-warning btn-icon" data-toggle="panel-collapse" rel="tooltip" data-placement="bottom" title="collapse"><i class="icon_minus_alt2"></i></a>
+                    <a href="#" class="btn btn-danger btn-icon" data-toggle="panel-hide" rel="tooltip" data-placement="bottom" title="hide"><i class="icon-close"></i></a>
+                  </div>
+                  <h3 class="panel-title">Panel heading</h3>
+                </div>
+                <div class="panel-body">
+                  <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div><!-- /.panel-body -->
+
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Username</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table><!-- /.table -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols-->
+
+            <div class="col-md-6">
+
+              <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                  <div class="panel-control-input pull-right">
+                    <ul class="pagination pagination-split pagination-sm">
+                      <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li class="active"><a href="#">5</a></li>
+                      <li class="disabled"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                  </div>
+                  <h3 class="panel-title">Panel heading</h3>
+                </div>
+
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Username</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table><!-- /.table -->
+                <div class="panel-body">
+                  <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+
+
+
+          <!-- PANEL WITH LISTS -->
+          <h2>With list groups</h2>
+          <p>Easily include full-width <a href="http://getbootstrap.com/components/#list-group" target="_blank">list groups</a> within any panel.</p>
+
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+              <div class="panel-control pull-right">
+                <a href="#" class="btn btn-primary btn-icon" data-toggle="panel-refresh" rel="tooltip" data-placement="bottom" title="refresh"><i class="icon-refresh"></i></a>
+                <a href="#" class="btn btn-success btn-icon" data-toggle="panel-expand" rel="tooltip" data-placement="bottom" title="expand"><i class="arrow_expand"></i></a>
+                <a href="#" class="btn btn-warning btn-icon" data-toggle="panel-collapse" rel="tooltip" data-placement="bottom" title="collapse"><i class="icon_minus_alt2"></i></a>
+                <a href="#" class="btn btn-danger btn-icon" data-toggle="panel-hide" rel="tooltip" data-placement="bottom" title="hide"><i class="icon-close"></i></a>
+              </div>
+              <h3 class="panel-title">Panel heading</h3>
+            </div>
+            <div class="panel-body">
+              <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div><!-- /.panel-body -->
+
+            <!-- List group -->
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul><!-- /.list-group -->
+          </div><!-- /.panel -->
+
+
+          <!-- PANEL PLUGIN -->
+          <h2>Javascript</h2>
+          <p>Activate panel features with a single line of JavaScript:</p>
+          <pre class="prettyprint" lang-js="">var myPanel = new WrapkitPanel( options );</pre>
+
+        </div><!-- /.content-body -->
+
+
+        <!-- Template Setups -->
+        <div class="modal fade" id="templateSetup">
+          <div class="modal-dialog">
+            <!-- modal-content -->
+            <div class="modal-content"></div>
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.templateSetup -->
+
+      </div><!-- /.content -->
+    </section><!-- /MAIN -->
+
+
+
+    <!-- ============================================
+    FOOTER SECTION
+    =============================================== -->
+    <footer class="footer-wrapper" role="contentinfo">
+      <div class="footer">
+        <div class="pull-right text-muted"><small>Currently v1.2</small></div>
+        <div>Wrapkit Template  &copy; 2015</div>
+      </div>
+    </footer><!-- /.FOOTER -->
+
+  </main><!-- /#MAIN -->
+
+
+  <!-- VENDORS : jQuery & Bootstrap -->
+  <script src="scripts/vendor.js"></script>
+  <!-- END VENDORS -->
+
+  <!-- DEPENDENCIES : Required plugins -->
+  <script src="scripts/dependencies.js"></script>
+  <!-- END DEPENDENCIES -->
+
+  <!-- WRAPKIT -->
+  <script src="scripts/wrapkit.js"></script>
+  <!-- END WRAPKIT -->
+
+  <!-- WRAPKIT SETUPS -->
+  <script src="scripts/wrapkit-setup.js"></script>
+  <!-- end WRAPKIT SETUPS -->
+
+  <!-- PLUGIN SETUPS: vendors & dependencies setups -->
+  <script src="scripts/plugin-setups.js"></script>
+  <!-- END PLUGIN SETUPS -->
+
+  <!-- DUMMY: Use for demo -->
+  <script src="scripts/demo/panel-demo.js"></script>
+
+
+  <!-- Google Analytics: change UA-48454066-1 to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='../../../../../www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-48454066-1');ga('send','pageview');
+  </script>
+</body>
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/panels.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:10 GMT -->
+</html>

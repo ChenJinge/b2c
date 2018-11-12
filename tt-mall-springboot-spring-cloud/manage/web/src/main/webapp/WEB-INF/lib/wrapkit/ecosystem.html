@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/ecosystem.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes">
+
+  <title>Ecosystem - Wrapkit Admin Template</title>
+
+
+  <!-- favicon.ico and apple-touch-icon.png -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+  <link rel="stylesheet" href="styles/dependencies.css">
+
+  <link rel="stylesheet" href="styles/wrapkit.css">
+
+  <link rel="stylesheet" href="styles/demo.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <main class="wrapkit-wrapper" id="wrapper">
+
+    <!-- ============================================
+    HEADER SECTION
+    =============================================== -->
+    <!-- navigation -->
+    <nav class="header navbar">
+      <div class="container-fluid">
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-left">
+          <a class="navbar-brand" href="index.html" role="logo" aria-label="Logo">
+            <img class="logo" src="images/logo/brand-text-dark.png" alt="Brand">
+          </a>
+          <button data-sidebar="toggleVisible" class="btn btn-icon navbar-btn">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-right" role="navigation">
+          <a aria-label="Search" id="brandSearchNav" class="btn btn-icon navbar-btn" href="#"><i class="fa fa-search"></i></a>
+
+          <div class="dropdown-ext">
+            <a aria-label="notifications" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-inbox"></i>
+              <span class="dotted dotted-danger"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-ext dropdown-menu-right" role="menu">
+              <div class="dd-head">
+                <div class="dd-head-actions">
+                  <a href="#" class="btn btn-xs btn-default">Compose</a>
+                </div>
+                <p><a href="#">Inbox (2)</a></p>
+              </div>
+              <div class="dd-body">
+                <ul class="media-list">
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>6m</small></p>
+                        <h4 class="media-heading body-text">Stilearning</h4>
+                        <p>Newest Themes & Templates - Et est, sed mattis, donec hac</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces7.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 03:11am</small></p>
+                        <h4 class="media-heading body-text">Eugene Barnett</h4>
+                        <p>Service Update: added support for Angular - Sed ultricies nibh, in feugiat</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces4.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 02:47am</small></p>
+                        <h4 class="media-heading body-text">bent10@stilearning.com</h4>
+                        <p>Spread the Word & Earn! - Dapibus nec. Integer sed purus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces3.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 11:41pm</small></p>
+                        <h4 class="media-heading body-text">David Lloyd</h4>
+                        <p>Say thanks for your awesome works! - Viverra fermentum ac. Litora mauris elit</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 10:04pm</small></p>
+                        <h4 class="media-heading body-text">Dribbble</h4>
+                        <p>Design brief from Apple - Quis in nonummy. Ut augue, proident habitant</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces16.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 08:55pm</small></p>
+                        <h4 class="media-heading body-text">Olivia Gonzales</h4>
+                        <p>Updating some of the designs! - Commodo non ac, sem netus adipiscing</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces20.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 03:57pm</small></p>
+                        <h4 class="media-heading body-text">Marco Auer</h4>
+                        <p>Request custom designs! - Adipiscing pellentesque cum, proin luctus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                </ul>
+              </div><!-- /.dd-body -->
+            </div><!-- /.dropdown-menu -->
+          </div><!-- /.dropdown -->
+
+          <div class="dropdown">
+            <a aria-label="More" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-ellipsis-v"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="pull-right"><i class="fa fa-user text-muted"></i></span>Profile</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="pull-right"><i class="fa fa-clock-o text-muted"></i></span>Timeline</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="pull-right"><i class="fa fa-question-circle text-muted"></i></span>Help</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="pull-right"><i class="fa fa-lock text-muted"></i></span>Locked</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="pull-right"><i class="fa fa-sign-out text-muted"></i></span> Sign out</a></li>
+            </ul>
+          </div><!-- /.dropdown -->
+        </div><!-- /navigation -->
+
+        <div class="brand-search" id="brandSearchFrm">
+          <form action="#" role="search">
+            <a href="#" class="search-close">&times;</a>
+            <input class="search-field" placeholder="Search for everything you want..." tabindex="-1">
+          </form>
+        </div><!-- /.brand-search -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /navigation -->
+
+
+
+    <!-- ============================================
+    SIDEBAR SECTION
+    =============================================== -->
+    <aside class="sidebar" role="complementary">
+
+      <!-- profile -->
+      <div class="sidebar-block">
+        <div class="media">
+          <div class="media-left">
+            <a href="page-profile.html">
+              <span class="status dotted dotted-primary" data-toggle="tooltip" data-container="body" title="available"></span>
+              <img class="media-object img-circle" src="images/dummy/uifaces14.jpg" alt="photo profile">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Emma Greene</h4>
+            <p class="text-muted">
+              <small>Graphic Designer</small>
+            </p>
+          </div>
+        </div>
+      </div><!-- /.sidebar-block -->
+      <!-- /profile -->
+
+      <!-- /navigation -->
+      <div class="nav-wrapper">
+        <ul class="nav nav-stacked" role="navigation">
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-dashcube"></i></span>
+              <span class="nav-text">Dashboard</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><span class="nav-text">Dashboard 1</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index-2.html"><span class="nav-text">Dashboard 2</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">GET STARTED</li>
+          <li class="nav-item" role="presentation">
+            <a href="layout.html">
+              <span class="nav-icon"><i class="fa fa-object-group"></i></span>
+              <span class="nav-text">Layout</span>
+            </a>
+          </li>
+          <li class="nav-item active" role="presentation">
+            <a href="ecosystem.html">
+              <span class="nav-icon"><i class="fa fa-cubes"></i></span>
+              <span class="nav-text">Ecosystem</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="panels.html">
+              <span class="nav-icon"><i class="fa fa-puzzle-piece"></i></span>
+              <span class="nav-text">Panels</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+              <span class="nav-text">Level Menu</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Lorem ipsum</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Dolor sit</span></a></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" data-toggle="nav-child" href="#"><span class="nav-text">Node</span></a>
+                <ul class="nav nav-child level-2 nav-stacked nav-pills" role="menu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Consectetur</span></a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Assumenda</span></a></li>
+                </ul>
+              </li> <!-- /node -->
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Amet</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">USER INTERFACES</li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-briefcase"></i></span>
+              <span class="nav-text">Components</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-grid.html"><span class="nav-text">Grids</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-type.html"><span class="nav-text">Type</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-button.html"><span class="nav-text">Buttons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-icons.html"><span class="nav-text">Icons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-modal.html"><span class="nav-text">Modal</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tooltip-popover.html"><span class="nav-text">Tooltips & Popovers</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-alert-callout.html"><span class="nav-text">Alerts & Callout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-progressbar.html"><span class="nav-text">Progress bar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-label-badge.html"><span class="nav-text">Label & Badge</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-navbar.html"><span class="nav-text">Navbar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-nav.html"><span class="nav-text">Nav</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tabs-collapse.html"><span class="nav-text">Tabs & Collapse</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-check-square"></i></span>
+              <span class="nav-text">Forms</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-basic.html"><span class="nav-text">Basic Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-advance.html"><span class="nav-text">Advance Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-uploader.html"><span class="nav-text">Uploader</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-xeditable.html"><span class="nav-text">x-Editable</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-wizard.html"><span class="nav-text">Wizard</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-editor.html"><span class="nav-text">Editor</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-imagecropping.html"><span class="nav-text">Image Cropping</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-validator.html"><span class="nav-text">Validator</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-line-chart"></i></span>
+              <span class="nav-text">Charts</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-js.html"><span class="nav-text">ChartJs</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-morris.html"><span class="nav-text">Morris</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-inline.html"><span class="nav-text">Inline Charts</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-database"></i></span>
+              <span class="nav-text">Tables</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-basic.html"><span class="nav-text">Basic Table</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-datatables.html"><span class="nav-text">DataTables</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">DEVELOPMENT</li>
+          <li class="nav-item" role="presentation">
+            <a href="ui-kits.html">
+              <span class="nav-icon"><i class="fa fa-cube"></i></span>
+              <span class="nav-text">Widgets</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-plug"></i></span>
+              <span class="nav-text">Plugins</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-animate.html"><span class="nav-text">Animated</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-bootbox.html"><span class="nav-text">Bootbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-calendar.html"><span class="nav-text">Calendar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-maps.html"><span class="nav-text">Maps</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-nestable.html"><span class="nav-text">Nestable List</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-session-timeout.html"><span class="nav-text">Session Timeout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-toastr.html"><span class="nav-text">Toastr</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-treeview.html"><span class="nav-text">Tree View</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-file-text-o"></i></span>
+              <span class="nav-text">Pages</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="nav-text">Signin</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="nav-text">Lock Screen</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-error.html"><span class="nav-text">Error Page</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="nav-text">Profile</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-inbox.html"><span class="nav-text">Inbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="nav-text">Timeline</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-gallery.html"><span class="nav-text">Gallery</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-pricing.html"><span class="nav-text">Pricing</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-invoice.html"><span class="nav-text">Invoice</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-search.html"><span class="nav-text">Search Result</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="nav-text">Help</span></a></li>
+            </ul>
+          </li>
+          <li class="collapse-item" role="presentation">
+            <a href="#" data-sidebar="toggleCollapse">
+              <i class="fa fa-angle-double-left"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside><!-- /.SIDEBAR -->
+
+
+
+    <!-- ============================================
+    MAIN CONTENT SECTION
+    =============================================== -->
+    <section class="content-wrapper" role="main">
+      <div class="content">
+        <div class="content-bar">
+          <div class="pull-right" role="group">
+            <a data-toggle="modal" href="#" data-scripts="_includes/setups.js" data-target="#templateSetup" title="Template Setups" aria-label="template setups" class="btn btn-nofill btn-sm btn-default" href="#"><span class="icon-settings fa-lg text-muted"></span></a>
+          </div>
+          <ul class="breadcrumb breadcrumb-angle">
+            <li><a href="#" aria-label="home"><i class="fa fa-home"></i></a></li>
+            <li class="active">Ecosystem</li>
+          </ul>
+        </div><!-- /.content-bar -->
+
+
+        <div class="content-body">
+          <!-- WRAPKIR LAYOUT DEMO -->
+          <h2>Wrapkit Layout</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">Initialize</h4>
+                  <pre>var options = {
+  box: false,
+  fullscreen: false
+};
+var wl = new WrapkitLayout( '#myLayout', options );</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="wlDemoSetFluid" type="button" class="btn btn-xs btn-primary pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Fluid Layout
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // set to fluid
+  wl.setFluid();
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="wlDemoSetBox" type="button" class="btn btn-xs btn-primary pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Box Layout
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // set to box
+  wl.setBox();
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="wlDemoFullscreen" type="button" class="btn btn-xs btn-primary pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Change to Fullscreen
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // fullscreen mode
+  wl.fullscreen();
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="wlDemoExitFullscreen" type="button" class="btn btn-xs btn-primary pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Exit Fullscreen
+                  </h4>
+                 <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // exit fullscreen
+  wl.exitFullscreen();
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">_events</h4>
+                 <pre>wl.on( "init", function( wl ) { });
+wl.on( "layoutChanged", function( wl, layout ) { });
+wl.on( "fullscreen", function( wl, fs ) { });</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+
+
+          <!-- WRAPKIR HEADER DEMO -->
+          <h2>Wrapkit Header</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">Initialize</h4>
+                  <pre>var options = {
+  fixed: false,
+  fixedPosition: "top",
+  rtlMode: false,
+  skin: "default"
+};
+var wh = new WrapkitHeader( '#myHeader', options );</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <div class="btn-group dropdown pull-right">
+                      <button type="button" class="btn btn-info btn-xs"><i class="icon-control-play"></i> Try It</button>
+                      <button type="button" class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" id="whDemoSetSkin" role="menu">
+                        <li><a data-toggle="header-skin" data-skin="default" href="#">Default</a></li>
+                        <li><a data-toggle="header-skin" data-skin="inverse" href="#">Inverse/Dark</a></li>
+                        <li><a data-toggle="header-skin" data-skin="light" href="#">Light</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="header-skin" data-skin="red" href="#">Red</a></li>
+                        <li><a data-toggle="header-skin" data-skin="orange" href="#">Orange</a></li>
+                        <li><a data-toggle="header-skin" data-skin="yellow" href="#">Yellow</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="header-skin" data-skin="green" href="#">Green</a></li>
+                        <li><a data-toggle="header-skin" data-skin="teal" href="#">Teal</a></li>
+                        <li><a data-toggle="header-skin" data-skin="cyan" href="#">Cyan</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="header-skin" data-skin="blue" href="#">Blue</a></li>
+                        <li><a data-toggle="header-skin" data-skin="violet" href="#">Violet</a></li>
+                      </ul>
+                    </div><!-- /.btn-group -->
+                    Change header skin
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // set skin
+  wh.setSkin("blue");
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="whDemoFixed" type="button" class="btn btn-xs btn-info pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Toggle fixed
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // set fixed
+  wh.fixed(true);
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="whDemoFixedTop" type="button" class="btn btn-xs btn-info pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Fixed to top
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // fixed to top
+  wh.fixedTop();
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="whDemoFixedBottom" type="button" class="btn btn-xs btn-info pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Fixed to bottom
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // fixed to bottom
+  wh.fixedBottom();
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="whDemoRtlMode" type="button" class="btn btn-xs btn-info pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Toggle direction (ltr/rtl)
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // toggle direction
+  wh.rtl(true);
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">_events</h4>
+                 <pre>wh.on( "init", function( wh ) { });
+wh.on( "fixed", function( wh, pos ) { });
+wh.on( "fixedBottom", function( wh ) { });
+wh.on( "fixedTop", function( wh ) { });
+wh.on( "rtl", function( wh ) { });
+wh.on( "setSkin", function( wh, old, current ) { });</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+
+
+          <!-- WRAPKIR CONTENT DEMO -->
+          <h2>Wrapkit Content</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">Initialize</h4>
+                  <pre>var options = { rtlMode: false };
+var wc = new WrapkitContent( '#myContent', options );
+// _events
+wc.on('init', function( wc ) { });
+wc.on('rtl', function( wc ) { });</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="wcDemoRtlMode" type="button" class="btn btn-xs btn-success pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Toggle direction (ltr/rtl)
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // toggle direction
+  wc.rtl(true);
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+
+
+          <!-- WRAPKIR SIDEBAR DEMO -->
+          <h2>Wrapkit Sidebar</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">Initialize</h4>
+                  <pre>var options = {
+  align: "left",
+  caret: {
+    collapse: "fa-angle-right",
+    expand: "fa-angle-down",
+    prefix: "fa"
+  },
+  context: "teal",
+  fixed: false,
+  loader: "fa-spinner",
+  maxResize: 360,
+  minResize: 220,
+  mode: "vertical",
+  resizable: true,
+  rtlMode: false,
+  size: "lg",
+  skin: "dark",
+  variant: "tabs",
+  visible: true
+};
+var sidebar = new WrapkitSidebar( '#mySidebar', options );</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoVertical" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Vertical mode
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // sidebar vertical
+  sidebar.setMode("vertical");
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoHorizontal" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Horizontal mode
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // sidebar horizontal
+  sidebar.setMode("horizontal");
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <div class="btn-group dropdown pull-right">
+                      <button type="button" class="btn btn-danger btn-xs"><i class="icon-control-play"></i> Try It</button>
+                      <button type="button" class="btn btn-danger btn-xs dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" id="sidebarDemoSkin" role="menu">
+                        <li><a data-toggle="sidebar-skin" data-skin="default" href="#">Default</a></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="dark" href="#">Dark</a></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="light" href="#">Light</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="red" href="#">Red</a></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="orange" href="#">Orange</a></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="yellow" href="#">Yellow</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="green" href="#">Green</a></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="teal" href="#">Teal</a></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="cyan" href="#">Cyan</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="blue" href="#">Blue</a></li>
+                        <li><a data-toggle="sidebar-skin" data-skin="violet" href="#">Violet</a></li>
+                      </ul>
+                    </div>
+                    Change sidebar skin
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // set skins
+  sidebar.setSkin('dark');
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <div class="btn-group dropdown pull-right">
+                      <button type="button" class="btn btn-danger btn-xs"><i class="icon-control-play"></i> Try It</button>
+                      <button type="button" class="btn btn-danger btn-xs dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" id="sidebarDemoContext" role="menu">
+                        <li><a data-toggle="sidebar-context" data-context="dark" href="#">Dark</a></li>
+                        <li><a data-toggle="sidebar-context" data-context="light" href="#">Light</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="sidebar-context" data-context="red" href="#">Red</a></li>
+                        <li><a data-toggle="sidebar-context" data-context="orange" href="#">Orange</a></li>
+                        <li><a data-toggle="sidebar-context" data-context="yellow" href="#">Yellow</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="sidebar-context" data-context="green" href="#">Green</a></li>
+                        <li><a data-toggle="sidebar-context" data-context="teal" href="#">Teal</a></li>
+                        <li><a data-toggle="sidebar-context" data-context="cyan" href="#">Cyan</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="sidebar-context" data-context="blue" href="#">Blue</a></li>
+                        <li><a data-toggle="sidebar-context" data-context="violet" href="#">Violet</a></li>
+                      </ul>
+                    </div>Sidebar Contexts
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // set contexts
+  sidebar.setContext('red');
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <div class="btn-group pull-right" data-toggle="buttons">
+                      <label class="btn btn-xs btn-danger active" data-toggle="sidebarDemoVariant">
+                        <input type="radio" autocomplete="off" value="tabs" checked="checked"> Tabs
+                      </label>
+                      <label class="btn btn-xs btn-danger" data-toggle="sidebarDemoVariant">
+                        <input type="radio" autocomplete="off" value="pills"> Pills
+                      </label>
+                    </div>Sidebar Variants
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // set variants
+  sidebar.setVariant('pills');
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoFixed" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Toggle Fixed
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // toggle fixed
+  sidebar.fixed(true);
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoResizeSm" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Resize to small
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // resize to small
+  sidebar.size('sm');
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoResizeLg" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Resize to large
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // resize to large
+  sidebar.size('lg');
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoHide" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Hide sidebar
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // hide sidebar
+  sidebar.hide();
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoShow" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Show sidebar
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // show sidebar
+  sidebar.show();
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoShowLoader" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Show Loader Indicator
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // show event loader
+  var index = sidebar.elem.querySelector('.nav-item:eq(3)');
+  sidebar.showLoader( index, 'fa-spinner' );
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoHideLoader" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Hide Loader Indicator
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // show event loader
+  var index = sidebar.elem.querySelector('.nav-item:eq(3)');
+  sidebar.hideLoader( index  );
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoAlign" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Toggle sidebar align
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // set align
+  sidebar.align('right');
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoRtl" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Sidebar Direction (rtl/ltr)
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // toggle direction
+  sidebar.rtl(true);
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="sidebarDemoResizable" type="button" class="btn btn-xs btn-danger pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Sidebar live resizable
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // turn on/off mouse resizable
+  sidebar.resizable(true);
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">_events</h4>
+                 <pre>sidebar.on( "init", function( sidebar ) { });
+sidebar.on( "align", function( sidebar, align ) { });
+sidebar.on( "fixed", function( sidebar, fixed ) { });
+sidebar.on( "hide", function( sidebar, visibility ) { });
+sidebar.on( "hideLoader", function( sidebar, loader, target ) { });
+sidebar.on( "rtl", function( sidebar, rtl ) { });
+sidebar.on( "resizable", function( sidebar, resizable ) { });
+sidebar.on( "setContext", function( sidebar, old, current ) { });
+sidebar.on( "setSkin", function( sidebar, old, current ) { });
+sidebar.on( "setVariant", function( sidebar, old, current ) { });
+sidebar.on( "show", function( sidebar, visibility ) { });
+sidebar.on( "showLoader", function( sidebar, loader, target ) { });
+sidebar.on( "size", function( sidebar, size ) { });
+</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+
+
+          <!-- WRAPKIR FOOTER DEMO -->
+          <h2>Wrapkit Footer</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">Initialize</h4>
+                  <pre>var options = {
+  rtlMode: false,
+  skin: "default"
+};
+var wf = new WrapkitFooter( '#myFooter', options );</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <div class="btn-group dropup pull-right">
+                      <button type="button" class="btn btn-warning btn-xs"><i class="icon-control-play"></i> Try It</button>
+                      <button type="button" class="btn btn-warning btn-xs dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" id="wfDemoSkin" role="menu">
+                        <li><a data-toggle="footer-skin" data-skin="default" href="#">Default</a></li>
+                        <li><a data-toggle="footer-skin" data-skin="dark" href="#">Dark</a></li>
+                        <li><a data-toggle="footer-skin" data-skin="light" href="#">Light</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="footer-skin" data-skin="red" href="#">Red</a></li>
+                        <li><a data-toggle="footer-skin" data-skin="orange" href="#">Orange</a></li>
+                        <li><a data-toggle="footer-skin" data-skin="yellow" href="#">Yellow</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="footer-skin" data-skin="green" href="#">Green</a></li>
+                        <li><a data-toggle="footer-skin" data-skin="teal" href="#">Teal</a></li>
+                        <li><a data-toggle="footer-skin" data-skin="cyan" href="#">Cyan</a></li>
+                        <li class="divider"></li>
+                        <li><a data-toggle="footer-skin" data-skin="blue" href="#">Blue</a></li>
+                        <li><a data-toggle="footer-skin" data-skin="violet" href="#">Violet</a></li>
+                      </ul>
+                    </div>
+                    Change Footer Skin
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // set skins
+  wf.setSkin('light');
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">
+                    <button id="wfDemoRtl" type="button" class="btn btn-xs btn-warning pull-right"><i class="icon-control-play"></i> Try it</button>
+                    Toggle direction (ltr/rtl)
+                  </h4>
+                  <pre>document.querySelector("#myButton")
+.addEventListener( "click", function(){
+  // toggle direction
+  wf.rtl(true);
+});</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <h4 class="clearfix">_events</h4>
+                 <pre>wf.on( "init", function( wf ) { });
+wf.on( "rtl", function( wf ) { });
+wf.on( "setSkin", function( wf, old, current ) { });</pre>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+        </div><!-- /.content-body -->
+
+
+        <!-- Template Setups -->
+        <div class="modal fade" id="templateSetup">
+          <div class="modal-dialog">
+            <!-- modal-content -->
+            <div class="modal-content"></div>
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.templateSetup -->
+
+      </div><!-- /.content -->
+    </section><!-- /MAIN -->
+
+
+
+    <!-- ============================================
+    FOOTER SECTION
+    =============================================== -->
+    <footer class="footer-wrapper" role="contentinfo">
+      <div class="footer">
+        <div class="pull-right text-muted"><small>Currently v1.2</small></div>
+        <div>Wrapkit Template  &copy; 2015</div>
+      </div>
+    </footer><!-- /.FOOTER -->
+
+  </main><!-- /#MAIN -->
+
+
+  <!-- VENDORS : jQuery & Bootstrap -->
+  <script src="scripts/vendor.js"></script>
+  <!-- END VENDORS -->
+
+  <!-- DEPENDENCIES : Required plugins -->
+  <script src="scripts/dependencies.js"></script>
+  <!-- END DEPENDENCIES -->
+
+  <!-- WRAPKIT -->
+  <script src="scripts/wrapkit.js"></script>
+  <!-- END WRAPKIT -->
+
+  <!-- WRAPKIT SETUPS -->
+  <script src="scripts/wrapkit-setup.js"></script>
+  <!-- end WRAPKIT SETUPS -->
+
+  <!-- PLUGIN SETUPS: vendors & dependencies setups -->
+  <script src="scripts/plugin-setups.js"></script>
+  <!-- END PLUGIN SETUPS -->
+
+  <!-- DUMMY: Use for demo -->
+  <script src="scripts/demo/ecosystem-demo.js"></script>
+
+
+  <!-- Google Analytics: change UA-48454066-1 to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='../../../../../www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-48454066-1');ga('send','pageview');
+  </script>
+</body>
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/ecosystem.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:09 GMT -->
+</html>

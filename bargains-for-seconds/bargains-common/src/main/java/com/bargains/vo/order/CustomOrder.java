@@ -1,6 +1,6 @@
 package com.bargains.vo.order;
 
-import com.bargains.enity.OrderEntity;
+import com.bargains.entity.OrderEntity;
 
 public class CustomOrder extends OrderEntity {
     private int stock;

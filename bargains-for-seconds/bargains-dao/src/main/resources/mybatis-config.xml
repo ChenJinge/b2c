@@ -6,25 +6,24 @@
 <configuration>
     <typeAliases>
         <!-- 别名定义 -->
-        <typeAlias type="com.bargains.enity.test.Person" alias="person"/>
 
         <!-- 秒杀商家 -->
-        <typeAlias type="com.bargains.enity.MerchantEntity" alias="merchantEntity"/>
-        <typeAlias type="com.bargains.vo.merchantEntity.MsmerchantVo" alias="merchantVo"/>
+        <typeAlias type="com.bargains.entity.MerchantEntity" alias="merchantEntity"/>
+        <typeAlias type="com.bargains.vo.merchant.MerchantVo" alias="merchantVo"/>
 
         <!-- 秒杀用户 -->
-        <typeAlias type="com.bargains.enity.UserEntity" alias="userEntity"/>
-        <typeAlias type="com.bargains.vo.userEntity.MsuserVo" alias="userVo"/>
+        <typeAlias type="com.bargains.entity.UserEntity" alias="userEntity"/>
+        <typeAlias type="com.bargains.vo.user.UserVo" alias="userVo"/>
 
         <!-- 秒杀商品-->
-        <typeAlias type="com.bargains.enity.BargainsEntity" alias="bargainsEntity"/>
-        <typeAlias type="com.bargains.vo.bargainsEntity.MsProductVo" alias="bargainsVo"/>
+        <typeAlias type="com.bargains.entity.BargainsEntity" alias="bargainsEntity"/>
+        <typeAlias type="com.bargains.vo.bargains.BargainsVo" alias="bargainsVo"/>
 
         <!-- 秒杀商品详情-->
-        <typeAlias type="com.bargains.enity.ProductEntity" alias="productEntity"/>
+        <typeAlias type="com.bargains.entity.ProductEntity" alias="productEntity"/>
 
         <!-- 秒杀订单-->
-        <typeAlias type="com.bargains.enity.OrderEntity" alias="orderEntity"/>
+        <typeAlias type="com.bargains.entity.OrderEntity" alias="orderEntity"/>
         <typeAlias type="com.bargains.vo.order.OrderVo" alias="orderVo"/>
     </typeAliases>
 

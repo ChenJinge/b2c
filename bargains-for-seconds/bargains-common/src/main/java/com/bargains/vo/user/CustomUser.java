@@ -1,6 +1,6 @@
 package com.bargains.vo.user;
 
-import com.bargains.enity.UserEntity;
+import com.bargains.entity.UserEntity;
 
 public class CustomUser extends UserEntity {
 

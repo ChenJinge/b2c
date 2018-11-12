@@ -1,6 +1,6 @@
 package com.bargains.service;
 
-import com.bargains.enity.BargainsEntity;
+import com.bargains.entity.BargainsEntity;
 import com.bargains.vo.bargains.BargainsVo;
 
 import java.util.List;

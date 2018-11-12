@@ -3,8 +3,8 @@
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
-    <dubbo:application name="YF_MS_WEB"/>
-    <dubbo:registry address="zookeeper://192.168.253.142:2181"/>
+    <dubbo:application name="BARGAINS_WEB"/>
+    <dubbo:registry address="zookeeper://localhost:2181"/>
 
     <dubbo:reference id="merchantService" interface="com.bargains.service.MerchantService"/>
     <dubbo:reference id="orderService" interface="com.bargains.service.OrderService"/>

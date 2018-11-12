@@ -1,15 +1,15 @@
 package com.bargains.service.redis;
 
-import com.bargains.enity.OrderEntity;
+import com.bargains.entity.OrderEntity;
 import com.bargains.vo.order.CustomOrder;
 
 import java.util.List;
 import java.util.Map;
 
 public interface OrderRedisService {
-    public Map<String, Object> seckill(int userid, int productid, CustomOrder msorder);
+    Map<String, Object> snatchBargains(int userId, int productId, CustomOrder order);
 
-    public boolean payorder(int paytype, int userid, int productid, int merchantid, String tradeserialnumber, int payamount);
+    boolean payOrder(int payType, int userId, int productId, int merchantId, String tradeSerialNumber, int payAmount);
 
-    public List<OrderEntity> queryorderbyuserid(int userid);
+    List<OrderEntity> queryOrderByUserId(int userId);
 }

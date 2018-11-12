@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes">
+
+  <title>Dashboard 2 - Wrapkit Admin Template</title>
+
+
+  <!-- favicon.ico and apple-touch-icon.png -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+  <link rel="stylesheet" href="styles/dependencies.css">
+
+  <link rel="stylesheet" href="styles/components.css">
+
+  <link rel="stylesheet" href="styles/wrapkit.css">
+
+  <link rel="stylesheet" href="styles/demo.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <main class="wrapkit-wrapper" id="wrapper">
+
+    <!-- ============================================
+    HEADER SECTION
+    =============================================== -->
+    <!-- navigation -->
+    <nav class="header navbar">
+      <div class="container-fluid">
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-left">
+          <a class="navbar-brand" href="index.html" role="logo" aria-label="Logo">
+            <img class="logo" src="images/logo/brand-text-dark.png" alt="Brand">
+          </a>
+          <button data-sidebar="toggleVisible" class="btn btn-icon navbar-btn">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-right" role="navigation">
+          <a aria-label="Search" id="brandSearchNav" class="btn btn-icon navbar-btn" href="#"><i class="fa fa-search"></i></a>
+
+          <div class="dropdown-ext">
+            <a aria-label="notifications" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-inbox"></i>
+              <span class="dotted dotted-danger"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-ext dropdown-menu-right" role="menu">
+              <div class="dd-head">
+                <div class="dd-head-actions">
+                  <a href="#" class="btn btn-xs btn-default">Compose</a>
+                </div>
+                <p><a href="#">Inbox (2)</a></p>
+              </div>
+              <div class="dd-body">
+                <ul class="media-list">
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>6m</small></p>
+                        <h4 class="media-heading body-text">Stilearning</h4>
+                        <p>Newest Themes & Templates - Et est, sed mattis, donec hac</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces7.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 03:11am</small></p>
+                        <h4 class="media-heading body-text">Eugene Barnett</h4>
+                        <p>Service Update: added support for Angular - Sed ultricies nibh, in feugiat</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces4.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 02:47am</small></p>
+                        <h4 class="media-heading body-text">bent10@stilearning.com</h4>
+                        <p>Spread the Word & Earn! - Dapibus nec. Integer sed purus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces3.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 11:41pm</small></p>
+                        <h4 class="media-heading body-text">David Lloyd</h4>
+                        <p>Say thanks for your awesome works! - Viverra fermentum ac. Litora mauris elit</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 10:04pm</small></p>
+                        <h4 class="media-heading body-text">Dribbble</h4>
+                        <p>Design brief from Apple - Quis in nonummy. Ut augue, proident habitant</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces16.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 08:55pm</small></p>
+                        <h4 class="media-heading body-text">Olivia Gonzales</h4>
+                        <p>Updating some of the designs! - Commodo non ac, sem netus adipiscing</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces20.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 03:57pm</small></p>
+                        <h4 class="media-heading body-text">Marco Auer</h4>
+                        <p>Request custom designs! - Adipiscing pellentesque cum, proin luctus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                </ul>
+              </div><!-- /.dd-body -->
+            </div><!-- /.dropdown-menu -->
+          </div><!-- /.dropdown -->
+
+          <div class="dropdown">
+            <a aria-label="More" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-ellipsis-v"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="pull-right"><i class="fa fa-user text-muted"></i></span>Profile</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="pull-right"><i class="fa fa-clock-o text-muted"></i></span>Timeline</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="pull-right"><i class="fa fa-question-circle text-muted"></i></span>Help</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="pull-right"><i class="fa fa-lock text-muted"></i></span>Locked</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="pull-right"><i class="fa fa-sign-out text-muted"></i></span> Sign out</a></li>
+            </ul>
+          </div><!-- /.dropdown -->
+        </div><!-- /navigation -->
+
+        <div class="brand-search" id="brandSearchFrm">
+          <form action="#" role="search">
+            <a href="#" class="search-close">&times;</a>
+            <input class="search-field" placeholder="Search for everything you want..." tabindex="-1">
+          </form>
+        </div><!-- /.brand-search -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /navigation -->
+
+
+
+    <!-- ============================================
+    SIDEBAR SECTION
+    =============================================== -->
+    <aside class="sidebar" role="complementary">
+
+      <!-- profile -->
+      <div class="sidebar-block">
+        <div class="media">
+          <div class="media-left">
+            <a href="page-profile.html">
+              <span class="status dotted dotted-primary" data-toggle="tooltip" data-container="body" title="available"></span>
+              <img class="media-object img-circle" src="images/dummy/uifaces14.jpg" alt="photo profile">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Emma Greene</h4>
+            <p class="text-muted">
+              <small>Graphic Designer</small>
+            </p>
+          </div>
+        </div>
+      </div><!-- /.sidebar-block -->
+      <!-- /profile -->
+
+      <!-- /navigation -->
+      <div class="nav-wrapper">
+        <ul class="nav nav-stacked" role="navigation">
+          <li class="nav-item open active" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-dashcube"></i></span>
+              <span class="nav-text">Dashboard</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><span class="nav-text">Dashboard 1</span></a></li>
+              <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="index-2.html"><span class="nav-text">Dashboard 2</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">GET STARTED</li>
+          <li class="nav-item" role="presentation">
+            <a href="layout.html">
+              <span class="nav-icon"><i class="fa fa-object-group"></i></span>
+              <span class="nav-text">Layout</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="ecosystem.html">
+              <span class="nav-icon"><i class="fa fa-cubes"></i></span>
+              <span class="nav-text">Ecosystem</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="panels.html">
+              <span class="nav-icon"><i class="fa fa-puzzle-piece"></i></span>
+              <span class="nav-text">Panels</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+              <span class="nav-text">Level Menu</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Lorem ipsum</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Dolor sit</span></a></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" data-toggle="nav-child" href="#"><span class="nav-text">Node</span></a>
+                <ul class="nav nav-child level-2 nav-stacked nav-pills" role="menu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Consectetur</span></a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Assumenda</span></a></li>
+                </ul>
+              </li> <!-- /node -->
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Amet</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">USER INTERFACES</li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-briefcase"></i></span>
+              <span class="nav-text">Components</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-grid.html"><span class="nav-text">Grids</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-type.html"><span class="nav-text">Type</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-button.html"><span class="nav-text">Buttons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-icons.html"><span class="nav-text">Icons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-modal.html"><span class="nav-text">Modal</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tooltip-popover.html"><span class="nav-text">Tooltips & Popovers</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-alert-callout.html"><span class="nav-text">Alerts & Callout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-progressbar.html"><span class="nav-text">Progress bar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-label-badge.html"><span class="nav-text">Label & Badge</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-navbar.html"><span class="nav-text">Navbar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-nav.html"><span class="nav-text">Nav</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tabs-collapse.html"><span class="nav-text">Tabs & Collapse</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-check-square"></i></span>
+              <span class="nav-text">Forms</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-basic.html"><span class="nav-text">Basic Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-advance.html"><span class="nav-text">Advance Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-uploader.html"><span class="nav-text">Uploader</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-xeditable.html"><span class="nav-text">x-Editable</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-wizard.html"><span class="nav-text">Wizard</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-editor.html"><span class="nav-text">Editor</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-imagecropping.html"><span class="nav-text">Image Cropping</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-validator.html"><span class="nav-text">Validator</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-line-chart"></i></span>
+              <span class="nav-text">Charts</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-js.html"><span class="nav-text">ChartJs</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-morris.html"><span class="nav-text">Morris</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-inline.html"><span class="nav-text">Inline Charts</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-database"></i></span>
+              <span class="nav-text">Tables</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-basic.html"><span class="nav-text">Basic Table</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-datatables.html"><span class="nav-text">DataTables</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">DEVELOPMENT</li>
+          <li class="nav-item" role="presentation">
+            <a href="ui-kits.html">
+              <span class="nav-icon"><i class="fa fa-cube"></i></span>
+              <span class="nav-text">Widgets</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-plug"></i></span>
+              <span class="nav-text">Plugins</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-animate.html"><span class="nav-text">Animated</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-bootbox.html"><span class="nav-text">Bootbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-calendar.html"><span class="nav-text">Calendar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-maps.html"><span class="nav-text">Maps</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-nestable.html"><span class="nav-text">Nestable List</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-session-timeout.html"><span class="nav-text">Session Timeout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-toastr.html"><span class="nav-text">Toastr</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-treeview.html"><span class="nav-text">Tree View</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-file-text-o"></i></span>
+              <span class="nav-text">Pages</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="nav-text">Signin</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="nav-text">Lock Screen</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-error.html"><span class="nav-text">Error Page</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="nav-text">Profile</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-inbox.html"><span class="nav-text">Inbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="nav-text">Timeline</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-gallery.html"><span class="nav-text">Gallery</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-pricing.html"><span class="nav-text">Pricing</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-invoice.html"><span class="nav-text">Invoice</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-search.html"><span class="nav-text">Search Result</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="nav-text">Help</span></a></li>
+            </ul>
+          </li>
+          <li class="collapse-item" role="presentation">
+            <a href="#" data-sidebar="toggleCollapse">
+              <i class="fa fa-angle-double-left"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside><!-- /.SIDEBAR -->
+
+
+
+    <!-- ============================================
+    MAIN CONTENT SECTION
+    =============================================== -->
+    <section class="content-wrapper" role="main">
+      <div class="content">
+        <div class="content-bar">
+          <div class="pull-right" role="group">
+            <a data-toggle="modal" href="#" data-scripts="_includes/setups.js" data-target="#templateSetup" title="Template Setups" aria-label="template setups" class="btn btn-nofill btn-sm btn-default" href="#"><span class="icon-settings fa-lg text-muted"></span></a>
+          </div>
+          <ul class="breadcrumb breadcrumb-angle">
+            <li><a href="#" aria-label="home"><i class="fa fa-home"></i></a></li>
+            <li class="active">Dashboard</li>
+          </ul>
+        </div><!-- /.content-bar -->
+
+
+        <div class="content-body">
+          <!-- OPPORTUNITY & WIN RATE -->
+          <div class="pull-right">
+            <a href="#" class="btn btn-sm btn-default">Month</a>
+            <a href="#" class="btn btn-sm btn-default">Year</a>
+          </div>
+          <h3 class="title">Opportunity & WinRate</h3>
+          <div class="row mb-2x">
+            <div class="col-md-8 col-md-push-4">
+              <div id="graph-opwr" class="morris-chart mb-4x" style="height:220px"></div>
+            </div><!-- /.cols -->
+
+            <div class="col-md-4 col-md-pull-8">
+              <div class="help-block">
+                <span class="pull-right">52%</span>
+                <span>Asia</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar progress-bar-primary" style="width:52%"></div>
+              </div>
+
+              <div class="help-block">
+                <span class="pull-right">82%</span>
+                <span>Australia & Africa</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar progress-bar-primary" style="width:82%"></div>
+              </div>
+
+              <div class="help-block">
+                <span class="pull-right">66%</span>
+                <span>Europe</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar progress-bar-primary" style="width:66%"></div>
+              </div>
+
+              <div class="help-block">
+                <span class="pull-right">92%</span>
+                <span>America</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar progress-bar-primary" style="width:92%"></div>
+              </div>
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+
+          <div class="panel">
+            <div class="panel-body" style="position:relative;overflow:hidden">
+              <div style="position:absolute;bottom:0;left:0;right:0;width:100%">
+                <span id="spark-bg"></span>
+              </div>
+              <div class="row">
+                <div class="col-sm-3 col-xs-6 mb-2x mt-2x text-center">
+                  <p class="text-muted"><strong>ITEMS</strong></p>
+                  <div class="mb-4x">
+                    <span id="spark-items"></span>
+                  </div>
+                  <p class="fa-lg">1,856</p>
+                </div><!-- /.cols -->
+                <div class="col-sm-3 col-xs-6 mb-2x mt-2x text-center">
+                  <p class="text-muted"><strong>SALES</strong></p>
+                  <div class="mb-4x">
+                    <span id="spark-sales"></span>
+                  </div>
+                  <p class="fa-lg">$432M</p>
+                </div><!-- /.cols -->
+                <div class="col-sm-3 col-xs-6 mb-2x mt-2x text-center">
+                  <p class="text-muted"><strong>SOLD</strong></p>
+                  <div class="mb-4x">
+                    <span id="spark-sold"></span>
+                  </div>
+                  <p class="fa-lg">876K</p>
+                </div><!-- /.cols -->
+                <div class="col-sm-3 col-xs-6 mb-2x mt-2x text-center">
+                  <p class="text-muted"><strong>AVG</strong></p>
+                  <div class="mb-4x">
+                    <span id="spark-avg"></span>
+                  </div>
+                  <p class="fa-lg">$46.5</p>
+                </div><!-- /.cols -->
+              </div><!-- /.row -->
+            </div><!-- /.panel-body -->
+          </div><!-- /.panel -->
+          <!-- /OPPORTUNITY -->
+
+
+          <!-- SOCIAL ACTIVITY -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel" data-fill-color="true">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Followers Track</h3>
+                </div>
+                <div class="panel-body">
+                  <div>
+                    <span class="ml-1x mr-1x"><i class="fa fa-square text-red mr-1x"></i> Google+</span>
+                    <span class="ml-1x mr-1x"><i class="fa fa-square text-teal mr-1x"></i> Instagram</span>
+                    <br class="visible-md visible-xxs">
+                    <span class="ml-1x mr-1x"><i class="fa fa-square text-cyan mr-1x"></i> Twitter</span>
+                    <span class="ml-1x mr-1x"><i class="fa fa-square text-blue mr-1x"></i> Facebook</span>
+                  </div>
+                  <div id="graph-socfol" class="morris-chart" style="height:220px"></div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <div class="panel" data-fill-color="true">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Data Track</h3>
+                </div>
+                <div class="panel-body">
+                  <div>
+                    <span class="ml-1x mr-1x"><i class="fa fa-square text-yellow mr-1x"></i> Upload</span>
+                    <br class="visible-md">
+                    <span class="ml-1x mr-1x"><i class="fa fa-square text-teal mr-1x"></i> Download</span>
+                  </div>
+                  <div id="graph-updown" class="morris-chart" style="height:220px"></div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+          <!-- /SOCIAL ACTIVITY -->
+
+
+
+          <!-- TOP BLOCK -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true" style="height:268px">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon">View all</a>
+                  </div>
+                  <h3 class="panel-title">Top Sellers</h3>
+                </div>
+                <div class="list-group">
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left">
+                        <div class="kit-avatar kit-avatar-28 no-border mr-1x">
+                          <img class="media-object" src="images/dummy/uifaces5.jpg">
+                        </div>
+                      </div>
+                      <div class="media-body media-middle">
+                        <div class="dropdown pull-right">
+                          <button class="btn btn-xs btn-default btn-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">View profile</a></li>
+                            <li><a href="#">View projects</a></li>
+                            <li><a href="#">Send a message</a></li>
+                          </ul>
+                        </div>
+                        <p class="media-heading"><strong>David Bowman</strong></p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left">
+                        <div class="kit-avatar kit-avatar-28 no-border mr-1x">
+                          <img class="media-object" src="images/dummy/uifaces22.jpg">
+                        </div>
+                      </div>
+                      <div class="media-body media-middle">
+                        <div class="dropdown pull-right">
+                          <button class="btn btn-xs btn-default btn-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">View profile</a></li>
+                            <li><a href="#">View projects</a></li>
+                            <li><a href="#">Send a message</a></li>
+                          </ul>
+                        </div>
+                        <p class="media-heading"><strong>Phillip Myers</strong></p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left">
+                        <div class="kit-avatar kit-avatar-28 no-border mr-1x">
+                          <img class="media-object" src="images/dummy/uifaces21.jpg">
+                        </div>
+                      </div>
+                      <div class="media-body media-middle">
+                        <div class="dropdown pull-right">
+                          <button class="btn btn-xs btn-default btn-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">View profile</a></li>
+                            <li><a href="#">View projects</a></li>
+                            <li><a href="#">Send a message</a></li>
+                          </ul>
+                        </div>
+                        <p class="media-heading"><strong>Carl Walsh</strong></p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left">
+                        <div class="kit-avatar kit-avatar-28 no-border mr-1x">
+                          <img class="media-object" src="images/dummy/uifaces20.jpg">
+                        </div>
+                      </div>
+                      <div class="media-body media-middle">
+                        <div class="dropup pull-right">
+                          <button class="btn btn-xs btn-default btn-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-options-vertical text-muted"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">View profile</a></li>
+                            <li><a href="#">View projects</a></li>
+                            <li><a href="#">Send a message</a></li>
+                          </ul>
+                        </div>
+                        <p class="media-heading"><strong>Theresa Ramirez</strong></p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                </div><!-- /.list-group -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true" style="height:268px">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <a href="#" class="btn btn-icon">View all</a>
+                  </div>
+                  <h3 class="panel-title">Top Items</h3>
+                </div>
+                <div class="list-group">
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left"><span class="fa fa-cutlery text-red fa-lg"></span></div>
+                      <div class="media-body">
+                        <div class="text-muted pull-right">77,326</div>
+                        <div class="media-heading">Soto Babat</div>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left"><span class="fa fa-cutlery text-red fa-lg"></span></div>
+                      <div class="media-body">
+                        <div class="text-muted pull-right">70,990</div>
+                        <div class="media-heading">Sate</div>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left"><span class="icon-cup text-red text-red fa-lg"></span></div>
+                      <div class="media-body">
+                        <div class="text-muted pull-right">66,427</div>
+                        <div class="media-heading">Jahe Wangi</div>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left"><span class="fa fa-cutlery text-red fa-lg"></span></div>
+                      <div class="media-body">
+                        <div class="text-muted pull-right">53,589</div>
+                        <div class="media-heading">Megono</div>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                  <div class="list-group-item">
+                    <div class="media">
+                      <div class="media-left"><span class="icon-cup text-red fa-lg"></span></div>
+                      <div class="media-body">
+                        <div class="text-muted pull-right">43,771</div>
+                        <div class="media-heading">Sop Buah</div>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div><!-- /.list-group-item -->
+                </div><!-- /.list-group -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-4">
+              <div class="panel" data-fill-color="true" style="height:268px">
+                <div class="panel-heading">
+                  <ul class="pull-right list-inline">
+                    <li class="active"><a href="#hc1" class="dotted dotted-lg" aria-controls="hc1" role="tab" data-toggle="tab"></a></li>
+                    <li><a href="#hc2" class="dotted dotted-lg" aria-controls="hc2" role="tab" data-toggle="tab"></a></li>
+                    <li><a href="#hc3" class="dotted dotted-lg" aria-controls="hc3" role="tab" data-toggle="tab"></a></li>
+                    <li><a href="#hc4" class="dotted dotted-lg" aria-controls="hc4" role="tab" data-toggle="tab"></a></li>
+                  </ul>
+                  <h3 class="panel-title">Happy Clients</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="hc1">
+                      <blockquote class="no-hpadding no-border">
+                        <p class="lead"><i class="fa fa-quote-right fa-fw text-muted"></i> Dolore, natus, ab. Commodi ab quia eaque earum optio voluptate minima beatae. <i class="fa fa-quote-right text-muted"></i></p>
+                        <footer>Emily Crawford</footer>
+                      </blockquote>
+                    </div>
+                    <div class="tab-pane fade" id="hc2">
+                      <blockquote class="no-hpadding no-border">
+                        <p class="lead"><i class="fa fa-quote-right fa-fw text-muted"></i> Assumenda adipisci velit fugit necessitatibus cum quo, quis amet rem. Sequi, nobis. <i class="fa fa-quote-right text-muted"></i></p>
+                        <footer>Ronald Price</footer>
+                      </blockquote>
+                    </div>
+                    <div class="tab-pane fade" id="hc3">
+                      <blockquote class="no-hpadding no-border">
+                        <p class="lead"><i class="fa fa-quote-right fa-fw text-muted"></i> Dolore, natus, ab. Commodi ab quia eaque earum optio voluptate minima beatae. <i class="fa fa-quote-right text-muted"></i></p>
+                        <footer>Russell Contreras</footer>
+                      </blockquote>
+                    </div>
+                    <div class="tab-pane fade" id="hc4">
+                      <blockquote class="no-hpadding no-border">
+                        <p class="lead"><i class="fa fa-quote-right fa-fw text-muted"></i> Assumenda adipisci velit fugit necessitatibus cum quo, quis amet rem. Sequi, nobis. <i class="fa fa-quote-right text-muted"></i></p>
+                        <footer>Donna Alvarado</footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+          </div><!-- /.row -->
+        </div><!-- /.content-body -->
+
+
+        <!-- Template Setups -->
+        <div class="modal fade" id="templateSetup">
+          <div class="modal-dialog">
+            <!-- modal-content -->
+            <div class="modal-content"></div>
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.templateSetup -->
+
+
+      </div><!-- /.content -->
+    </section><!-- /MAIN -->
+
+
+
+    <!-- ============================================
+    FOOTER SECTION
+    =============================================== -->
+    <footer class="footer-wrapper" role="contentinfo">
+      <div class="footer">
+        <div class="pull-right text-muted"><small>Currently v1.2</small></div>
+        <div>Wrapkit Template  &copy; 2015</div>
+      </div>
+    </footer><!-- /.FOOTER -->
+
+  </main><!-- /#MAIN -->
+
+
+  <!-- VENDORS : jQuery & Bootstrap -->
+  <script src="scripts/vendor.js"></script>
+  <!-- END VENDORS -->
+
+  <!-- DEPENDENCIES : Required plugins -->
+  <script src="scripts/dependencies.js"></script>
+  <!-- END DEPENDENCIES -->
+
+  <!-- WRAPKIT -->
+  <script src="scripts/wrapkit.js"></script>
+  <!-- END WRAPKIT -->
+
+  <!-- WRAPKIT SETUPS -->
+  <script src="scripts/wrapkit-setup.js"></script>
+  <!-- end WRAPKIT SETUPS -->
+
+  <!-- PLUGIN SETUPS: vendors & dependencies setups -->
+  <script src="scripts/plugin-setups.js"></script>
+  <!-- END PLUGIN SETUPS -->
+
+  <!-- COMPONENTS -->
+  <!-- Morris.js + Raphael -->
+  <script src="scripts/morris.bundle.js"></script>
+  <script src="scripts/jquery.sparkline.js"></script>
+  <!-- END COMPONENTS -->
+
+
+  <!-- DUMMY: Use for demo -->
+  <script src="scripts/demo/dashboard2-demo.js"></script>
+
+
+  <!-- Google Analytics: change UA-48454066-1 to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='../../../../../www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-48454066-1');ga('send','pageview');
+  </script>
+</body>
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:07 GMT -->
+</html>

@@ -1,0 +1,39 @@
+#STS
+.apt_generated
+.vscode
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+#IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+*.class
+*.iml
+target/
+bin/
+out/
+local/
+
+# Eclipse
+.project
+.settings/
+.classpath
+
+# NetBeans
+.nb-gradle/
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+
+# Others
+.DS_Store
+*.orig
+Thumbs.db
+docs/apidoc/

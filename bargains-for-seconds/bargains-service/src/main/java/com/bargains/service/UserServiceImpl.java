@@ -1,7 +1,7 @@
 package com.bargains.service;
 
 import com.bargains.dao.UserDao;
-import com.bargains.enity.UserEntity;
+import com.bargains.entity.UserEntity;
 import com.bargains.vo.user.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

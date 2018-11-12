@@ -1,6 +1,6 @@
 package com.bargains.vo.bargains;
 
-import com.bargains.enity.BargainsEntity;
+import com.bargains.entity.BargainsEntity;
 
 public class CustomBargains extends BargainsEntity {
 

@@ -1,6 +1,6 @@
 package com.bargains.service;
 
-import com.bargains.enity.OrderEntity;
+import com.bargains.entity.OrderEntity;
 
 import java.util.Date;
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.bargains.service;
 
 import com.bargains.dao.OrderDao;
-import com.bargains.enity.OrderEntity;
+import com.bargains.entity.OrderEntity;
 import com.bargains.vo.order.CustomOrder;
 import com.bargains.vo.order.OrderVo;
 import org.springframework.beans.factory.annotation.Autowired;

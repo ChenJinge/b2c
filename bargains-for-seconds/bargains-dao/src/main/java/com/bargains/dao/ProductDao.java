@@ -1,6 +1,6 @@
 package com.bargains.dao;
 
-import com.bargains.enity.ProductEntity;
+import com.bargains.entity.ProductEntity;
 
 public interface ProductDao {
      void insertProduct(ProductEntity productEntity);

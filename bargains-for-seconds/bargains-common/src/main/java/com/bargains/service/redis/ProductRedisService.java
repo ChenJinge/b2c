@@ -1,6 +1,6 @@
 package com.bargains.service.redis;
 
-import com.bargains.enity.ProductEntity;
+import com.bargains.entity.ProductEntity;
 
 
 public interface ProductRedisService {

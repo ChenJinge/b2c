@@ -1,6 +1,6 @@
 package com.bargains.redis;
 
-import com.bargains.enity.ProductEntity;
+import com.bargains.entity.ProductEntity;
 import com.bargains.service.cache.ProductCacheService;
 import com.bargains.service.redis.ProductRedisService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.bargains.dao;
 
-import com.bargains.enity.UserEntity;
+import com.bargains.entity.UserEntity;
 import com.bargains.vo.user.UserVo;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.bargains.service;
 
-import com.bargains.enity.MerchantEntity;
+import com.bargains.entity.MerchantEntity;
 import com.bargains.vo.merchant.MerchantVo;
 
 import java.util.List;

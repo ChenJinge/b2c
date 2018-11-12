@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/component-tabs-collapse.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes">
+
+  <title>Tab and Collapse - Wrapkit Admin Template</title>
+
+
+  <!-- favicon.ico and apple-touch-icon.png -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+  <link rel="stylesheet" href="styles/dependencies.css">
+
+  <link rel="stylesheet" href="styles/wrapkit.css">
+
+  <link rel="stylesheet" href="styles/demo.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <main class="wrapkit-wrapper" id="wrapper">
+
+    <!-- ============================================
+    HEADER SECTION
+    =============================================== -->
+    <!-- navigation -->
+    <nav class="header navbar">
+      <div class="container-fluid">
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-left">
+          <a class="navbar-brand" href="index.html" role="logo" aria-label="Logo">
+            <img class="logo" src="images/logo/brand-text-dark.png" alt="Brand">
+          </a>
+          <button data-sidebar="toggleVisible" class="btn btn-icon navbar-btn">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+
+        <!-- use .pull-*, couse we need this float on any screen size -->
+        <div class="pull-right" role="navigation">
+          <a aria-label="Search" id="brandSearchNav" class="btn btn-icon navbar-btn" href="#"><i class="fa fa-search"></i></a>
+
+          <div class="dropdown-ext">
+            <a aria-label="notifications" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-inbox"></i>
+              <span class="dotted dotted-danger"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-ext dropdown-menu-right" role="menu">
+              <div class="dd-head">
+                <div class="dd-head-actions">
+                  <a href="#" class="btn btn-xs btn-default">Compose</a>
+                </div>
+                <p><a href="#">Inbox (2)</a></p>
+              </div>
+              <div class="dd-body">
+                <ul class="media-list">
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>6m</small></p>
+                        <h4 class="media-heading body-text">Stilearning</h4>
+                        <p>Newest Themes & Templates - Et est, sed mattis, donec hac</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces7.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 03:11am</small></p>
+                        <h4 class="media-heading body-text">Eugene Barnett</h4>
+                        <p>Service Update: added support for Angular - Sed ultricies nibh, in feugiat</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces4.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Today, 02:47am</small></p>
+                        <h4 class="media-heading body-text">bent10@stilearning.com</h4>
+                        <p>Spread the Word & Earn! - Dapibus nec. Integer sed purus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media unread">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces3.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 11:41pm</small></p>
+                        <h4 class="media-heading body-text">David Lloyd</h4>
+                        <p>Say thanks for your awesome works! - Viverra fermentum ac. Litora mauris elit</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as read" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/unknown-profile.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 10:04pm</small></p>
+                        <h4 class="media-heading body-text">Dribbble</h4>
+                        <p>Design brief from Apple - Quis in nonummy. Ut augue, proident habitant</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle-o"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces16.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 08:55pm</small></p>
+                        <h4 class="media-heading body-text">Olivia Gonzales</h4>
+                        <p>Updating some of the designs! - Commodo non ac, sem netus adipiscing</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                  <li class="media">
+                    <a href="#">
+                      <div class="media-left">
+                        <img class="media-object img-circle" width="32" src="images/dummy/uifaces20.jpg" alt="user">
+                      </div>
+                      <div class="media-body">
+                        <p class="pull-right"><small>Yesterday, 03:57pm</small></p>
+                        <h4 class="media-heading body-text">Marco Auer</h4>
+                        <p>Request custom designs! - Adipiscing pellentesque cum, proin luctus</p>
+                      </div>
+                    </a>
+                    <span class="dd-actions">
+                      <a href="#" title="mark as unread" data-toggle="tooltip" data-container="body" data-placement="bottom"><i class="fa fa-circle"></i></a>
+                    </span>
+                  </li>
+                </ul>
+              </div><!-- /.dd-body -->
+            </div><!-- /.dropdown-menu -->
+          </div><!-- /.dropdown -->
+
+          <div class="dropdown">
+            <a aria-label="More" class="btn btn-icon navbar-btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-ellipsis-v"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="pull-right"><i class="fa fa-user text-muted"></i></span>Profile</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="pull-right"><i class="fa fa-clock-o text-muted"></i></span>Timeline</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="pull-right"><i class="fa fa-question-circle text-muted"></i></span>Help</a></li>
+              <li class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="pull-right"><i class="fa fa-lock text-muted"></i></span>Locked</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="pull-right"><i class="fa fa-sign-out text-muted"></i></span> Sign out</a></li>
+            </ul>
+          </div><!-- /.dropdown -->
+        </div><!-- /navigation -->
+
+        <div class="brand-search" id="brandSearchFrm">
+          <form action="#" role="search">
+            <a href="#" class="search-close">&times;</a>
+            <input class="search-field" placeholder="Search for everything you want..." tabindex="-1">
+          </form>
+        </div><!-- /.brand-search -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /navigation -->
+
+
+
+    <!-- ============================================
+    SIDEBAR SECTION
+    =============================================== -->
+    <aside class="sidebar" role="complementary">
+
+      <!-- profile -->
+      <div class="sidebar-block">
+        <div class="media">
+          <div class="media-left">
+            <a href="page-profile.html">
+              <span class="status dotted dotted-primary" data-toggle="tooltip" data-container="body" title="available"></span>
+              <img class="media-object img-circle" src="images/dummy/uifaces14.jpg" alt="photo profile">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Emma Greene</h4>
+            <p class="text-muted">
+              <small>Graphic Designer</small>
+            </p>
+          </div>
+        </div>
+      </div><!-- /.sidebar-block -->
+      <!-- /profile -->
+
+      <!-- /navigation -->
+      <div class="nav-wrapper">
+        <ul class="nav nav-stacked" role="navigation">
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-dashcube"></i></span>
+              <span class="nav-text">Dashboard</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><span class="nav-text">Dashboard 1</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index-2.html"><span class="nav-text">Dashboard 2</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">GET STARTED</li>
+          <li class="nav-item" role="presentation">
+            <a href="layout.html">
+              <span class="nav-icon"><i class="fa fa-object-group"></i></span>
+              <span class="nav-text">Layout</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="ecosystem.html">
+              <span class="nav-icon"><i class="fa fa-cubes"></i></span>
+              <span class="nav-text">Ecosystem</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="panels.html">
+              <span class="nav-icon"><i class="fa fa-puzzle-piece"></i></span>
+              <span class="nav-text">Panels</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+              <span class="nav-text">Level Menu</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Lorem ipsum</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Dolor sit</span></a></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" data-toggle="nav-child" href="#"><span class="nav-text">Node</span></a>
+                <ul class="nav nav-child level-2 nav-stacked nav-pills" role="menu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Consectetur</span></a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Assumenda</span></a></li>
+                </ul>
+              </li> <!-- /node -->
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="nav-text">Amet</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">USER INTERFACES</li>
+          <li class="nav-item open active" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-briefcase"></i></span>
+              <span class="nav-text">Components</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-grid.html"><span class="nav-text">Grids</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-type.html"><span class="nav-text">Type</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-button.html"><span class="nav-text">Buttons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-icons.html"><span class="nav-text">Icons</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-modal.html"><span class="nav-text">Modal</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-tooltip-popover.html"><span class="nav-text">Tooltips & Popovers</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-alert-callout.html"><span class="nav-text">Alerts & Callout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-progressbar.html"><span class="nav-text">Progress bar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-label-badge.html"><span class="nav-text">Label & Badge</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-navbar.html"><span class="nav-text">Navbar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="component-nav.html"><span class="nav-text">Nav</span></a></li>
+              <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="component-tabs-collapse.html"><span class="nav-text">Tabs & Collapse</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-check-square"></i></span>
+              <span class="nav-text">Forms</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-basic.html"><span class="nav-text">Basic Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-advance.html"><span class="nav-text">Advance Elements</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-uploader.html"><span class="nav-text">Uploader</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-xeditable.html"><span class="nav-text">x-Editable</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-wizard.html"><span class="nav-text">Wizard</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-editor.html"><span class="nav-text">Editor</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-imagecropping.html"><span class="nav-text">Image Cropping</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="frm-validator.html"><span class="nav-text">Validator</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-line-chart"></i></span>
+              <span class="nav-text">Charts</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-js.html"><span class="nav-text">ChartJs</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-morris.html"><span class="nav-text">Morris</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="chart-inline.html"><span class="nav-text">Inline Charts</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-database"></i></span>
+              <span class="nav-text">Tables</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-basic.html"><span class="nav-text">Basic Table</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="table-datatables.html"><span class="nav-text">DataTables</span></a></li>
+            </ul>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-header" role="presentation">DEVELOPMENT</li>
+          <li class="nav-item" role="presentation">
+            <a href="ui-kits.html">
+              <span class="nav-icon"><i class="fa fa-cube"></i></span>
+              <span class="nav-text">Widgets</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-plug"></i></span>
+              <span class="nav-text">Plugins</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-animate.html"><span class="nav-text">Animated</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-bootbox.html"><span class="nav-text">Bootbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-calendar.html"><span class="nav-text">Calendar</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-maps.html"><span class="nav-text">Maps</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-nestable.html"><span class="nav-text">Nestable List</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-session-timeout.html"><span class="nav-text">Session Timeout</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-toastr.html"><span class="nav-text">Toastr</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="plugin-treeview.html"><span class="nav-text">Tree View</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" data-toggle="nav-child">
+              <span class="nav-icon"><i class="fa fa-file-text-o"></i></span>
+              <span class="nav-text">Pages</span>
+            </a>
+            <ul class="nav nav-child level-1 nav-stacked nav-pills" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-signin.html"><span class="nav-text">Signin</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-locked.html"><span class="nav-text">Lock Screen</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-error.html"><span class="nav-text">Error Page</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-profile.html"><span class="nav-text">Profile</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-inbox.html"><span class="nav-text">Inbox</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-timeline.html"><span class="nav-text">Timeline</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-gallery.html"><span class="nav-text">Gallery</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-pricing.html"><span class="nav-text">Pricing</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-invoice.html"><span class="nav-text">Invoice</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-search.html"><span class="nav-text">Search Result</span></a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="page-help.html"><span class="nav-text">Help</span></a></li>
+            </ul>
+          </li>
+          <li class="collapse-item" role="presentation">
+            <a href="#" data-sidebar="toggleCollapse">
+              <i class="fa fa-angle-double-left"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside><!-- /.SIDEBAR -->
+
+
+
+    <!-- ============================================
+    MAIN CONTENT SECTION
+    =============================================== -->
+    <section class="content-wrapper" role="main">
+      <div class="content">
+        <div class="content-bar">
+          <div class="pull-right" role="group">
+            <a data-toggle="modal" href="#" data-scripts="_includes/setups.js" data-target="#templateSetup" title="Template Setups" aria-label="template setups" class="btn btn-nofill btn-sm btn-default" href="#"><span class="icon-settings fa-lg text-muted"></span></a>
+          </div>
+          <ul class="breadcrumb breadcrumb-angle">
+            <li><a href="#" aria-label="home"><i class="fa fa-home"></i></a></li>
+            <li>Components</li>
+            <li class="active">Tabs & Collapse</li>
+          </ul>
+        </div><!-- /.content-bar -->
+
+
+        <div class="content-body">
+          <!-- TAB & COLLAPSE
+          ================================================== -->
+          <!-- Tabs -->
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Simple tabs</h4>
+              <div class="panel">
+                <ul class="nav nav-tabs" id="demo1-tabs">
+                  <li class="active"><a href="#botabs1" data-toggle="tab">Tabs #1</a></li>
+                  <li><a href="#botabs2" data-toggle="tab">Tabs #2</a></li>
+                </ul>
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="botabs1">
+                      <p><strong>Tabs #1</strong>, Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="tab-pane fade" id="botabs2">
+                      <p><strong>Tabs #2</strong>, Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                  </div><!-- /tab-content -->
+                </div><!-- /panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <h4>Inverted</h4>
+              <div class="panel" data-context="dark" data-fill-color="true">
+                <ul class="nav nav-tabs nav-contrast-teal" id="demo2-tabs">
+                  <li class="active"><a href="#botabs3" data-toggle="tab">Tabs #1</a></li>
+                  <li><a href="#botabs4" data-toggle="tab">Tabs #2</a></li>
+                </ul>
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="botabs3">
+                      <p><strong>Tabs #1</strong>, Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="tab-pane fade" id="botabs4">
+                      <p><strong>Tabs #2</strong>, Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                  </div><!-- /tab-content -->
+                </div><!-- /panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <h4>Use panel control</h4>
+              <div id="demo3-panel" class="panel" data-context="blue">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <ul class="nav nav-tabs nav-contrast-dark" id="demo3-tabs">
+                      <li class="active"><a href="#home1" data-toggle="tab">Home</a></li>
+                      <li><a href="#profile1" data-toggle="tab">Profile</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Stilearning <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#bent1" data-toggle="tab">@bent</a></li>
+                          <li><a href="#iin1" data-toggle="tab">@iin</a></li>
+                        </ul>
+                      </li>
+                    </ul><!-- /.nav -->
+                  </div>
+                  <h3 class="panel-title"><i class="icon-rocket fa-fw"></i> <span class="hidden-xs">Awesome things</span></h3>
+                </div>
+                <div class="panel-body">
+                  <div class="dropdown pull-right">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Change color"><i class="fa fa-tint"></i></a>
+                    <ul class="dropdown-menu dropdown-inline color-lists dropdown-menu-right" role="menu">
+                      <li><a href="#" class="bg-dark" data-toggle="panel-context" data-context="dark" rel="tooltip" title="dark"></a></li>
+                      <li><a href="#" class="bg-light" data-toggle="panel-context" data-context="light" rel="tooltip" title="light"></a></li>
+                      <li><a href="#" class="bg-red" data-toggle="panel-context" data-context="red" rel="tooltip" title="red"></a></li>
+                      <li><a href="#" class="bg-orange" data-toggle="panel-context" data-context="orange" rel="tooltip" title="orange"></a></li>
+                      <li><a href="#" class="bg-yellow" data-toggle="panel-context" data-context="yellow" rel="tooltip" title="yellow"></a></li>
+                      <li><a href="#" class="bg-green" data-toggle="panel-context" data-context="green" rel="tooltip" title="green"></a></li>
+                      <li><a href="#" class="bg-teal" data-toggle="panel-context" data-context="teal" rel="tooltip" title="teal"></a></li>
+                      <li><a href="#" class="bg-cyan" data-toggle="panel-context" data-context="cyan" rel="tooltip" title="cyan"></a></li>
+                      <li><a href="#" class="bg-blue" data-toggle="panel-context" data-context="blue" rel="tooltip" title="blue"></a></li>
+                      <li><a href="#" class="bg-violet" data-toggle="panel-context" data-context="violet" rel="tooltip" title="violet"></a></li>
+                    </ul>
+                  </div>
+
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="home1">
+                      <p class="text-muted"><strong>Home</strong></p>
+                      <p>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile1">
+                      <p class="text-muted"><strong>Profile</strong></p>
+                      <p>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="tab-pane fade" id="bent1">
+                      <p class="text-muted"><strong>Bent</strong></p>
+                      <p>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="tab-pane fade" id="iin1">
+                      <p class="text-muted"><strong>Iin</strong></p>
+                      <p>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                  </div><!-- /tab-content -->
+                </div><!-- /panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <h4>Use Icons</h4>
+              <div class="panel" data-context="teal">
+                <div class="panel-heading">
+                  <div class="panel-control pull-right">
+                    <ul class="nav nav-tabs nav-contrast-dark" id="demo4-tabs">
+                      <li class="active"><a href="#home2" data-toggle="tab" aria-label="home"><i class="icon-home"></i></a></li>
+                      <li><a href="#profile2" data-toggle="tab" aria-label="profile"><i class="icon-user"></i></a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-label="stilearning"><i class="icon-users"></i> <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#bent2" data-toggle="tab">@bent</a></li>
+                          <li><a href="#iin2" data-toggle="tab">@iin</a></li>
+                        </ul>
+                      </li>
+                    </ul><!-- /.nav -->
+                  </div>
+                  <h3 class="panel-title"><i class="icon-rocket fa-fw"></i> Awesome things</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="home2">
+                      <p class="text-muted"><strong>Home</strong></p>
+                      <p>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile2">
+                      <p class="text-muted"><strong>Profile</strong></p>
+                      <p>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="tab-pane fade" id="bent2">
+                      <p class="text-muted"><strong>Bent</strong></p>
+                      <p>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="tab-pane fade" id="iin2">
+                      <p class="text-muted"><strong>Iin</strong></p>
+                      <p>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                  </div><!-- /tab-content -->
+                </div><!-- /panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <h4>Advance Usage</h4>
+              <div id="demo5-panel" class="panel" data-context="cyan" data-fill-color="true">
+                <div class="panel-control">
+                  <ul class="nav nav-tabs nav-contrast-dark" id="demo5-tabs">
+                    <li class="active"><a href="#tab-twitter" data-toggle="tab" data-context="cyan"><i class="icon-social-twitter"></i> Twitter</a></li>
+                    <li><a href="#tab-facebook" data-toggle="tab" data-context="blue"><i class="icon-social-facebook"></i> Facebook</a></li>
+                    <li><a href="#tab-youtube" data-toggle="tab" data-context="red"><i class="icon-social-youtube"></i> Youtube</a></li>
+                  </ul><!-- /.nav -->
+                </div>
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab-twitter">
+                      <p class="lead">Architecto sapiente, eius id nostrum dicta, soluta magnam non voluptatum aperiam ullam provident sequi, optio voluptate tenetur error rem repudiandae nisi minima.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-facebook">
+                      <p class="lead">Repellendus rerum eaque nisi ipsum modi similique excepturi, reiciendis dolores consequuntur sunt iusto impedit! Voluptatum nisi, quod animi, amet repellendus ducimus officiis.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-youtube">
+                      <p class="lead">Tenetur neque sapiente sit aspernatur dolor maxime repudiandae eius ducimus, accusamus! Amet voluptates voluptatem dolorem. Molestiae voluptatem quia, minima eius itaque magni?</p>
+                    </div>
+                  </div><!-- /tab-content -->
+                </div><!-- /panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <h4>With slimScroll</h4>
+              <div id="demo6-panel" class="panel" data-fill-color="true">
+                <div class="panel-body">
+                  <div class="tab-content" data-toggle="slimScroll" style="height:160px" data-color="#AAB2BD" data-allow-page-scroll="true">
+                    <div class="tab-pane fade in active" id="tab-twitter2">
+                      <p>Architecto sapiente, eius id nostrum dicta, soluta magnam non voluptatum aperiam ullam provident sequi, optio voluptate tenetur error rem repudiandae nisi minima.</p>
+                      <blockquote>Excepturi inventore quos fugiat, modi illum illo debitis ipsam distinctio mollitia, tempora.</blockquote>
+                      <p>Esse sed quod aliquam enim amet inventore, numquam veniam quibusdam dolorum, tempore eum porro ipsa itaque eveniet cum beatae nostrum totam illum.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-facebook2">
+                      <p>Architecto sapiente, eius id nostrum dicta, soluta magnam non voluptatum aperiam ullam provident sequi, optio voluptate tenetur error rem repudiandae nisi minima.</p>
+                      <blockquote>Excepturi inventore quos fugiat, modi illum illo debitis ipsam distinctio mollitia, tempora.</blockquote>
+                      <p>Esse sed quod aliquam enim amet inventore, numquam veniam quibusdam dolorum, tempore eum porro ipsa itaque eveniet cum beatae nostrum totam illum.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-youtube2">
+                      <p>Architecto sapiente, eius id nostrum dicta, soluta magnam non voluptatum aperiam ullam provident sequi, optio voluptate tenetur error rem repudiandae nisi minima.</p>
+                      <blockquote>Excepturi inventore quos fugiat, modi illum illo debitis ipsam distinctio mollitia, tempora.</blockquote>
+                      <p>Esse sed quod aliquam enim amet inventore, numquam veniam quibusdam dolorum, tempore eum porro ipsa itaque eveniet cum beatae nostrum totam illum.</p>
+                    </div>
+                  </div><!-- /tab-content -->
+                </div><!-- /panel-body -->
+                <div class="panel-control">
+                  <ul class="nav nav-tabs" id="demo6-tabs">
+                    <li class="active"><a href="#tab-twitter2" data-toggle="tab" class="text-cyan border-cyan"><i class="icon-social-twitter"></i> Twitter</a></li>
+                    <li><a href="#tab-facebook2" data-toggle="tab" class="text-blue border-blue"><i class="icon-social-facebook"></i> Facebook</a></li>
+                    <li><a href="#tab-youtube2" data-toggle="tab" class="text-red border-red"><i class="icon-social-youtube"></i> Youtube</a></li>
+                  </ul>
+                </div>
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-6">
+              <h4>Stacked</h4>
+              <div id="demo7-panel" class="panel">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-lg-3 col-sm-4 col-xs-2">
+                      <ul class="nav nav-tabs nav-stacked nav-contrast-dark" id="demo7-tabs">
+                        <li class="active"><a href="#tab-twitter3" data-toggle="tab" data-context="cyan" class="text-nowrap text-cyan border-cyan"><i class="icon-social-twitter fa-fw"></i> <span class="hidden-xs">Twitter</span></a></li>
+                        <li><a href="#tab-facebook3" data-toggle="tab" data-context="blue" class="text-nowrap text-blue border-blue"><i class="icon-social-facebook fa-fw"></i> <span class="hidden-xs">Facebook</span></a></li>
+                        <li><a href="#tab-youtube3" data-toggle="tab" data-context="red" class="text-nowrap text-red border-red"><i class="icon-social-youtube fa-fw"></i> <span class="hidden-xs">Youtube</span></a></li>
+                      </ul><!-- /.nav -->
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-xs-10">
+                      <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab-twitter3">
+                          <p class="lead">Architecto sapiente, eius id nostrum dicta, soluta magnam non voluptatum aperiam ullam provident sequi, optio voluptate tenetur error rem repudiandae nisi minima.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-facebook3">
+                          <p class="lead">Repellendus rerum eaque nisi ipsum modi similique excepturi, reiciendis dolores consequuntur sunt iusto impedit! Voluptatum nisi, quod animi, amet repellendus ducimus officiis.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-youtube3">
+                          <p class="lead">Tenetur neque sapiente sit aspernatur dolor maxime repudiandae eius ducimus, accusamus! Amet voluptates voluptatem dolorem. Molestiae voluptatem quia, minima eius itaque magni?</p>
+                        </div>
+                      </div><!-- /tab-content -->
+                    </div>
+                  </div>
+                </div><!-- /panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <h4>Stacked right</h4>
+              <div id="demo7-panel" class="panel">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-lg-3 col-sm-4 col-xs-2 col-lg-push-9 col-sm-push-8 col-xs-push-10">
+                      <ul class="nav nav-tabs nav-stacked nav-contrast-dark" id="demo7-tabs">
+                        <li class="active"><a href="#tab-twitter4" data-toggle="tab" data-context="cyan" class="text-nowrap text-cyan border-cyan"><i class="icon-social-twitter fa-fw"></i> <span class="hidden-xs">Twitter</span></a></li>
+                        <li><a href="#tab-facebook4" data-toggle="tab" data-context="blue" class="text-nowrap text-blue border-blue"><i class="icon-social-facebook fa-fw"></i> <span class="hidden-xs">Facebook</span></a></li>
+                        <li><a href="#tab-youtube4" data-toggle="tab" data-context="red" class="text-nowrap text-red border-red"><i class="icon-social-youtube fa-fw"></i> <span class="hidden-xs">Youtube</span></a></li>
+                      </ul><!-- /.nav -->
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-xs-10 col-lg-pull-3 col-sm-pull-4 col-xs-pull-2">
+                      <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab-twitter4">
+                          <p class="lead">Architecto sapiente, eius id nostrum dicta, soluta magnam non voluptatum aperiam ullam provident sequi, optio voluptate tenetur error rem repudiandae nisi minima.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-facebook4">
+                          <p class="lead">Repellendus rerum eaque nisi ipsum modi similique excepturi, reiciendis dolores consequuntur sunt iusto impedit! Voluptatum nisi, quod animi, amet repellendus ducimus officiis.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-youtube4">
+                          <p class="lead">Tenetur neque sapiente sit aspernatur dolor maxime repudiandae eius ducimus, accusamus! Amet voluptates voluptatem dolorem. Molestiae voluptatem quia, minima eius itaque magni?</p>
+                        </div>
+                      </div><!-- /tab-content -->
+                    </div>
+                  </div>
+                </div><!-- /panel-body -->
+              </div><!-- /.panel -->
+            </div><!-- /.cols -->
+
+            <div class="cleafix"></div>
+
+            <!-- COLLAPSE
+            ================================================== -->
+            <div class="col-md-6">
+              <h4>Simple Collapse</h4>
+              <div class="panel-group" id="accordion1">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                        Collapsible Group Item #1
+                      </a>
+                    </h3><!-- /panel-title -->
+                  </div><!-- /panel-heading -->
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable <vhs class="p"></vhs></p>
+                    </div><!-- /panel-body -->
+                  </div><!-- /panel-collapse -->
+                </div><!-- /panel -->
+
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+                        Collapsible Group Item #2
+                      </a>
+                    </h3><!-- /panel-title-->
+                  </div><!-- /panel-heading-->
+                  <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div><!-- /panel-body-->
+                  </div><!-- /panel-collapse-->
+                </div><!-- /panel-->
+
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+                        Collapsible Group Item #3
+                      </a>
+                    </h3><!-- /panel-title-->
+                  </div><!-- /panel-heading-->
+                  <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div><!-- /panel-body-->
+                  </div><!-- /panel-collapse-->
+                </div><!-- /panel-->
+              </div><!-- /panel-group -->
+            </div><!-- /.cols -->
+
+            <div class="col-md-6">
+              <h4>And Clean</h4>
+              <div class="panel-group" id="accordion2">
+                <div class="panel" data-fill-color="true">
+                  <div class="panel-heading">
+                    <div class="panel-control pull-right">
+                      <a href="#" class="btn btn-icon" data-toggle="panel-refresh" title="refresh"><i class="icon-refresh"></i></a>
+                      <a href="#" class="btn btn-icon" data-toggle="panel-expand" title="expand"><i class="arrow_expand"></i></a>
+                      <a href="#collapse1" class="btn btn-icon" data-toggle="collapse" data-parent="#accordion2" aria-expanded="true" aria-controls="collapse1" title="collapse"><i class="icon_minus_alt2"></i></a>
+                    </div>
+                    <h3 class="panel-title">Collapsible Group Item #1</h3><!-- /panel-title -->
+                  </div><!-- /panel-heading -->
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable <vhs class="p"></vhs></p>
+                    </div><!-- /panel-body -->
+                  </div><!-- /panel-collapse -->
+                </div><!-- /panel -->
+
+                <div class="panel" data-fill-color="true">
+                  <div class="panel-heading">
+                    <div class="panel-control pull-right">
+                      <a href="#" class="btn btn-icon" data-toggle="panel-refresh" title="refresh"><i class="icon-refresh"></i></a>
+                      <a href="#" class="btn btn-icon" data-toggle="panel-expand" title="expand"><i class="arrow_expand"></i></a>
+                      <a href="#collapse2" class="btn btn-icon" data-toggle="collapse" data-parent="#accordion2" aria-expanded="true" aria-controls="collapse2" title="collapse"><i class="icon_minus_alt2"></i></a>
+                    </div>
+                    <h3 class="panel-title">Collapsible Group Item #2</h3><!-- /panel-title-->
+                  </div><!-- /panel-heading-->
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div><!-- /panel-body-->
+                  </div><!-- /panel-collapse-->
+                </div><!-- /panel-->
+
+                <div class="panel" data-fill-color="true">
+                  <div class="panel-heading">
+                    <div class="panel-control pull-right">
+                      <a href="#" class="btn btn-icon" data-toggle="panel-refresh" title="refresh"><i class="icon-refresh"></i></a>
+                      <a href="#" class="btn btn-icon" data-toggle="panel-expand" title="expand"><i class="arrow_expand"></i></a>
+                      <a href="#collapse3" class="btn btn-icon" data-toggle="collapse" data-parent="#accordion2" aria-expanded="true" aria-controls="collapse3" title="collapse"><i class="icon_minus_alt2"></i></a>
+                    </div>
+                    <h3 class="panel-title">Collapsible Group Item #3</h3><!-- /panel-title-->
+                  </div><!-- /panel-heading-->
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div><!-- /panel-body-->
+                  </div><!-- /panel-collapse-->
+                </div><!-- /panel-->
+              </div><!-- /panel-group -->
+            </div><!-- /.cols -->
+
+
+          </div><!-- /.row -->
+
+        </div><!-- /.content-body -->
+
+
+        <!-- Template Setups -->
+        <div class="modal fade" id="templateSetup">
+          <div class="modal-dialog">
+            <!-- modal-content -->
+            <div class="modal-content"></div>
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.templateSetup -->
+
+      </div><!-- /.content -->
+    </section><!-- /MAIN -->
+
+
+
+    <!-- ============================================
+    FOOTER SECTION
+    =============================================== -->
+    <footer class="footer-wrapper" role="contentinfo">
+      <div class="footer">
+        <div class="pull-right text-muted"><small>Currently v1.2</small></div>
+        <div>Wrapkit Template  &copy; 2015</div>
+      </div>
+    </footer><!-- /.FOOTER -->
+
+  </main><!-- /#MAIN -->
+
+
+  <!-- VENDORS : jQuery & Bootstrap -->
+  <script src="scripts/vendor.js"></script>
+  <!-- END VENDORS -->
+
+  <!-- DEPENDENCIES : Required plugins -->
+  <script src="scripts/dependencies.js"></script>
+  <!-- END DEPENDENCIES -->
+
+  <!-- WRAPKIT -->
+  <script src="scripts/wrapkit.js"></script>
+  <!-- END WRAPKIT -->
+
+  <!-- WRAPKIT SETUPS -->
+  <script src="scripts/wrapkit-setup.js"></script>
+  <!-- end WRAPKIT SETUPS -->
+
+  <!-- PLUGIN SETUPS: vendors & dependencies setups -->
+  <script src="scripts/plugin-setups.js"></script>
+  <!-- END PLUGIN SETUPS -->
+
+  <!-- DUMMY: Use for demo -->
+  <script src="scripts/demo/tabs-demo.js"></script>
+
+
+  <!-- Google Analytics: change UA-48454066-1 to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='../../../../../www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-48454066-1');ga('send','pageview');
+  </script>
+</body>
+
+<!-- Mirrored from 192.168.220.187/SOHO3Q/后台模板/wrapkit-v1.2/dist/component-tabs-collapse.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2016 10:32:16 GMT -->
+</html>

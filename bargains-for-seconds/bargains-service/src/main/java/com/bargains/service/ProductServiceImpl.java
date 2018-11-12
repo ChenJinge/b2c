@@ -1,7 +1,7 @@
 package com.bargains.service;
 
 import com.bargains.dao.ProductDao;
-import com.bargains.enity.ProductEntity;
+import com.bargains.entity.ProductEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

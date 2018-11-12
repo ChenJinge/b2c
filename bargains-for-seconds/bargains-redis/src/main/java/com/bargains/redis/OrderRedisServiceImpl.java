@@ -1,6 +1,6 @@
 package com.bargains.redis;
 
-import com.bargains.enity.OrderEntity;
+import com.bargains.entity.OrderEntity;
 import com.bargains.service.redis.OrderRedisService;
 import com.bargains.util.DateUtils;
 import com.bargains.vo.order.CustomOrder;
@@ -17,7 +17,7 @@ public class OrderRedisServiceImpl implements OrderRedisService {
     @Autowired
     private AmqpTemplate amqpTemplate;
 
-    public Map<String, Object> seckill(int userId, int productId, CustomOrder Order) {
+    public Map<String, Object> snatchBargains(int userId, int productId, CustomOrder Order) {
 
         Map<String, Object> resultMap = new HashMap<String, Object>();
         int stockCount = Order.getStock();
@@ -64,7 +64,7 @@ public class OrderRedisServiceImpl implements OrderRedisService {
         return resultMap;
     }
 
-    public boolean payorder(int payType, int userId, int productId, int merchantId, String tradeSerialNumber, int payAmount) {
+    public boolean payOrder(int payType, int userId, int productId, int merchantId, String tradeSerialNumber, int payAmount) {
 
         String key = "userId:" + userId + "==productId:" + productId;
         String value = (String) redisUtil.get(key);
@@ -88,7 +88,7 @@ public class OrderRedisServiceImpl implements OrderRedisService {
         return issuccess;
     }
 
-    public List<OrderEntity> queryorderbyuserid(int userid) {
+    public List<OrderEntity> queryOrderByUserId(int userid) {
         List<OrderEntity> listmsorder = new ArrayList<OrderEntity>();
         Set<String> keys = redisUtil.getkeys("user id:" + userid);
 
@@ -112,6 +112,7 @@ public class OrderRedisServiceImpl implements OrderRedisService {
             String receivingname = valuearray[6];
             String receivingphone = valuearray[7];
             String stockcountnum = valuearray[8];
+
             OrderEntity orderEntity = new OrderEntity();
             orderEntity.setCreateTime(DateUtils.transferdate(createtimestring, "yyyy-MM-dd HH:mm:ss"));
             orderEntity.setPayAmount(Integer.valueOf(payamount));

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+         xsi:noNamespaceSchemaLocation="http://www.ehcache.org/ehcache.xsd">
 
     <!-- 磁盘缓存位置 -->
     <diskStore path="java.io.tmpdir/ehcache"/>
@@ -17,7 +17,7 @@
         <persistence strategy="localTempSwap"/>
     </defaultCache>
 
-    <cache name="MS_Cache"
+    <cache name="Bargains_Cache"
            maxElementsInMemory="1000"
            eternal="false"
            timeToIdleSeconds="1800"

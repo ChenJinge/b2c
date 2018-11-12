@@ -1,7 +1,7 @@
 package com.bargains.service;
 
 import com.bargains.dao.MerchantDao;
-import com.bargains.enity.MerchantEntity;
+import com.bargains.entity.MerchantEntity;
 import com.bargains.vo.merchant.MerchantVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

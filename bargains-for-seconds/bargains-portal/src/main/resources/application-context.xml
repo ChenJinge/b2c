@@ -14,7 +14,7 @@
 
     <bean id="dataSource1" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-        <property name="url" value="jdbc:mysql://localhost:3306/test4"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/bargains_quartz"></property>
         <property name="username" value="root"></property>
         <property name="password" value="passw0rd"></property>
     </bean>

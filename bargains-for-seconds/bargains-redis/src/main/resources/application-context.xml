@@ -5,24 +5,21 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:protocol name="dubbo" port="20882"></dubbo:protocol>
-    <dubbo:application name="YF_MS_REDIS"/>
+    <dubbo:application name="BARGAINS_REDIS"/>
 
-    <dubbo:registry address="zookeeper://192.168.253.142:2181"/>
+    <dubbo:registry address="zookeeper://localhost:2181"/>
 
-    <dubbo:service interface="com.bargains.service.redis.ProductRedisService"
-                   ref="msproductDetailRedisServiceImpl"/>
-    <bean id="msproductDetailRedisServiceImpl" class="com.bargains.redis.ProductRedisServiceImpl"/>
+    <dubbo:service interface="com.bargains.service.redis.ProductRedisService" ref="productRedisServiceImpl"/>
+    <bean id="productRedisServiceImpl" class="com.bargains.redis.ProductRedisServiceImpl"/>
 
-    <dubbo:service interface="com.bargains.service.redis.BargainsRedisService" ref="msproductRedisServiceImpl"/>
-    <bean id="msproductRedisServiceImpl" class="com.bargains.redis.BargainsRedisServiceImpl"/>
+    <dubbo:service interface="com.bargains.service.redis.BargainsRedisService" ref="bargainsRedisServiceImpl"/>
+    <bean id="bargainsRedisServiceImpl" class="com.bargains.redis.BargainsRedisServiceImpl"/>
 
     <dubbo:service interface="com.bargains.service.redis.OrderRedisService" ref="orderRedisServiceImpl"/>
     <bean id="orderRedisServiceImpl" class="com.bargains.redis.OrderRedisServiceImpl"/>
 
-
-    <dubbo:reference id="msproductDetailCacheService"
-                     interface="com.bargains.service.cache.ProductCacheService"/>
-    <dubbo:reference id="msproductCacheService" interface="com.bargains.service.cache.BargainsCacheService"/>
+    <dubbo:reference id="productCacheService" interface="com.bargains.service.cache.ProductCacheService"/>
+    <dubbo:reference id="bargainsCacheService" interface="com.bargains.service.cache.BargainsCacheService"/>
 
 
 </beans>

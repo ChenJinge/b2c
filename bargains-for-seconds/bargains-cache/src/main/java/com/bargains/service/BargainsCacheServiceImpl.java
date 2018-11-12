@@ -1,6 +1,6 @@
 package com.bargains.service;
 
-import com.bargains.enity.BargainsEntity;
+import com.bargains.entity.BargainsEntity;
 import com.bargains.service.cache.BargainsCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;

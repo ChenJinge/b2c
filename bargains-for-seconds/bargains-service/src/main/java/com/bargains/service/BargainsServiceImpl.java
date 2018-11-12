@@ -1,7 +1,7 @@
 package com.bargains.service;
 
 import com.bargains.dao.BargainsDao;
-import com.bargains.enity.BargainsEntity;
+import com.bargains.entity.BargainsEntity;
 import com.bargains.vo.bargains.BargainsVo;
 import com.bargains.vo.bargains.CustomBargains;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-@Service
+@Service("bargainsService")
 public class BargainsServiceImpl implements BargainsService {
 
     @Autowired

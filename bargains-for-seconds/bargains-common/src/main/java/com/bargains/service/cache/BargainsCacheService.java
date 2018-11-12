@@ -1,6 +1,6 @@
 package com.bargains.service.cache;
 
-import com.bargains.enity.BargainsEntity;
+import com.bargains.entity.BargainsEntity;
 
 
 public interface BargainsCacheService {

@@ -1,6 +1,6 @@
 package com.bargains.service.impl;
 
-import com.bargains.enity.OrderEntity;
+import com.bargains.entity.OrderEntity;
 import com.bargains.service.OrderService;
 import com.bargains.util.DateUtils;
 import org.springframework.amqp.core.Message;
