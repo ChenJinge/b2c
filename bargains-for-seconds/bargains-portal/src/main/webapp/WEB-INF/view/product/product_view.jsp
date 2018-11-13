@@ -8,12 +8,12 @@
 </head>
 <body>
 <form>
-    商品产地:${productEntity.productplace }</br>
-    商品名称:${productEntity.productname }</br>
-    商品品牌:${productEntity.brandname }</br>
-    商品重量:${productEntity.productweight }</br>
-    规格和包装:${productEntity.specification }</br>
-    商品详情图片地址:${productEntity.productdetailpicture }</br>
+    商品产地:${product.originPlace }</br>
+    商品名称:${product.name }</br>
+    商品品牌:${product.brandName }</br>
+    商品重量:${product.weight }</br>
+    规格和包装:${product.specification }</br>
+    商品详情图片地址:${product.detailPicture }</br>
 </form>
 </body>
 <script type="text/javascript">

@@ -8,19 +8,19 @@
 </head>
 <body>
 <form action="add">
-    秒杀商品的id: ${bargainsEntity.productid }</br>
-    秒杀商品的标题: ${bargainsEntity.producttitle }</br>
-    秒杀商品的图片地址: ${bargainsEntity.productpicture }</br>
-    秒杀商品价格: ${bargainsEntity.miaoshaprice }</br>
-    商家的id: ${bargainsEntity.msmerchantid }</br>
-    商品原价: ${bargainsEntity.originalprice }</br>
-    秒杀商品的申请时间: ${bargainsEntity.applydate }</br>
-    秒杀商品的审核时间: ${bargainsEntity.auditstate }</br>
-    秒杀的开始时间: ${bargainsEntity.starttime }</br>
-    秒杀的结束时间: ${bargainsEntity.endtime }</br>
-    秒杀数量: ${bargainsEntity.productcount }</br>
-    秒杀的库存: ${bargainsEntity.stockcount }</br>
-    秒杀的描述: ${bargainsEntity.description }</br>
+    秒杀商品的id: ${bargains.productId }</br>
+    秒杀商品的标题: ${bargains.title }</br>
+    秒杀商品的图片地址: ${bargains.picture }</br>
+    秒杀商品价格: ${bargains.bargainsPrice }</br>
+    商家的id: ${bargains.merchantId }</br>
+    商品原价: ${bargains.originalPrice }</br>
+    秒杀商品的申请时间: ${bargains.applyDate }</br>
+    秒杀商品的审核时间: ${bargains.auditStatus }</br>
+    秒杀的开始时间: ${bargains.startTime }</br>
+    秒杀的结束时间: ${bargains.endTime }</br>
+    秒杀数量: ${bargains.productQauntity }</br>
+    秒杀的库存: ${bargains.stock }</br>
+    秒杀的描述: ${bargains.description }</br>
 </form>
 </body>
 </html>

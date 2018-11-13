@@ -28,26 +28,26 @@
     </tr>
     <c:forEach items="${list}" var="item">
         <tr>
-            <td>${item.productid }</td>
-            <td>${item.producttitle }</td>
-            <td>${item.productpicture }</td>
-            <td>${item.miaoshaprice }</td>
-            <td>${item.msmerchantid }</td>
-            <td>${item.originalprice }</td>
-            <td>${item.applydate }</td>
-            <td>${item.auditstate }</td>
-            <td>${item.starttime }</td>
-            <td>${item.endtime }</td>
-            <td>${item.productcount }</td>
-            <td>${item.stockcount }</td>
+            <td>${item.productId }</td>
+            <td>${item.title }</td>
+            <td>${item.picture }</td>
+            <td>${item.bargainsPrice }</td>
+            <td>${item.merchantId }</td>
+            <td>${item.originalPrice }</td>
+            <td>${item.applyDate }</td>
+            <td>${item.auditStatus }</td>
+            <td>${item.startTime }</td>
+            <td>${item.endTime }</td>
+            <td>${item.productQuantity }</td>
+            <td>${item.stock }</td>
             <td>${item.description }</td>
-            productid,int merchantid
-            <td><a href="toupdatemsproduct?id=${item.id}">修改</a>||<a href="deletemsproductByid?id=${item.id}">删除</a>||<a
-                    href="querymsproductByid?id=${item.id}">查看</a>||<a
-                    href="toupdatemsproductstate?id=${item.id}">审核</a>
-                ||<a href="/YF_MS_WEB/msproductDetailAction/toinsertMsproductdetail?productid=${item.id}&&merchantid=${item.msmerchantid}">添加商品详情</a>||<a
-                        href="/YF_MS_WEB/msproductDetailAction/queryMsproductdetailByid?productid=${item.id}">查看商品详情</a>||<a
-                        href="/YF_MS_WEB/msproductDetailAction/toupdateMsproductdetail?productid=${item.id}">修改商品详情</a>
+            productId,int merchantId
+            <td><a href="toupdateBargains?id=${item.id}">修改</a>||<a href="deleteBargainsById?id=${item.id}">删除</a>||<a
+                    href="/bargains/queryBargainsById?id=${item.id}">查看</a>||<a
+                    href="/bargains/toUpdateBargainsAuditStatus?id=${item.id}">审核</a>
+                ||<a href="/product/toAddProduct?productId=${item.id}&&merchantId=${item.msmerchantid}">添加商品详情</a>||<a
+                        href="/product/queryProductById?productId=${item.id}">查看商品详情</a>||<a
+                        href="/product/toUpdateProduct?productId=${item.id}">修改商品详情</a>
             </td>
         </tr>
     </c:forEach>

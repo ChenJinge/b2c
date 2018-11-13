@@ -69,7 +69,7 @@ public class PageHomeController {
     public void producehtml(HttpServletRequest req) {
         String htmlPath = req.getRealPath("/WEB-INF/html/");
         String contextpath = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath();
-        contextpath = contextpath + "/pagehomeAction/tohome";
+        contextpath = contextpath + "/pageHome/toHome";
 
         CloseableHttpClient client = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet(contextpath);

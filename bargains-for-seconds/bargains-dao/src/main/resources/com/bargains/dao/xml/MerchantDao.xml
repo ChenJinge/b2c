@@ -6,56 +6,56 @@
 <mapper namespace="com.bargains.dao.MerchantDao">
 
     <select id="queryMerchantById" parameterType="int" resultType="merchantEntity">
-        select * from merchantEntity where id = #{value}
+        select * from merchant where id = #{value}
     </select>
 
     <insert id="insertMerchant" parameterType="merchantEntity">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
             SELECT LAST_INSERT_ID()
         </selectKey>
-        insert into merchantEntity(name,shopName,account,password,sunScope)
-        value(#{name},#{shopName},#{account},#{password},#{sunScope})
+        insert into merchant(name,shop_name,account,password,run_scope)
+        value(#{name},#{shopName},#{account},#{password},#{runScope})
     </insert>
 
     <delete id="deleteMerchantById" parameterType="int">
-        delete from merchantEntity where id = #{id}
+        delete from merchant where id = #{id}
     </delete>
 
     <update id="updateMerchant" parameterType="merchantEntity">
-        update merchantEntity set
-        name=#{name},shopName=#{shopName},account=#{account},password=#{password},sunScope=#{sunScope}
+        update merchant set
+        name=#{name},shop_name=#{shopName},account=#{account},password=#{password},run_scope=#{runScope}
         where id=#{id}
     </update>
 
-    <sql id="consutomsql">
-        <if test="constomMerchant != null">
-            <if test="constomMerchant.name!=null and constomMerchant.name!=''">
-                and name = "${constomMerchant.name}"
+    <sql id="customSQL">
+        <if test="customMerchant != null">
+            <if test="customMerchant.name!=null and customMerchant.name!=''">
+                and name = "${customMerchant.name}"
             </if>
-            <if test="constomMerchant.shopName!=null and constomMerchant.shopName!='' ">
-                and shopName = "${constomMerchant.shopName}"
+            <if test="customMerchant.shopName!=null and customMerchant.shopName!='' ">
+                and shop_name = "${customMerchant.shopName}"
             </if>
-            <if test="constomMerchant.account!=null and constomMerchant.account!='' ">
-                and account = "${constomMerchant.account}"
+            <if test="customMerchant.account!=null and customMerchant.account!='' ">
+                and account = "${customMerchant.account}"
             </if>
-            <if test="constomMerchant.password!=null and constomMerchant.password!='' ">
-                and constomMerchant.password = "${constomMerchant.password}"
+            <if test="customMerchant.password!=null and customMerchant.password!='' ">
+                and password = "${customMerchant.password}"
             </if>
-            <if test="constomMerchant.sunScope!=null and constomMerchant.sunScope!='' ">
-                and sunScope = "${constomMerchant.sunScope}"
+            <if test="customMerchant.runScope!=null and customMerchant.runScope!='' ">
+                and run_scope = "${customMerchant.runScope}"
             </if>
         </if>
     </sql>
 
     <select id="queryMerchantByVo" parameterType="merchantVo" resultType="merchantEntity">
-        select * from merchantEntity
+        select * from merchant
         <where>
-            <include refid="consutomsql"></include>
+            <include refid="customSQL"></include>
         </where>
     </select>
 
     <select id="queryMerchantByAccount" parameterType="java.lang.String" resultType="merchantEntity">
-        select * from merchantEntity where account = #{value}
+        select * from merchant where account = #{value}
     </select>
 
 </mapper>

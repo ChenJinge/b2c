@@ -10,7 +10,7 @@
 <body>
 <form action="#">
     购买数量：1 <input type="hidden" name="num" value="1"><span id="remainnoties"></span>
-    <input type="hidden" name="id" value="${msproduct.id}">
+    <input type="hidden" name="id" value="${baigains.id}">
     <table border="1">
         <tr>
             <td>商品标题</td>
@@ -23,16 +23,16 @@
             <td>库存</td>
         </tr>
         <tr>
-            <td>${msproduct.producttitle}</td>
-            <td>${msproduct.productpicture}</td>
-            <td>${msproduct.miaoshaprice}</td>
-            <td>${msproduct.originalprice}</td>
-            <td><span id="starttime"><fmt:formatDate value="${msproduct.starttime}"
+            <td>${bargains.title}</td>
+            <td>${bargains.picture}</td>
+            <td>${bargains.bargainsPrice}</td>
+            <td>${bargains.originalPrice}</td>
+            <td><span id="starttime"><fmt:formatDate value="${bargains.startTime}"
                                                      pattern="yyyy-MM-dd HH:mm:dd"/></span></td>
-            <td><span id="endtime"><fmt:formatDate value="${msproduct.endtime}" pattern="yyyy-MM-dd HH:mm:dd"/></span>
+            <td><span id="endtime"><fmt:formatDate value="${bargains.endTime}" pattern="yyyy-MM-dd HH:mm:dd"/></span>
             </td>
-            <td>${msproduct.productcount}</td>
-            <td>${msproduct.stockcount}</td>
+            <td>${bargains.productQuantity}</td>
+            <td>${bargains.stock}</td>
         </tr>
     </table>
     <table border="1">
@@ -45,24 +45,24 @@
             <td>商品详情图片地址</td>
         </tr>
         <tr>
-            <td>${productEntity.productplace}</td>
-            <td>${productEntity.productname}</td>
-            <td>${productEntity.brandname}</td>
-            <td>${productEntity.productweight}</td>
-            <td>${productEntity.specification}</td>
-            <td>${productEntity.productdetailpicture}</td>
+            <td>${product.originPlace}</td>
+            <td>${product.name}</td>
+            <td>${product.brandName}</td>
+            <td>${product.weight}</td>
+            <td>${product.specification}</td>
+            <td>${product.picture}</td>
         </tr>
     </table>
     <input id="sellbnt" type="button" value="立即购买" onclick="submit(this)"/>
 </form>
 </body>
-<script type="text/javascript" src="/YF_MS_WEB/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
     function submit(obj) {
 
         obj.parent.sumbit();
     }
 
-    document.write("<script src='/YF_MS_WEB/js/remain.js?radom=" + Math.random() + " '></s" + "cript>")
+    document.write("<script src='/js/remain.js?radom=" + Math.random() + " '></s" + "cript>")
 </script>
 </html>

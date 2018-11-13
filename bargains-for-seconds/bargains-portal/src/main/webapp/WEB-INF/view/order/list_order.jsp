@@ -23,25 +23,25 @@
     </tr>
     <c:forEach items="${list}" var="item">
         <tr>
-            <td>${item.payamount }</td>
-            <td>${item.createtime }</td>
-            <td>${item.paystatus }</td>
-            <td>${item.receivingadress }</td>
-            <td>${item.receivingphone }</td>
-            <td>${item.receivingname }</td>
-            <td>${item.tradeserialnumber }</td>
+            <td>${item.payAmount }</td>
+            <td>${item.createTime }</td>
+            <td>${item.payStatus }</td>
+            <td>${item.receivingAdress }</td>
+            <td>${item.receivingPhone }</td>
+            <td>${item.receivingName }</td>
+            <td>${item.tradeSerialNumber }</td>
             <td>${item.num }</td>
-            <td><c:if test="${item.paystatus == 1 }"><a
-                    href="topaywithorder?userid=${item.userid}&&productid=${item.productid}&&tradeserialnumber=${item.tradeserialnumber}&&payamount=${item.payamount}&&&merchantid=${item.merchantid}">继续支付</a></c:if><c:if
-                    test="${item.paystatus == 2 }">支付完成<input type="button" value="发起退款" onclick="applyrefund('${item.id}','${item.paytype}')"></c:if><c:if
-                    test="${item.paystatus == 3 }">退款成功</c:if><c:if test="${item.paystatus == 4 }">退款申请中</c:if><c:if
-                    test="${item.paystatus == 5 }">退款申请不成功</c:if></td>
+            <td><c:if test="${item.payStatus == 1 }"><a
+                    href="toPayWithOrder?userId=${item.userId}&&productId=${item.productId}&&tradeSerialNumber=${item.tradeSerialNumber}&&payAmount=${item.payAmount}&&&merchantId=${item.merchantId}">继续支付</a></c:if><c:if
+                    test="${item.payStatus == 2 }">支付完成<input type="button" value="发起退款" onclick="applyrefund('${item.id}','${item.paytype}')"></c:if><c:if
+                    test="${item.payStatus == 3 }">退款成功</c:if><c:if test="${item.payStatus == 4 }">退款申请中</c:if><c:if
+                    test="${item.payStatus == 5 }">退款申请不成功</c:if></td>
         </tr>
     </c:forEach>
 </table>
 <script type="text/javascript">
     function applyrefund(orderid, paytype) {
-        window.location.href = "applyrefund?orderid=" + orderid + "&&paytype=" + paytype;
+        window.location.href = "applyRefund?orderId=" + orderId + "&&payType=" + payType;
     }
 </script>
 </body>

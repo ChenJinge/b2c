@@ -8,12 +8,12 @@
 </head>
 <body>
 <form action="update" method="post">
-    <input name="id" value="${merchantEntity.id }" type="hidden"/>
-    商家的姓名:<input name="merchantname" value="${merchantEntity.name }"></br>
-    商家的店铺名称:<input name="merchantshopname" value="${merchantEntity.shopName }"></br>
-    商家账号:<input name="merchantaccount" value="${merchantEntity.account }"></br>
-    商家密码:<input name="merchantpassword" value="${merchantEntity.password }"></br>
-    商家经营范围:<input name="merchantscope" value="${merchantEntity.runScope }"></br>
+    <input name="id" value="${merchant.id }" type="hidden"/>
+    商家的姓名:<input name="name" value="${merchant.name }"></br>
+    商家的店铺名称:<input name="shopame" value="${merchant.shopName }"></br>
+    商家账号:<input name="account" value="${merchant.account }"></br>
+    商家密码:<input name="password" value="${merchant.password }"></br>
+    商家经营范围:<input name="runScope" value="${merchant.runScope }"></br>
     <input type="button" value="提交" onclick="submit(this)">
 </form>
 </body>

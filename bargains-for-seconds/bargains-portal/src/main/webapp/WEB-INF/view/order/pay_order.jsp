@@ -8,19 +8,19 @@
 </head>
 <body>
 <form action="payorder">
-    商品名称：${bargainsEntity.producttitle}
-    购买数量：${productnum}
-    支付总额：${payamount}
-    <input type="hidden" name="productid" value="${bargainsEntity.id}">
-    <input type="hidden" name="userid" value="${msuserid}">
-    <input type="hidden" name="merchantid" value="${bargainsEntity.msmerchantid}">
-    <input type="hidden" name="payamount" value="${payamount}">
-    <input type="hidden" name="num" value="${productnum}">
-    <input type="hidden" name="stockcount" value="${bargainsEntity.stockcount}">
+    商品名称：${bargains.title}
+    购买数量：${productQuantity}
+    支付总额：${payAmount}
+    <input type="hidden" name="productId" value="${bargains.id}">
+    <input type="hidden" name="userId" value="${userId}">
+    <input type="hidden" name="merchantId" value="${bargains.merchantId}">
+    <input type="hidden" name="payAmount" value="${payAmount}">
+    <input type="hidden" name="productQuantity" value="${productQuantity}">
+    <input type="hidden" name="stock" value="${bargains.stock}">
 
-    收货人地址:<input type="text" name="receivingadress"></br>
-    收货人电话:<input type="text" name="receivingphone"></br>
-    收货人名称:<input type="text" name="receivingname"></br>
+    收货人地址:<input type="text" name="receivingAdress"></br>
+    收货人电话:<input type="text" name="receivingPhone"></br>
+    收货人名称:<input type="text" name="receivingName"></br>
     <input type="button" value="订单提交" onclick="submit(this)"/>
 </form>
 </body>

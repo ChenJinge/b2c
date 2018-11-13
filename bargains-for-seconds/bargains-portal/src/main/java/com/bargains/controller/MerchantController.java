@@ -50,14 +50,14 @@ public class MerchantController {
     }
 
     @RequestMapping("queryById")
-    public String querybyid(HttpServletRequest request, int id) {
+    public String queryById(HttpServletRequest request, int id) {
         MerchantEntity merchantEntity = merchantService.queryMerchantById(id);
         request.setAttribute("merchant", merchantEntity);
         return "merchant/view";
     }
 
     @RequestMapping("queryByVo")
-    public String querybyvo(HttpServletRequest request, MerchantVo merchantVo) {
+    public String queryByVo(HttpServletRequest request, MerchantVo merchantVo) {
         List<MerchantEntity> list = merchantService.queryMerchantByVo(merchantVo);
         request.setAttribute("merchants", list);
         return "merchant/list";

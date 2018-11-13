@@ -7,18 +7,18 @@
     <title>Insert title here</title>
 </head>
 <body>
-<form action="updatemsproduct" method="post">
-    <input name="id" value="${bargainsEntity.id }" type="hidden">
-    商品id:<input name="productid" value="${bargainsEntity.productid }"></br>
-    商品标题:<input name="producttitle" value="${bargainsEntity.producttitle }"></br>
-    商品图片地址:<input name="productpicture" value="${bargainsEntity.productpicture }"></br>
-    秒杀价格:<input name="miaoshaprice" value="${bargainsEntity.miaoshaprice }"></br>
-    商品原价:<input name="originalprice" value="${bargainsEntity.originalprice }"></br>
-    秒杀开始时间:<input name="starttimestring" value="${starttimestring }"></br>
-    秒杀结束时间:<input name="endtimestring" value="${endtimestring}"></br>
-    秒杀商品数量:<input name="productcount" value="${bargainsEntity.productcount }"></br>
-    库存:<input name="stockcount" value="${bargainsEntity.stockcount }"></br>
-    描述:<input name="description" value="${bargainsEntity.description }"></br>
+<form action="updateBargains" method="post">
+    <input name="id" value="${bargains.id }" type="hidden">
+    商品id:<input name="productId" value="${bargains.productId }"></br>
+    商品标题:<input name="title" value="${bargains.title }"></br>
+    商品图片地址:<input name="picture" value="${bargains.picture }"></br>
+    秒杀价格:<input name="bargainsPrice" value="${bargains.bargainsPrice }"></br>
+    商品原价:<input name="originalPrice" value="${bargains.originalPrice }"></br>
+    秒杀开始时间:<input name="startTime" value="${startTime }"></br>
+    秒杀结束时间:<input name="endTime" value="${endTime}"></br>
+    秒杀商品数量:<input name="productQuantity" value="${bargains.productQuantity }"></br>
+    库存:<input name="stock" value="${bargains.stock }"></br>
+    描述:<input name="description" value="${bargains.description }"></br>
     <input type="button" value="提交" onclick="submit(this)">
 </form>
 </body>

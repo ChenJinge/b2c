@@ -7,15 +7,15 @@
     <title>Insert title here</title>
 </head>
 <body>
-<form action="insertMsproductdetail" method="post">
-    <input name="productid" type="hidden" value="${productid}">
-    <input name="merchantid" type="hidden" value="${merchantid}">
-    商品产地:<input name="productplace"></br>
-    商品名称:<input name="productname"></br>
-    商品品牌:<input name="brandname"></br>
-    商品重量:<input name="productweight"></br>
+<form action="/addProduct" method="post">
+    <input name="productId" type="hidden" value="${productId}">
+    <input name="merchantId" type="hidden" value="${merchantId}">
+    商品产地:<input name="originPlace"></br>
+    商品名称:<input name="name"></br>
+    商品品牌:<input name="brandName"></br>
+    商品重量:<input name="weight"></br>
     规格和包装:<input name="specification"></br>
-    商品详情图片地址:<input name="productdetailpicture"></br>
+    商品详情图片地址:<input name="detailPicture"></br>
     <input type="button" value="提交" onclick="submit(this)">
 </form>
 </body>

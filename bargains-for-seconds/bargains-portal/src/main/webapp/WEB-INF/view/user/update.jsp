@@ -8,14 +8,14 @@
 </head>
 <body>
 <form action="update" method="post">
-    <input name="id" value="${userEntity.id }" type="hidden"/>
-    用户姓名:<input name="name" value="${userEntity.name }"></br>
-    用户账号:<input name="useraccount" value="${userEntity.useraccount }"></br>
-    用户密码:<input name="userpassword" value="${userEntity.userpassword }"></br>
-    用户性别:<input name="usersex" value="${userEntity.usersex }"></br>
-    用户年龄:<input name="userage" value="${userEntity.userage }"></br>
-    用户的地址:<input name="useraddress" value="${userEntity.useraddress}"></br>
-    用户的邮箱:<input name="useremail" value="${userEntity.useremail }"></br>
+    <input name="id" value="${user.id }" type="hidden"/>
+    用户姓名:<input name="name" value="${user.name }"></br>
+    用户账号:<input name="account" value="${user.account }"></br>
+    用户密码:<input name="password" value="${user.password }"></br>
+    用户性别:<input name="sex" value="${user.sex }"></br>
+    用户年龄:<input name="age" value="${user.age }"></br>
+    用户的地址:<input name="address" value="${user.address}"></br>
+    用户的邮箱:<input name="email" value="${user.email }"></br>
     <input type="button" value="提交" onclick="submit(this)">
 </form>
 </body>

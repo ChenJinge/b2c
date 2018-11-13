@@ -11,28 +11,28 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
         insert into
-        orderEntity(productId,payAmount,userId,merchantId,createTime,payStatus,receivingAdress,receivingPhone,receivingName,tradeserialNumber,productQuantity)
-        value(#{productId},#{payAmount},#{userId},#{merchantId},#{createTime},#{payStatus},#{receivingAdress},#{receivingPhone},#{receivingName},#{tradeserialNumber},#{productQuantity})
+        order (product_id,pay_amount,user_id,merchant_id,create_time,pay_status,receiving_adress,receiving_phone,receiving_name,trade_serial_number,product_quantity)
+        value(#{productId},#{payAmount},#{userId},#{merchantId},#{createTime},#{payStatus},#{receivingAdress},#{receivingPhone},#{receivingName},#{tradeSerialNumber},#{productQuantity})
     </insert>
 
     <select id="queryOrderByUserId" parameterType="int" resultType="orderEntity">
-        select * from orderEntity where userId = #{value}
+        select * from order where user_id = #{value}
     </select>
 
     <select id="queryOrderByMerchantId" parameterType="int" resultType="orderEntity">
-        select * from orderEntity where merchantId = #{value}
+        select * from order where merchant_id = #{value}
     </select>
 
 
     <update id="updateOrderPayStatusById" parameterType="orderVo">
-        update orderEntity set payStatus=#{customOrder.payStatus},payType=#{customOrder.payType} where
+        update order set pay_status=#{customOrder.payStatus},pay_type=#{customOrder.payType} where
         id=#{customOrder.id}
     </update>
 
     <update id="updateOrderByTrNumber" parameterType="orderVo">
-        update orderEntity set
-        payStatus=#{customOrder.payStatus},payType=#{customOrder.payType},payTime=#{customOrder.payTime} where
-        tradeserialNumber=#{customOrder.tradeserialNumber}
+        update order set
+        pay)_status=#{customOrder.payStatus},pay_type=#{customOrder.payType},pay_time=#{customOrder.payTime} where
+        trade_serial_number=#{customOrder.tradeSerialNumber}
     </update>
 
 

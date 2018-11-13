@@ -8,13 +8,13 @@
 </head>
 <body>
 <form action="add">
-    用户姓名:${userEntity.name }</br>
-    用户账号:${userEntity.useraccount }</br>
-    用户密码:${userEntity.userpassword }</br>
-    用户性别:${userEntity.usersex }</br>
-    用户年龄:${userEntity.userage }</br>
-    用户地址:${userEntity.useraddress }</br>
-    用户邮箱:${userEntity.useremail }</br>
+    用户姓名:${user.name }</br>
+    用户账号:${user.account }</br>
+    用户密码:${user.password }</br>
+    用户性别:${user.sex }</br>
+    用户年龄:${user.age }</br>
+    用户地址:${user.address }</br>
+    用户邮箱:${user.email }</br>
 </form>
 </body>
 </html>

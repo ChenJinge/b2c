@@ -11,17 +11,17 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
         insert into
-        productEntity(prodcutId,merchantId,originPlace,name,brandName,weight,specification,detailPicture)
+        product (prodcut)_id,merchant_id,origin_place,name,brand_name,weight,specification,detail_picture)
         value(#{productId},#{merchantId},#{originPlace},#{name},#{brandName},#{weight},#{specification},#{detailPicture})
     </insert>
 
     <select id="queryProductById" parameterType="int" resultType="productEntity">
-        select * from productEntity where productId = #{value}
+        select * from product where product_id = #{value}
     </select>
 
     <update id="updateProduct" parameterType="productEntity">
-        update productEntity set
-        originPlace=#{originPlace},name=#{name},brandName=#{brandName},weight=#{weight},specification=#{specification},detailPicture=#{detailPicture}
+        update product set
+        origin_place=#{originPlace},name=#{name},brand_name=#{brandName},weight=#{weight},specification=#{specification},detail_picture=#{detailPicture}
         where productId=#{productId}
     </update>
 

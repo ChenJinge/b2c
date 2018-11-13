@@ -172,7 +172,7 @@
                     <div class='price'><b class='sec-price'>￥${item.bargainsPrice}</b><b
                             class='ever-price'>￥${item.originalPrice}</b></div>
                     <div class='num'>
-                        <div>已售${item.productcount -item.stockcount}</div>
+                        <div>已售${item.productQuantity -item.stock}</div>
                         <div class='progress'>
                             <div class='sui-progress progress-danger'><span
                                     style='width: {{  ((pojo.num-pojo.stockCount)/pojo.num*100).toFixed(0) }}%;'

@@ -8,9 +8,9 @@
 </head>
 <body>
 欢迎商家：${merchantEntity.account}
-<a href="/msmerchantReloginAction/toregiter">商家注册</a></br>
-<a href="/msmerchantReloginAction/tologin">商家登录</a>
-<a href="/msmerchantReloginAction/exit">商家退出登录</a>
-<a href="/orderAction/queryorderbyMsmerchanid">订单查询</a>
+<a href="/merchantRelogin/toRegister">商家注册</a></br>
+<a href="/merchantRelogin/toLogin">商家登录</a>
+<a href="/merchantRelogin/exit">商家退出登录</a>
+<a href="/order/queryOrderByMerchanId">订单查询</a>
 </body>
 </html>

@@ -11,27 +11,27 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping("userregiterloginAction")
-public class UserRegisterLoginAction {
+@RequestMapping("login")
+public class LoginController {
 
     @Autowired
     UserService userService;
 
-    @RequestMapping(value = "toregiter")
-    public String toregiter() {
+    @RequestMapping(value = "toRegister")
+    public String toRegister() {
         return "user/to_register";
     }
 
-    @RequestMapping(value = "regiter", method = RequestMethod.POST)
-    public String regiter(HttpServletRequest req, UserEntity userEntity) {
+    @RequestMapping(value = "register", method = RequestMethod.POST)
+    public String register(HttpServletRequest req, UserEntity userEntity) {
         userService.insertUser(userEntity);
         HttpSession sess = req.getSession();
-        sess.setAttribute("msuser", userEntity);
+        sess.setAttribute("user", userEntity);
         System.out.println(userEntity);
-        return "homepage/homepage";
+        return "home_page/home_page";
     }
 
-    @RequestMapping(value = "tologin")
+    @RequestMapping(value = "toLogin")
     public String tologin(HttpServletRequest req, UserEntity userEntity) {
 
         return "user/to_login";
@@ -39,29 +39,29 @@ public class UserRegisterLoginAction {
 
     @RequestMapping(value = "login", method = RequestMethod.POST)
     public String login(HttpServletRequest req, UserEntity userEntity) {
-        String returnurl = "homepage/error";
+        String returnurl = "home_page/error";
         String account = userEntity.getAccount();
         String password = userEntity.getPassword();
         UserEntity msuserresult = userService.queryUserByAccount(account);
         if (msuserresult == null) {
-            System.out.println("�޴��û�");
-            req.setAttribute("errorinfo", "�޴��û�");
+            System.out.println("");
+            req.setAttribute("errorinfo", "");
         } else if (!msuserresult.getPassword().equals(password)) {
-            System.out.println("�������");
-            req.setAttribute("errorinfo", "�������");
+            System.out.println("");
+            req.setAttribute("errorinfo", "");
         } else {
             HttpSession sess = req.getSession();
-            sess.setAttribute("msuser", msuserresult);
-            returnurl = "homepage/homepage";
+            sess.setAttribute("user", msuserresult);
+            returnurl = "home_page/home_page";
         }
         return returnurl;
     }
 
     @RequestMapping(value = "exit")
     public String exit(HttpServletRequest req) {
-        HttpSession sess = req.getSession();
-        sess.removeAttribute("user");
-        return "homepage/homepage";
+        HttpSession session = req.getSession();
+        session.removeAttribute("user");
+        return "home_page/home_page";
     }
 
 }

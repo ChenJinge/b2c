@@ -12,15 +12,15 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
-@RequestMapping("msUserAction")
-public class UserAction {
+@RequestMapping("user")
+public class UserController {
 
     @Autowired
     UserService userService;
 
 
-    @RequestMapping("toadd")
-    public String toadd() {
+    @RequestMapping("toAdd")
+    public String toAdd() {
         return "user/add";
     }
 
@@ -28,11 +28,11 @@ public class UserAction {
     public String add(UserEntity userEntity) {
         userService.insertUser(userEntity);
         System.out.println(userEntity);
-        return "redirect:querybyvo";
+        return "redirect:queryByVo";
     }
 
-    @RequestMapping("toupdate")
-    public String toupdate(HttpServletRequest request, int id) {
+    @RequestMapping("toUpdate")
+    public String toUpdate(HttpServletRequest request, int id) {
         UserEntity user = userService.queryUserById(id);
         request.setAttribute("user", user);
         return "user/update";
@@ -42,26 +42,26 @@ public class UserAction {
     public String update(HttpServletRequest request, UserEntity userEntity) {
         userService.updateUser(userEntity);
         System.out.println(userEntity);
-        return "redirect:querybyvo";
+        return "redirect:queryByVo";
     }
 
-    @RequestMapping("del")
-    public String del(HttpServletRequest request, int id) {
+    @RequestMapping("delete")
+    public String delete(HttpServletRequest request, int id) {
         userService.deleteUserById(id);
-        return "redirect:querybyvo";
+        return "redirect:queryByVo";
     }
 
-    @RequestMapping("querybyid")
+    @RequestMapping("querybyId")
     public String querybyid(HttpServletRequest request, int id) {
         UserEntity userEntity = userService.queryUserById(id);
-        request.setAttribute("userEntity", userEntity);
+        request.setAttribute("user", userEntity);
         return "user/view";
     }
 
-    @RequestMapping("querybyvo")
-    public String querybyvo(HttpServletRequest request, UserVo userVo) {
+    @RequestMapping("queryByVo")
+    public String queryByVo(HttpServletRequest request, UserVo userVo) {
         List<UserEntity> list = userService.queryUserByVo(userVo);
-        request.setAttribute("msuserlist", list);
+        request.setAttribute("users", list);
         return "user/list";
     }
 

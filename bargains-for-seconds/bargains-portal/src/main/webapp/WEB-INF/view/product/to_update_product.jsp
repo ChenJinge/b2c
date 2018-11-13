@@ -7,15 +7,15 @@
     <title>Insert title here</title>
 </head>
 <body>
-<form action="updateMsproductdetail" method="post">
-    <input name="productid" type="hidden" value="${productEntity.productid}">
-    <input name="merchantid" type="hidden" value="${productEntity.merchantid}">
-    商品产地:<input name="productplace" value="${productEntity.productplace }"></br>
-    商品名称:<input name="productname" value="${productEntity.productname }"></br>
-    商品品牌:<input name="brandname" value="${productEntity.brandname }"></br>
-    商品重量:<input name="productweight" value="${productEntity.productweight }"></br>
-    规格和包装:<input name="specification" value="${productEntity.specification }"></br>
-    商品详情图片地址:<input name="productdetailpicture" value="${productEntity.productdetailpicture }"></br>
+<form action="updateProduct" method="post">
+    <input name="productId" type="hidden" value="${product.productId}">
+    <input name="merchantId" type="hidden" value="${product.merchantId}">
+    商品产地:<input name="productplace" value="${product.originplace }"></br>
+    商品名称:<input name="productname" value="${product.name }"></br>
+    商品品牌:<input name="brandname" value="${product.brandName }"></br>
+    商品重量:<input name="productweight" value="${product.weight }"></br>
+    规格和包装:<input name="specification" value="${product.specification }"></br>
+    商品详情图片地址:<input name="productdetailpicture" value="${product.detailPicture }"></br>
     <input type="button" value="提交" onclick="submit(this)">
 </form>
 </body>

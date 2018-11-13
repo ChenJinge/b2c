@@ -8,7 +8,7 @@
     <title>Insert title here</title>
 </head>
 <body>
-<center><a href="toadd">添加商家</a></center>
+<center><a href="toAdd">添加商家</a></center>
 <table border="2">
     <tr>
         <td>支付金额</td>
@@ -23,27 +23,27 @@
     </tr>
     <c:forEach items="${list}" var="item">
         <tr>
-            <td>${item.payamount }</td>
-            <td>${item.createtime }</td>
-            <td>${item.paystatus }</td>
-            <td>${item.receivingadress }</td>
-            <td>${item.receivingphone }</td>
-            <td>${item.receivingname }</td>
-            <td>${item.tradeserialnumber }</td>
+            <td>${item.payAmount }</td>
+            <td>${item.createTime }</td>
+            <td>${item.payStatus }</td>
+            <td>${item.receivingAdress }</td>
+            <td>${item.receivingPhone }</td>
+            <td>${item.receivingName }</td>
+            <td>${item.tradeSerialNumber }</td>
             <td>${item.num }</td>
-            <td><c:if test="${item.paystatus == 1 }">未支付</c:if><c:if test="${item.paystatus == 2 }">支付完成</c:if><c:if
-                    test="${item.paystatus == 3 }">退款成功</c:if>
-                <c:if test="${item.paystatus == 4 }"><a href="javascript:void"
-                                                        onclick="applyrefund('${item.tradeserialnumber}','${item.payamount}','${item.id}','${item.paytype}','3')">退款审核通过</a>||<a href="javascript:void" onclick="applyrefund('${item.tradeserialnumber}','${item.payamount}','${item.id}','${item.paytype}','5')">退款审核不通过</a></c:if>
-                <c:if test="${item.paystatus == 5 }">退款申请不成功</c:if></td>
+            <td><c:if test="${item.payStatus == 1 }">未支付</c:if><c:if test="${item.payStatus == 2 }">支付完成</c:if><c:if
+                    test="${item.payStatus == 3 }">退款成功</c:if>
+                <c:if test="${item.payStatus == 4 }"><a href="javascript:void"
+                                                        onclick="applyrefund('${item.tradeSerialNumber}','${item.payAmount}','${item.id}','${item.payType}','3')">退款审核通过</a>||<a href="javascript:void" onclick="applyrefund('${item.tradeSerialNumber}','${item.payAmount}','${item.id}','${item.payType}','5')">退款审核不通过</a></c:if>
+                <c:if test="${item.payStatus == 5 }">退款申请不成功</c:if></td>
         </tr>
     </c:forEach>
 </table>
 
 <script type="text/javascript">
 
-    function applyrefund(tradeserialnumber, payamount, orderid, paytype, paystatus) {
-        window.location.href = "auditrefund?tradeserialnumber=" + tradeserialnumber + "&&payamount=" + payamount + "&&orderid=" + orderid + "&&paytype=" + paytype + "&&paystatus=" + paystatus;
+    function applyrefund(tradeSerialNumber, payAmount, orderId, payType, payStatus) {
+        window.location.href = "auditRefund?tradeSerialNumber=" + tradeSerialNumber + "&&payAmount=" + payAmount + "&&orderId=" + orderId + "&&payType=" + payType + "&&payStatus=" + payStatus;
     }
 </script>
 </body>

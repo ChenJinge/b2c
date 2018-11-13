@@ -20,15 +20,15 @@
         <td>用户的邮箱</td>
         <td>操作</td>
     </tr>
-    <c:forEach items="${msuserlist}" var="item">
+    <c:forEach items="${users}" var="item">
         <tr>
             <td>${item.name }</td>
-            <td>${item.useraccount }</td>
-            <td>${item.userpassword }</td>
-            <td>${item.usersex }</td>
-            <td>${item.userage }</td>
-            <td>${item.useraddress }</td>
-            <td>${item.useremail }</td>
+            <td>${item.account }</td>
+            <td>${item.password }</td>
+            <td>${item.sex }</td>
+            <td>${item.age }</td>
+            <td>${item.address }</td>
+            <td>${item.email }</td>
             <td><a href="toupdate?id=${item.id}">修改</a>||<a href="del?id=${item.id}">删除</a>||<a
                     href="querybyid?id=${item.id}">查看</a></td>
         </tr>

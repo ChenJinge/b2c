@@ -10,13 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
     <title>秒杀详细页</title>
-    <link rel="icon" href="/YF_MS_WEB/img/assets/img/favicon.ico">
+    <link rel="icon" href="/img/assets/img/favicon.ico">
 
 
-    <link rel="stylesheet" type="text/css" href="/YF_MS_WEB/css/webbase.css"/>
-    <link rel="stylesheet" type="text/css" href="/YF_MS_WEB/css/pages-zoom.css"/>
-    <link rel="stylesheet" type="text/css" href="/YF_MS_WEB/css/pages-seckill-item.css"/>
-    <link rel="stylesheet" type="text/css" href="/YF_MS_WEB/css/widget-cartPanelView.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/webbase.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/pages-zoom.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/pages-seckill-item.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/widget-cartPanelView.css"/>
 
 
 </head>
@@ -68,7 +68,7 @@
             <div class="py-container">
                 <div class="yui3-g Logo">
                     <div class="yui3-u Left logoArea">
-                        <a class="logo-bd" title="友凡购" href="/YF_MS_WEB/newpagehomeAction/index" target="_blank"></a>
+                        <a class="logo-bd" title="友凡购" href="/newPageHome/index" target="_blank"></a>
                     </div>
                     <div class="yui3-u Center searchArea">
                         <div class="search">
@@ -122,7 +122,7 @@
                             <li class="f-item">全球购</li>
                             <li class="f-item">闪购</li>
                             <li class="f-item">团购</li>
-                            <li class="f-item"><a href="/YF_MS_WEB/newpagehomeAction/index" target="_blank">秒杀</a></li>
+                            <li class="f-item"><a href="/newPageHome/index" target="_blank">秒杀</a></li>
                         </ul>
                     </div>
                     <div class="yui3-u Right"></div>
@@ -146,8 +146,8 @@
 
     })
 </script>
-<script src="/YF_MS_WEB/js/jquery-3.3.1.min.js"></script>
-<script src="/YF_MS_WEB/js/remain.js"></script>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/remain.js"></script>
 <script type="text/javascript">
     $(function () {
         $("ul.btn-choose li a.btn-xlarge").click(function () {
@@ -174,7 +174,7 @@
                 <div class="zoom">
                     <!--默认第一个预览-->
                     <div id="preview" class="spec-preview">
-                        <span class="jqzoom"><img jqimg="${msproduct.productpicture}" src="${msproduct.productpicture}"
+                        <span class="jqzoom"><img jqimg="${bargains.picture}" src="${msproduct.productpicture}"
                                                   width="400px" height="400px"/></span>
                     </div>
                 </div>
@@ -182,15 +182,15 @@
             </div>
             <div class="fr itemInfo-wrap">
                 <div class="sku-name">
-                    <h4>${msproduct.producttitle}</h4>
+                    <h4>${bargains.title}</h4>
                 </div>
                 <div class="news">
 
-                    <span style="display: none" id="starttime"><fmt:formatDate value="${msproduct.starttime}"
+                    <span style="display: none" id="starttime"><fmt:formatDate value="${bargains.startTime}"
                                                                                pattern="yyyy-MM-dd HH:mm:ss"/></span>
-                    <span style="display: none" id="endtime"><fmt:formatDate value="${msproduct.endtime}"
+                    <span style="display: none" id="endtime"><fmt:formatDate value="${bargains.endTime}"
                                                                              pattern="yyyy-MM-dd HH:mm:ss"/></span>
-                    <span><img src="/YF_MS_WEB/img/_/clock.png"/>友凡秒杀</span>
+                    <span><img src="/img/_/clock.png"/>友凡秒杀</span>
                     <span class="overtime"><span id="remainingtime"></span></span>
                 </div>
                 <div class="summary">
@@ -201,11 +201,11 @@
                         </div>
                         <div class="fl price">
                             <i>¥</i>
-                            <em>${msproduct.miaoshaprice}</em>
-                            <span>原价：${msproduct.originalprice}</span>
+                            <em>${bargains.bargainsPrice}</em>
+                            <span>原价：${bargains.originalPrice}</span>
                         </div>
                         <div class="fr remark">
-                            剩余库存：${msproduct.stockcount}
+                            剩余库存：${bargains.stock}
                         </div>
                     </div>
                     <div class="summary-wrap">
@@ -246,8 +246,8 @@
                         <div class="fl">
                             <ul class="btn-choose unstyled">
                                 <li>
-                                    <form action="/YF_MS_WEB/orderAction/topayorder" id="ac">
-                                        <input type="hidden" name="id" value="${msproduct.id}">
+                                    <form action="/order/toPayOrder" id="ac">
+                                        <input type="hidden" name="id" value="${bargains.id}">
                                         <input type="hidden" name="num" value="1">
                                         <a id="buybt" href="javascript:void(0)" onclick="submit(this)"
                                            class="sui-btn  btn-danger addshopcar">立即抢购</a>
@@ -296,7 +296,7 @@
                             <li>
                                 <div class="list-wrap">
                                     <div class="p-img">
-                                        <img src="/YF_MS_WEB/img/_/part01.png"/>
+                                        <img src="/img/_/part01.png"/>
                                     </div>
                                     <div class="attr">
                                         <em>Apple苹果iPhone 6s (A1699)</em>
@@ -315,7 +315,7 @@
                             <li>
                                 <div class="list-wrap">
                                     <div class="p-img">
-                                        <img src="/YF_MS_WEB/img/_/part02.png"/>
+                                        <img src="/img/_/part02.png"/>
                                     </div>
                                     <div class="attr">
                                         <em>Apple苹果iPhone 6s (A1699)</em>
@@ -334,7 +334,7 @@
                             <li>
                                 <div class="list-wrap">
                                     <div class="p-img">
-                                        <img src="/YF_MS_WEB/img/_/part03.png"/>
+                                        <img src="/img/_/part03.png"/>
                                     </div>
                                     <div class="attr">
                                         <em>Apple苹果iPhone 6s (A1699)</em>
@@ -351,7 +351,7 @@
                                 </div>
                                 <div class="list-wrap">
                                     <div class="p-img">
-                                        <img src="/YF_MS_WEB/img/_/part02.png"/>
+                                        <img src="/img/_/part02.png"/>
                                     </div>
                                     <div class="attr">
                                         <em>Apple苹果iPhone 6s (A1699)</em>
@@ -368,7 +368,7 @@
                                 </div>
                                 <div class="list-wrap">
                                     <div class="p-img">
-                                        <img src="/YF_MS_WEB/img/_/part03.png"/>
+                                        <img src="/img/_/part03.png"/>
                                     </div>
                                     <div class="attr">
                                         <em>Apple苹果iPhone 6s (A1699)</em>
@@ -428,7 +428,7 @@
 
                             </ul>
                             <div class="intro-detail">
-                                ${msproduct.description}
+                                ${bargains.description}
                             </div>
                         </div>
                         <div id="two" class="tab-pane">

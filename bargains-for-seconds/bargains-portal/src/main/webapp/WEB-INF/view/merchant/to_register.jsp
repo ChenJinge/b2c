@@ -7,7 +7,7 @@
     <title>Insert title here</title>
 </head>
 <body>
-<form action="regiter" method="post">
+<form action="register" method="post">
     商家的姓名:<input name="name"></br>
     商家的店铺名称:<input name="shopName"></br>
     商家账号:<input name="account"></br>

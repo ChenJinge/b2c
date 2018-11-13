@@ -18,15 +18,15 @@
         <td>商家经营范围</td>
         <td>操作</td>
     </tr>
-    <c:forEach items="${merchantList}" var="item">
+    <c:forEach items="${merchants}" var="item">
         <tr>
             <td>${item.name }</td>
             <td>${item.shopName }</td>
             <td>${item.account }</td>
             <td>${item.password }</td>
             <td>${item.runScope }</td>
-            <td><a href="toupdate?id=${item.id}">修改</a>||<a href="del?id=${item.id}">删除</a>||<a
-                    href="querybyid?id=${item.id}">查看</a></td>
+            <td><a href="toUpdate?id=${item.id}">修改</a>||<a href="delete?id=${item.id}">删除</a>||<a
+                    href="queryById?id=${item.id}">查看</a></td>
         </tr>
     </c:forEach>
 </table>
