@@ -34,6 +34,12 @@ public class OrderController {
     BargainsService bargainsService;
 
     @Autowired
+    private BargainsRedisService bargainsRedisService;
+
+    @Autowired
+    private OrderRedisService orderRedisService;
+
+    @Autowired
     WeChatPay weChatPay;
 
     @Autowired
@@ -42,21 +48,15 @@ public class OrderController {
     @Autowired
     AliPay aliPay;
 
-    @Autowired
-    private BargainsRedisService bargainsRedisService;
-
-    @Autowired
-    private OrderRedisService orderRedisService;
-
     @RequestMapping("payOrder")
     public String payOrder(HttpServletRequest req, CustomOrder msorder) {
-        String returnurl = "redirect:/pageHome/toHome";
-        HttpSession sess = req.getSession();
-        UserEntity userEntity = (UserEntity) sess.getAttribute("user");
+        String returnUrl = "redirect:/pageHome/toHome";
+        HttpSession session = req.getSession();
+        UserEntity userEntity = (UserEntity) session.getAttribute("user");
         if (userEntity != null) {
             Map<String, Object> resultmap = orderRedisService.snatchBargains(userEntity.getId(), msorder.getProductId(), msorder);
-            boolean issuccess = (Boolean) resultmap.get("success");
-            if (issuccess) {
+            boolean isSuccess = (Boolean) resultmap.get("success");
+            if (isSuccess) {
                 System.out.println("pay order succeed");
                 Map<String, String> datamap = (Map<String, String>) resultmap.get("datamap");
                 String merchantid = datamap.get("merchantId");
@@ -65,15 +65,15 @@ public class OrderController {
                 String productid = datamap.get("productId");
                 String userid = datamap.get("userId");
 
-                returnurl = "redirect:toPayWithOrder?userId=" + userid + "&&productId=" + productid + "&&tradeSerialNumber=" + tradeserialnumber + "&&payAmount=" + payamount + "&&merchantId=" + merchantid;
+                returnUrl = "redirect:toPayWithOrder?userId=" + userid + "&&productId=" + productid + "&&tradeSerialNumber=" + tradeserialnumber + "&&payAmount=" + payamount + "&&merchantId=" + merchantid;
             } else {
                 System.out.println("pay order failed");
             }
         } else {
             req.setAttribute("error", "login status invalid");
-            returnurl = "user/to_login";
+            returnUrl = "user/to_login";
         }
-        return returnurl;
+        return returnUrl;
 
     }
 
@@ -115,20 +115,20 @@ public class OrderController {
     }
 
 
-    @RequestMapping("queryOrderByMerchanId")
-    public String queryOrderByMerchanId(HttpServletRequest req) {
-        String returnurl = "order/list_order_with_merchat";
+    @RequestMapping("queryOrderByMerchantId")
+    public String queryOrderByMerchantId(HttpServletRequest req) {
+        String returnUrl = "order/list_order_with_merchant";
         HttpSession sess = req.getSession();
-        MerchantEntity merchantEntity = (MerchantEntity) sess.getAttribute("merchantEntity");
+        MerchantEntity merchantEntity = (MerchantEntity) sess.getAttribute("merchant");
         if (merchantEntity != null) {
             List<OrderEntity> list = orderService.queryOrderByMerchantId(merchantEntity.getId());
             req.setAttribute("list", list);
         } else {
-            req.setAttribute("error", "merchant info invalid");
-            returnurl = "merchant/to_login";
+            req.setAttribute("error", "merchant authentication invalid");
+            returnUrl = "merchant/to_login";
         }
 
-        return returnurl;
+        return returnUrl;
 
     }
 
@@ -167,17 +167,17 @@ public class OrderController {
 
     @RequestMapping("applyRefund")
     public String applyRefund(HttpServletRequest req, int orderid, int paytype) {
-        String returnurl = "redirect:queryOrderByUserId";
+        String returnUrl = "redirect:queryOrderByUserId";
         HttpSession sess = req.getSession();
         UserEntity userEntity = (UserEntity) sess.getAttribute("userEntity");
         if (userEntity != null) {
             orderService.updateOrderPayStatusById(4, orderid, paytype);
         } else {
             req.setAttribute("error", "user info invalid");
-            returnurl = "user/to_login";
+            returnUrl = "user/to_login";
         }
 
-        return returnurl;
+        return returnUrl;
     }
 
     @RequestMapping("auditRefund")

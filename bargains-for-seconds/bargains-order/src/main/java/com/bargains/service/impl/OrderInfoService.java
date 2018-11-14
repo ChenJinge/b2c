@@ -18,40 +18,40 @@ public class OrderInfoService implements MessageListener {
 
     public void onMessage(Message message) {
         try {
-            byte[] messsagebyte = message.getBody();
-            ByteArrayInputStream in = new ByteArrayInputStream(messsagebyte);
+            byte[] messageByte = message.getBody();
+            ByteArrayInputStream in = new ByteArrayInputStream(messageByte);
             ObjectInputStream obj = new ObjectInputStream(in);
-            Map<String, String> datamap = (Map<String, String>) obj.readObject();
+            Map<String, String> dataMap = (Map<String, String>) obj.readObject();
 
-            String createtime = datamap.get("createtime");
-            String merchantid = datamap.get("merchantid");
-            String payamount = datamap.get("payamount");
-            String receivingadress = datamap.get("receivingadress");
-            String receivingphone = datamap.get("receivingphone");
-            String stockcountnum = datamap.get("stockcountnum");
-            String receivingname = datamap.get("receivingname");
-            String tradeserialnumber = datamap.get("tradeserialnumber");
-            String paystatus = datamap.get("paystatus");
-            String productid = datamap.get("productid");
-            String userid = datamap.get("userid");
+            String createTime = dataMap.get("createTime");
+            String merchantId = dataMap.get("merchantId");
+            String payAmount = dataMap.get("payAmount");
+            String receivingAdress = dataMap.get("receivingAdress");
+            String receivingPhone = dataMap.get("receivingPhone");
+            String stock = dataMap.get("stock");
+            String receivingName = dataMap.get("receivingName");
+            String tradeSerialNumber = dataMap.get("tradeSerialNumber");
+            String payStatus = dataMap.get("payStatus");
+            String productId = dataMap.get("productId");
+            String userId = dataMap.get("userId");
 
             OrderEntity orderEntity = new OrderEntity();
-            orderEntity.setUserId(Integer.valueOf(userid));
-            orderEntity.setProductId(Integer.valueOf(productid));
-            orderEntity.setCreateTime(DateUtils.transferdate(createtime, "yyyy-MM-dd HH:mm:ss"));
-            orderEntity.setTradeSerialNumber(tradeserialnumber);
-            orderEntity.setMerchantId(Integer.valueOf(merchantid));
-            orderEntity.setPayAmount(Integer.valueOf(payamount));
-            orderEntity.setPayStatus(Integer.valueOf(paystatus));
-            orderEntity.setReceivingAddress(receivingadress);
-            orderEntity.setReceivingName(receivingname);
-            orderEntity.setReceivingPhone(receivingphone);
-            orderEntity.setProductQuantity(1);
+            orderEntity.setUserId(Integer.valueOf(userId));
+            orderEntity.setProductId(Integer.valueOf(productId));
+            orderEntity.setCreateTime(DateUtils.transferdate(createTime, "yyyy-MM-dd HH:mm:ss"));
+            orderEntity.setTradeSerialNumber(tradeSerialNumber);
+            orderEntity.setMerchantId(Integer.valueOf(merchantId));
+            orderEntity.setPayAmount(Integer.valueOf(payAmount));
+            orderEntity.setPayStatus(Integer.valueOf(payStatus));
+            orderEntity.setReceivingAddress(receivingAdress);
+            orderEntity.setReceivingName(receivingName);
+            orderEntity.setReceivingPhone(receivingPhone);
+            orderEntity.setProductQuantity(Integer.valueOf(stock));
             orderService.insertOrder(orderEntity);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        System.out.println("��Ϣ������ = " + message.toString());
+        System.out.println("the order information is : " + message.toString());
     }
 }

@@ -11,11 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-/**
- * �̼�ע���¼ģ��
- *
- * @author Administrator
- */
 @Controller
 @RequestMapping("merchantRelogin")
 public class MerchantReloginController {

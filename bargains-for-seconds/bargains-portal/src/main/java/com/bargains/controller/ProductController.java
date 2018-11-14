@@ -28,7 +28,7 @@ public class ProductController {
     }
 
     @RequestMapping(value = "addProduct", method = RequestMethod.POST)
-    public String addProdcut(ProductEntity productEntity) {
+    public String addProduct(ProductEntity productEntity) {
         productService.insertProduct(productEntity);
         return "redirect:/bargains/listBargains";
     }

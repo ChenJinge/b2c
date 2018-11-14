@@ -1,4 +1,4 @@
-package com.bargains.controller.newpagehome;
+package com.bargains.controller;
 
 import com.bargains.entity.BargainsEntity;
 import com.bargains.entity.ProductEntity;

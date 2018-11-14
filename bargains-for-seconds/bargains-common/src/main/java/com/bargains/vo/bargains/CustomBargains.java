@@ -16,8 +16,8 @@ public class CustomBargains extends BargainsEntity {
     private String endStartTime;
     private String startEndTime;
     private String endEndTime;
-    private int startBargainsCount;
-    private int endBargainsCount;
+    private int startCount;
+    private int endCount;
     private int startStock;
     private int endStock;
 
@@ -117,20 +117,20 @@ public class CustomBargains extends BargainsEntity {
         this.endEndTime = endEndTime;
     }
 
-    public int getStartBargainsCount() {
-        return startBargainsCount;
+    public int getStartCount() {
+        return startCount;
     }
 
-    public void setStartBargainsCount(int startBargainsCount) {
-        this.startBargainsCount = startBargainsCount;
+    public void setStartCount(int startCount) {
+        this.startCount = startCount;
     }
 
-    public int getEndBargainsCount() {
-        return endBargainsCount;
+    public int getEndCount() {
+        return endCount;
     }
 
-    public void setEndBargainsCount(int endBargainsCount) {
-        this.endBargainsCount = endBargainsCount;
+    public void setEndCount(int endCount) {
+        this.endCount = endCount;
     }
 
     public int getStartStock() {

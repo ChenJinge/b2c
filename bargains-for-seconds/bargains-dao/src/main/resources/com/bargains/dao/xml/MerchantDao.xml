@@ -5,24 +5,33 @@
 
 <mapper namespace="com.bargains.dao.MerchantDao">
 
-    <select id="queryMerchantById" parameterType="int" resultType="merchantEntity">
-        select * from merchant where id = #{value}
+    <resultMap id="BaseResultMap" type="com.bargains.entity.MerchantEntity">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="shop_name" jdbcType="VARCHAR" property="shopName"/>
+        <result column="account" jdbcType="VARCHAR" property="account"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="run_scope" jdbcType="VARCHAR" property="runScope"/>
+    </resultMap>
+
+    <select id="queryMerchantById" parameterType="int" resultMap="BaseResultMap">
+        select * from tb_merchant where id = #{value}
     </select>
 
     <insert id="insertMerchant" parameterType="merchantEntity">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
             SELECT LAST_INSERT_ID()
         </selectKey>
-        insert into merchant(name,shop_name,account,password,run_scope)
+        insert into tb_merchant(name,shop_name,account,password,run_scope)
         value(#{name},#{shopName},#{account},#{password},#{runScope})
     </insert>
 
     <delete id="deleteMerchantById" parameterType="int">
-        delete from merchant where id = #{id}
+        delete from tb_merchant where id = #{id}
     </delete>
 
     <update id="updateMerchant" parameterType="merchantEntity">
-        update merchant set
+        update tb_merchant set
         name=#{name},shop_name=#{shopName},account=#{account},password=#{password},run_scope=#{runScope}
         where id=#{id}
     </update>
@@ -47,15 +56,15 @@
         </if>
     </sql>
 
-    <select id="queryMerchantByVo" parameterType="merchantVo" resultType="merchantEntity">
-        select * from merchant
+    <select id="queryMerchantByVo" parameterType="merchantVo" resultMap="BaseResultMap">
+        select * from tb_merchant
         <where>
             <include refid="customSQL"></include>
         </where>
     </select>
 
-    <select id="queryMerchantByAccount" parameterType="java.lang.String" resultType="merchantEntity">
-        select * from merchant where account = #{value}
+    <select id="queryMerchantByAccount" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select * from tb_merchant where account = #{value}
     </select>
 
 </mapper>

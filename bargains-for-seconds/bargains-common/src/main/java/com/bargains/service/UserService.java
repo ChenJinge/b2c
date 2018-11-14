@@ -7,16 +7,16 @@ import java.util.List;
 
 public interface UserService {
 
-     void insertUser(UserEntity userEntity);
+    void insertUser(UserEntity userEntity);
 
-     UserEntity queryUserById(int id);
+    UserEntity queryUserById(int id);
 
-     void updateUser(UserEntity userEntity);
+    void updateUser(UserEntity userEntity);
 
-     void deleteUserById(int id);
+    void deleteUserById(int id);
 
-     List<UserEntity> queryUserByVo(UserVo userVo);
+    List<UserEntity> queryUserByVo(UserVo userVo);
 
-     UserEntity queryUserByAccount(String account);
+    UserEntity queryUserByAccount(String account);
 
 }

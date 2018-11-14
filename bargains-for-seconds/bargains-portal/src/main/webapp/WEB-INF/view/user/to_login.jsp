@@ -8,7 +8,7 @@
 </head>
 <body>
 ${error }
-<form action="/YF_MS_WEB/userregiterloginAction/login" method="post">
+<form action="/userRegisterlogin/login" method="post">
     用户账号:<input name="account"></br>
     用户密码:<input name="password"></br>
     <input type="button" value="提交" onclick="submit(this)">

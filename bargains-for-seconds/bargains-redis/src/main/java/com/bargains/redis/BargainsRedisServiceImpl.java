@@ -21,7 +21,7 @@ public class BargainsRedisServiceImpl implements BargainsRedisService {
             bargainsEntity = bargainsCacheService.queryProductById(id);
             redisUtil.set("product:" + id, bargainsEntity);
         } else {
-            System.out.println("come into  redis --  queryProductById");
+            System.out.println("come into redis -- queryProductById");
             bargainsEntity = (BargainsEntity) value;
         }
         return bargainsEntity;

@@ -118,7 +118,7 @@
                             <li class="f-item">全球购</li>
                             <li class="f-item">闪购</li>
                             <li class="f-item">团购</li>
-                            <li class="f-item"><a href="/newPageHomeAction/index" target="_blank">秒杀</a></li>
+                            <li class="f-item"><a href="/newPageHome/index" target="_blank">秒杀</a></li>
                         </ul>
                     </div>
                     <div class="yui3-u Right"></div>

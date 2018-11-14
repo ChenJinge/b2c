@@ -5,22 +5,33 @@
 
 <mapper namespace="com.bargains.dao.ProductDao">
 
-    <insert id="insertProduct" parameterType="productEntity">
+    <resultMap id="BaseResultMap" type="com.bargains.entity.ProductEntity">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="product_id" jdbcType="INTEGER" property="productId"/>
+        <result column="merchant_id" jdbcType="INTEGER" property="merchantId"/>
+        <result column="origin_place" jdbcType="VARCHAR" property="originPlace"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="brand_name" jdbcType="VARCHAR" property="brandName"/>
+        <result column="weight" jdbcType="VARCHAR" property="weight"/>
+        <result column="specification" jdbcType="VARCHAR" property="specification"/>
+        <result column="detail_picture" jdbcType="VARCHAR" property="detailPicture"/>
+    </resultMap>
 
+    <insert id="insertProduct" parameterType="productEntity">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
             SELECT LAST_INSERT_ID()
         </selectKey>
         insert into
-        product (prodcut)_id,merchant_id,origin_place,name,brand_name,weight,specification,detail_picture)
+        tb_product (prodcut)_id,merchant_id,origin_place,name,brand_name,weight,specification,detail_picture)
         value(#{productId},#{merchantId},#{originPlace},#{name},#{brandName},#{weight},#{specification},#{detailPicture})
     </insert>
 
-    <select id="queryProductById" parameterType="int" resultType="productEntity">
-        select * from product where product_id = #{value}
+    <select id="queryProductById" parameterType="int" resultMap="BaseResultMap">
+        select * from tb_product where product_id = #{value}
     </select>
 
     <update id="updateProduct" parameterType="productEntity">
-        update product set
+        update tb_product set
         origin_place=#{originPlace},name=#{name},brand_name=#{brandName},weight=#{weight},specification=#{specification},detail_picture=#{detailPicture}
         where productId=#{productId}
     </update>

@@ -30,34 +30,34 @@ public class OrderRedisServiceImpl implements OrderRedisService {
         String key = "user id:" + userId + "==product id:" + productId;
         String value = "";
 
-        String createtimestring = DateUtils.transferdate(new Date(), "yyyy-MM-dd HH:mm:ss");
-        String merchantid = Order.getMerchantId() + "";
-        String payamount = Order.getPayAmount() + "";
-        String receivingadress = Order.getReceivingAddress();
-        String receivingname = Order.getReceivingName();
-        String receivingphone = Order.getReceivingPhone();
-        String stockcountnum = Order.getStock() + "";
-        String tradeserialnumber = createtimestring + UUID.randomUUID();
-        String paystatus = "1";
+        String createTimeString = DateUtils.transferdate(new Date(), "yyyy-MM-dd HH:mm:ss");
+        String merchantId = Order.getMerchantId() + "";
+        String payAmount = Order.getPayAmount() + "";
+        String receivingAddress = Order.getReceivingAddress();
+        String receivingName = Order.getReceivingName();
+        String receivingPhone = Order.getReceivingPhone();
+        String stock = Order.getStock() + "";
+        String tradeSerialNumber = createTimeString + UUID.randomUUID();
+        String payStatus = "1";
 
-        value += paystatus + "==" + tradeserialnumber + "==" + createtimestring + "==" + merchantid + "==" + payamount + "==" + receivingadress + "==" + receivingname + "==" + receivingphone + "==" + stockcountnum;
+        value += payStatus + "==" + tradeSerialNumber + "==" + createTimeString + "==" + merchantId + "==" + payAmount + "==" + receivingAddress + "==" + receivingName + "==" + receivingPhone + "==" + stock;
         redisUtil.set(key, value);
 
         Map<String, String> datamap = new HashMap<String, String>();
 
-        datamap.put("createtime", createtimestring);
-        datamap.put("merchantid", merchantid);
-        datamap.put("payamount", payamount);
-        datamap.put("receivingadress", receivingadress);
-        datamap.put("receivingname", receivingname);
-        datamap.put("receivingphone", receivingphone);
-        datamap.put("stockcountnum", stockcountnum);
-        datamap.put("tradeserialnumber", tradeserialnumber);
-        datamap.put("paystatus", paystatus);
-        datamap.put("productid", productId + "");
-        datamap.put("userid", userId + "");
+        datamap.put("createTime", createTimeString);
+        datamap.put("merchantId", merchantId);
+        datamap.put("payAmount", payAmount);
+        datamap.put("receivingAdress", receivingAddress);
+        datamap.put("receivingName", receivingName);
+        datamap.put("receivingPhone", receivingPhone);
+        datamap.put("stock", stock);
+        datamap.put("tradeSerialNumber", tradeSerialNumber);
+        datamap.put("payStatus", payStatus);
+        datamap.put("productId", productId + "");
+        datamap.put("userId", userId + "");
 
-        amqpTemplate.convertAndSend("ms_exchange", "orderinfomation", datamap);
+        amqpTemplate.convertAndSend("bargains_exchange", "orderinfomation", datamap);
 
         resultMap.put("success", true);
         resultMap.put("datamap", datamap);
@@ -68,28 +68,28 @@ public class OrderRedisServiceImpl implements OrderRedisService {
 
         String key = "userId:" + userId + "==productId:" + productId;
         String value = (String) redisUtil.get(key);
-        String[] splitvalues = value.split("==");
-        splitvalues[0] = "2";
+        String[] splitValues = value.split("==");
+        splitValues[0] = "2";
         value = "";
 
-        for (String temp : splitvalues) {
+        for (String temp : splitValues) {
             value += temp + "==";
         }
 
-        boolean issuccess = redisUtil.set(key, value);
-        Map<String, String> datamap = new HashMap<String, String>();
-        datamap.put("tradeserialnumber", tradeSerialNumber);
-        datamap.put("paystatus", "2");
-        String paytimestring = DateUtils.transferdate(new Date(), "yyyy-MM-dd HH:mm:ss");
-        datamap.put("paytimestring", paytimestring);
-        datamap.put("paytype", payType + "");
-        amqpTemplate.convertAndSend("ms_exchange", "payinfomation", datamap);
+        boolean isSuccess = redisUtil.set(key, value);
+        Map<String, String> dataMap = new HashMap<String, String>();
+        dataMap.put("tradeSerialNumber", tradeSerialNumber);
+        dataMap.put("payStatus", "2");
+        String payTimeStr = DateUtils.transferdate(new Date(), "yyyy-MM-dd HH:mm:ss");
+        dataMap.put("payTime", payTimeStr);
+        dataMap.put("payType", payType + "");
+        amqpTemplate.convertAndSend("bargains_exchange", "payinfomation", dataMap);
 
-        return issuccess;
+        return isSuccess;
     }
 
     public List<OrderEntity> queryOrderByUserId(int userid) {
-        List<OrderEntity> listmsorder = new ArrayList<OrderEntity>();
+        List<OrderEntity> orders = new ArrayList<OrderEntity>();
         Set<String> keys = redisUtil.getkeys("user id:" + userid);
 
         for (String key : keys) {
@@ -99,35 +99,34 @@ public class OrderRedisServiceImpl implements OrderRedisService {
                 continue;
             }
 
-            String productid = prusers[1].split(":")[1];
-            String useridstring = prusers[0].split(":")[1];
+            String productId = prusers[1].split(":")[1];
             String value = (String) redisUtil.get(key);
-            String[] valuearray = value.split("==");
-            String paystatus = valuearray[0];
-            String tradeserialnumber = valuearray[1];
-            String createtimestring = valuearray[2];
-            String merchantid = valuearray[3];
-            String payamount = valuearray[4];
-            String receivingadress = valuearray[5];
-            String receivingname = valuearray[6];
-            String receivingphone = valuearray[7];
-            String stockcountnum = valuearray[8];
+            String[] valueArray = value.split("==");
+            String payStatus = valueArray[0];
+            String tradeSerialNumber = valueArray[1];
+            String createTimeStr = valueArray[2];
+            String merchantId = valueArray[3];
+            String payAmount = valueArray[4];
+            String receivingAdress = valueArray[5];
+            String receivingName = valueArray[6];
+            String receivingPhone = valueArray[7];
+            String stock = valueArray[8];
 
             OrderEntity orderEntity = new OrderEntity();
-            orderEntity.setCreateTime(DateUtils.transferdate(createtimestring, "yyyy-MM-dd HH:mm:ss"));
-            orderEntity.setPayAmount(Integer.valueOf(payamount));
-            orderEntity.setMerchantId(Integer.valueOf(merchantid));
-            orderEntity.setReceivingAddress(receivingadress);
-            orderEntity.setReceivingName(receivingname);
-            orderEntity.setProductId(Integer.valueOf(productid));
-            orderEntity.setReceivingPhone(receivingphone);
-            orderEntity.setTradeSerialNumber(tradeserialnumber);
+            orderEntity.setCreateTime(DateUtils.transferdate(createTimeStr, "yyyy-MM-dd HH:mm:ss"));
+            orderEntity.setPayAmount(Integer.valueOf(payAmount));
+            orderEntity.setMerchantId(Integer.valueOf(merchantId));
+            orderEntity.setReceivingAddress(receivingAdress);
+            orderEntity.setReceivingName(receivingName);
+            orderEntity.setProductId(Integer.valueOf(productId));
+            orderEntity.setReceivingPhone(receivingPhone);
+            orderEntity.setTradeSerialNumber(tradeSerialNumber);
             orderEntity.setUserId(userid);
-            orderEntity.setProductQuantity(1);
-            orderEntity.setPayStatus(Integer.valueOf(paystatus));
-            listmsorder.add(orderEntity);
+            orderEntity.setProductQuantity(Integer.valueOf(stock));
+            orderEntity.setPayStatus(Integer.valueOf(payStatus));
+            orders.add(orderEntity);
         }
-        return listmsorder;
+        return orders;
     }
 
 }

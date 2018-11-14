@@ -4,33 +4,49 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.bargains.dao.OrderDao">
+    <resultMap id="BaseResultMap" type="com.bargains.entity.OrderEntity">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="product_quantity" jdbcType="INTEGER" property="productQuantity"/>
+        <result column="product_id" jdbcType="INTEGER" property="productId"/>
+        <result column="pay_amount" jdbcType="INTEGER" property="payAmount"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="merchant_id" jdbcType="INTEGER" property="merchantId"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="pay_time" jdbcType="TIMESTAMP" property="payTime"/>
+        <result column="pay_type" jdbcType="INTEGER" property="payType"/>
+        <result column="pay_status" jdbcType="INTEGER" property="payStatus"/>
+        <result column="receiving_address" jdbcType="VARCHAR" property="receivingAddress"/>
+        <result column="receiving_phone" jdbcType="VARCHAR" property="receivingPhone"/>
+        <result column="receiving_name" jdbcType="VARCHAR" property="receivingName"/>
+        <result column="trade_serial_number" jdbcType="VARCHAR" property="tradeSerialNumber"/>
+    </resultMap>
 
     <insert id="insertOrder" parameterType="orderEntity">
-
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
             SELECT LAST_INSERT_ID()
         </selectKey>
         insert into
-        order (product_id,pay_amount,user_id,merchant_id,create_time,pay_status,receiving_adress,receiving_phone,receiving_name,trade_serial_number,product_quantity)
+        tb_order
+        (product_id,pay_amount,user_id,merchant_id,create_time,pay_status,receiving_adress,receiving_phone,receiving_name,trade_serial_number,product_quantity)
         value(#{productId},#{payAmount},#{userId},#{merchantId},#{createTime},#{payStatus},#{receivingAdress},#{receivingPhone},#{receivingName},#{tradeSerialNumber},#{productQuantity})
     </insert>
 
-    <select id="queryOrderByUserId" parameterType="int" resultType="orderEntity">
-        select * from order where user_id = #{value}
+    <select id="queryOrderByUserId" parameterType="int" resultMap="BaseResultMap">
+        select * from tb_order where user_id = #{value}
     </select>
 
-    <select id="queryOrderByMerchantId" parameterType="int" resultType="orderEntity">
-        select * from order where merchant_id = #{value}
+    <select id="queryOrderByMerchantId" parameterType="int" resultMap="BaseResultMap">
+        select * from tb_order where merchant_id = #{value}
     </select>
 
 
     <update id="updateOrderPayStatusById" parameterType="orderVo">
-        update order set pay_status=#{customOrder.payStatus},pay_type=#{customOrder.payType} where
+        update tb_order set pay_status=#{customOrder.payStatus},pay_type=#{customOrder.payType} where
         id=#{customOrder.id}
     </update>
 
     <update id="updateOrderByTrNumber" parameterType="orderVo">
-        update order set
+        update tb_order set
         pay)_status=#{customOrder.payStatus},pay_type=#{customOrder.payType},pay_time=#{customOrder.payTime} where
         trade_serial_number=#{customOrder.tradeSerialNumber}
     </update>

@@ -10,7 +10,7 @@ public class ProductCacheServiceImpl implements ProductCacheService {
     @Autowired
     private ProductService productService;
 
-    @Cacheable(value = "MS_Cache", key = "'productdetail:' + #productId")
+    @Cacheable(value = "Bargains_Cache", key = "'productdetail:' + #productId")
     public ProductEntity queryProductById(int productId) {
         System.out.println("come into queryProductById");
         return productService.queryProductById(productId);

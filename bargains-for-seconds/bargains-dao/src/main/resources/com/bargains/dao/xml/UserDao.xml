@@ -5,24 +5,35 @@
 
 <mapper namespace="com.bargains.dao.UserDao">
 
-    <select id="queryUserById" parameterType="int" resultType="userEntity">
-        select * from user where id = #{value}
+    <resultMap id="BaseResultMap" type="com.bargains.entity.UserEntity">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="account" jdbcType="VARCHAR" property="account"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="sex" jdbcType="VARCHAR" property="sex"/>
+        <result column="age" jdbcType="INTEGER" property="age"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+    </resultMap>
+
+    <select id="queryUserById" parameterType="int" resultMap="BaseResultMap">
+        select * from tb_user where id = #{value}
     </select>
 
     <insert id="insertUser" parameterType="userEntity">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
             SELECT LAST_INSERT_ID()
         </selectKey>
-        insert into user (name,account,password,sex,age,address,email)
+        insert into tb_user (name,account,password,sex,age,address,email)
         value(#{name},#{account},#{password},#{sex},#{age},#{address},#{email})
     </insert>
 
     <delete id="deleteUserById" parameterType="int">
-        delete from user  where id = #{id}
+        delete from tb_user where id = #{id}
     </delete>
 
     <update id="updateUser" parameterType="merchantEntity">
-        update user set
+        update tb_user set
         name=#{name},account=#{account},password=#{password},sex=#{sex},age=#{age},address=#{address},email=#{email}
         where id=#{id}
     </update>
@@ -53,15 +64,15 @@
         </if>
     </sql>
 
-    <select id="queryUserByVo" parameterType="userVo" resultType="userEntity">
-        select * from user
+    <select id="queryUserByVo" parameterType="userVo" resultMap="BaseResultMap">
+        select * from tb_user
         <where>
             <include refid="customSQL"></include>
         </where>
     </select>
 
-    <select id="queryUserByAccount" parameterType="java.lang.String" resultType="userEntity">
-        select * from user where account = #{value}
+    <select id="queryUserByAccount" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select * from tb_user where account = #{value}
     </select>
 
 </mapper>

@@ -11,6 +11,6 @@
 <a href="/merchantRelogin/toRegister">商家注册</a></br>
 <a href="/merchantRelogin/toLogin">商家登录</a>
 <a href="/merchantRelogin/exit">商家退出登录</a>
-<a href="/order/queryOrderByMerchanId">订单查询</a>
+<a href="/order/queryOrderByMerchantId">订单查询</a>
 </body>
 </html>

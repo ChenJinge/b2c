@@ -4,8 +4,8 @@ import com.bargains.entity.BargainsEntity;
 import com.bargains.entity.ProductEntity;
 import com.bargains.entity.UserEntity;
 import com.bargains.service.BargainsService;
-import com.bargains.service.redis.ProductRedisService;
 import com.bargains.service.redis.BargainsRedisService;
+import com.bargains.service.redis.ProductRedisService;
 import com.bargains.vo.bargains.BargainsVo;
 import com.bargains.vo.bargains.CustomBargains;
 import org.apache.http.HttpEntity;
@@ -83,7 +83,7 @@ public class PageHomeController {
 
             if (entity != null) {
                 String html = EntityUtils.toString(entity);
-                File file = new File(htmlPath + "/index.html");//�浽Ӧ�õ�htmlPathĿ¼��
+                File file = new File(htmlPath + "/index.html");
                 Writer writer = new BufferedWriter(
                         new OutputStreamWriter(
                                 new FileOutputStream(file), "utf-8"));
@@ -97,7 +97,6 @@ public class PageHomeController {
         }
     }
 
-
     @RequestMapping("producejs")
     public void producejs(HttpServletRequest req) {
         String jsPath = req.getRealPath("/WEB-INF/classes/js");
@@ -105,7 +104,7 @@ public class PageHomeController {
                 "var starttime = $(\"#starttime\").html();" + "\n" +
                 "var s1 = new Date(starttime.replace(\"/-/g\",\"/\"));" + "\n" +
                 "var s2 = new Date();" + "\n" +
-                "var date3 = s1.getTime() - s2.getTime();//����һ�����ʱ���" + "\n" +
+                "var date3 = s1.getTime() - s2.getTime();" + "\n" +
                 "if(date3 > 2){" + "\n" +
                 "$(\"#sellbnt\").attr({\"disabled\":\"disabled\"});" + "\n" +
                 "var days = Math.floor(date3/(24*3600*1000));" + "\n" +
@@ -119,12 +118,12 @@ public class PageHomeController {
                 "}else{" + "\n" +
                 "$(\"#remainnoties\").html(\"\");" + "\n" +
                 "$(\"#sellbnt\").removeAttr(\"disabled\");" + "\n" +
-                "$(\"#sellbnt\").parent().attr(\"controller\",\"/YF_MS_WEB/orderAction/topayorder\");" + "\n" +
+                "$(\"#sellbnt\").parent().attr(\"controller\",\"/order/toPayOrder\");" + "\n" +
                 "}" + "\n" +
                 "}" + "\n" +
                 "// test js new " + "\n" +
                 "setInterval('remaintime()',500);";
-        File file = new File(jsPath + "/remain.js");//�浽Ӧ�õ�htmlPathĿ¼��
+        File file = new File(jsPath + "/remain.js");
         Writer writer = null;
         try {
             writer = new BufferedWriter(
@@ -133,14 +132,12 @@ public class PageHomeController {
             writer.write(jscontent);
             writer.flush();
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             if (writer != null)
                 try {
                     writer.close();
                 } catch (IOException e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
         }

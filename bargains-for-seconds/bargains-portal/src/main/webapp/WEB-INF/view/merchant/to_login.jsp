@@ -8,7 +8,7 @@
 </head>
 <body>
 ${error }
-<form action="/login/login" method="post">
+<form action="/merchantRelogin/login" method="post">
     商家账号:<input name="account"></br>
     商家密码:<input name="password"></br>
     <input type="button" value="提交" onclick="submit(this)">

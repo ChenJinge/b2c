@@ -5,11 +5,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:protocol name="dubbo" port="20882"></dubbo:protocol>
-    <dubbo:application name="YF_MS_ORDER"/>
+    <dubbo:application name="BARGAINS_ORDER"/>
 
-    <dubbo:registry address="zookeeper://192.168.253.142:2181"/>
+    <dubbo:registry address="zookeeper://localhost:2181"/>
 
-    <dubbo:reference id="msoderService" interface="com.bargains.service.OrderService"/>
+    <dubbo:reference id="oderService" interface="com.bargains.service.OrderService"/>
 
 
 </beans>

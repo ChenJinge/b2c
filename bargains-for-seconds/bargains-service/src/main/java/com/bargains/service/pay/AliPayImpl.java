@@ -4,14 +4,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AliPayImpl implements AliPay {
-
-    public int payWithOrder(String tradeserialnumber, int payamount) {
-        System.out.println("֧����֧���ɹ�");
+    public int payWithOrder(String tradeSerialNumber, int payAmount) {
+        System.out.println("Ali pay succeed ");
         return 1;
     }
 
-    public int refundWithOrder(String tradeserialnumber, int payamount) {
-        System.out.println("֧�����˿�ɹ�");
+    public int refundWithOrder(String tradeSerialNumber, int payAmount) {
+        System.out.println("Ali refund succeed ");
         return 1;
     }
 

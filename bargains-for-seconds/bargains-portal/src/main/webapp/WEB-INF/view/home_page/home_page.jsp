@@ -9,10 +9,10 @@
 </head>
 <body>
 欢迎：<span id="useraccount"></span>
-<a href="/userregiterloginAction/toregiter">注册</a></br>
-<a href="/userregiterloginAction/tologin">登录</a>
-<a href="/userregiterloginAction/exit">退出登录</a>
-<a href="/orderAction/queryorderbyuserid">订单查询</a>
+<a href="/login/toRegister">注册</a></br>
+<a href="/login/toLogin">登录</a>
+<a href="/login/exit">退出登录</a>
+<a href="/order/queryOrderByUserId">订单查询</a>
 <table border="2">
     <c:forEach items="${list}" var="item">
         <tr>
@@ -22,15 +22,15 @@
             <td>${item.originalPrice}</td>
             <td>${item.startTime}</td>
             <td>${item.endTime}</td>
-            <td><a href="viewproductdetail?id=${item.id}">查看</a></td>
+            <td><a href="viewProduct?id=${item.id}">查看</a></td>
         </tr>
     </c:forEach>
 </table>
-<script src="/YF_MS_WEB/js/jquery-3.3.1.min.js"></script>
+<script src="/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
     $.ajax({
         type: "get",
-        url: "/pagehomeAction/getuser",
+        url: "/pageHome/getUser",
         success: function (msg) {
             $("#useraccount").html(msg);
         }
