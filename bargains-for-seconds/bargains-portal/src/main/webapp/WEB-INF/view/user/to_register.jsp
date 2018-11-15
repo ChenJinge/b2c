@@ -7,7 +7,7 @@
     <title>Insert title here</title>
 </head>
 <body>
-<form action="regiter" method="post">
+<form action="register" method="post">
     用户姓名:<input name="name"></br>
     用户账号:<input name="account"></br>
     用户密码:<input name="password"></br>

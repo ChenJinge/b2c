@@ -65,8 +65,8 @@ public class PageHomeController {
         return "order/sell_detail";
     }
 
-    @RequestMapping("producehtml")
-    public void producehtml(HttpServletRequest req) {
+    @RequestMapping("produceHtml")
+    public void produceHtml(HttpServletRequest req) {
         String htmlPath = req.getRealPath("/WEB-INF/html/");
         String contextpath = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath();
         contextpath = contextpath + "/pageHome/toHome";
@@ -97,8 +97,8 @@ public class PageHomeController {
         }
     }
 
-    @RequestMapping("producejs")
-    public void producejs(HttpServletRequest req) {
+    @RequestMapping("produceJS")
+    public void produceJS(HttpServletRequest req) {
         String jsPath = req.getRealPath("/WEB-INF/classes/js");
         String jscontent = "function remaintime(){" + "\n" +
                 "var starttime = $(\"#starttime\").html();" + "\n" +

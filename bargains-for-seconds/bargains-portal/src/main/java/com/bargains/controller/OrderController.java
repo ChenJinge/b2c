@@ -133,7 +133,7 @@ public class OrderController {
     }
 
     @RequestMapping("toPayWithOrder")
-    public String topaywithorder(HttpServletRequest req, int userid, int productid, int merchantid, String tradeserialnumber, int payamount) {
+    public String toPayWithOrder(HttpServletRequest req, int userid, int productid, int merchantid, String tradeserialnumber, int payamount) {
         req.setAttribute("userId", userid);
         req.setAttribute("productId", productid);
         req.setAttribute("merchantId", merchantid);

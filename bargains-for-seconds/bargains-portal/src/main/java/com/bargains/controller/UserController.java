@@ -51,8 +51,8 @@ public class UserController {
         return "redirect:queryByVo";
     }
 
-    @RequestMapping("querybyId")
-    public String querybyid(HttpServletRequest request, int id) {
+    @RequestMapping("queryById")
+    public String queryById(HttpServletRequest request, int id) {
         UserEntity userEntity = userService.queryUserById(id);
         request.setAttribute("user", userEntity);
         return "user/view";

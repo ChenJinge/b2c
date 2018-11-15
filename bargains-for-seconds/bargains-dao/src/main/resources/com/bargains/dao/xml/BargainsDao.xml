@@ -29,7 +29,7 @@
         insert into
         tb_bargains
         (product_id,title,picture,bargains_orice,original_price,merchant_id,apply_date,audit_status,start_time,end_time,count,stock,description)
-        value(#{productId},#{title},#{picture},#{bargainsPrice},#{originalPrice},#{merchantId},#{ApplyDate},#{auditStatus},#{startTime},#{endTime},#{count},#{stock},#{description})
+        value(#{productId},#{title},#{picture},#{bargainsPrice},#{originalPrice},#{merchantId},#{applyDate},#{auditStatus},#{startTime},#{endTime},#{count},#{stock},#{description})
     </insert>
 
     <sql id="customBargainsSQL">

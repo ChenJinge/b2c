@@ -31,9 +31,23 @@ public class BargainsController {
     }
 
     @RequestMapping(value = "applyBargains", method = RequestMethod.POST)
-    public String applyBargains(BargainsEntity bargainsEntity) {
-        bargainsService.applyProduct(bargainsEntity);
+    public String applyBargains(HttpServletRequest request,BargainsEntity bargainsEntity) {
+        try {
+            String startTimeStr = request.getParameter("startTimeStr");
+            String endTimeStr = request.getParameter("endTimeStr");
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            Date startTime = dateFormat.parse(startTimeStr);
+            Date endTime = dateFormat.parse(endTimeStr);
+            bargainsEntity.setStartTime(startTime);
+            bargainsEntity.setEndTime(endTime);
+            bargainsService.applyProduct(bargainsEntity);
+            return "redirect:listProduct";
+        }catch (Exception e ){
+            e.printStackTrace();
+        }
+
         return "redirect:listProduct";
+
     }
 
     @RequestMapping(value = "listBargains")

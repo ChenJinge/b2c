@@ -8,7 +8,7 @@
     <title>Insert title here</title>
 </head>
 <body>
-<center><a href="toApplymsproduct">申请秒杀商品</a></center>
+<center><a href="toApplyBargains">申请秒杀商品</a></center>
 <table border="2">
     <tr>
         <td>商品id</td>
@@ -45,7 +45,7 @@
             <td><a href="toupdateBargains?id=${item.id}">修改</a>||<a href="deleteBargainsById?id=${item.id}">删除</a>||<a
                     href="/bargains/queryBargainsById?id=${item.id}">查看</a>||<a
                     href="/bargains/toUpdateBargainsAuditStatus?id=${item.id}">审核</a>
-                ||<a href="/product/toAddProduct?productId=${item.id}&&merchantId=${item.msmerchantid}">添加商品详情</a>||<a
+                ||<a href="/product/toAddProduct?productId=${item.id}&&merchantId=${item.merchantId}">添加商品详情</a>||<a
                         href="/product/queryProductById?productId=${item.id}">查看商品详情</a>||<a
                         href="/product/toUpdateProduct?productId=${item.id}">修改商品详情</a>
             </td>

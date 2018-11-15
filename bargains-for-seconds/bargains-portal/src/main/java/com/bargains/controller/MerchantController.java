@@ -19,7 +19,7 @@ public class MerchantController {
     MerchantService merchantService;
 
     @RequestMapping("toAdd")
-    public String toadd() {
+    public String toAdd() {
         return "merchant/add";
     }
 

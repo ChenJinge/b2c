@@ -24,7 +24,7 @@ public class MerchantReloginController {
     }
 
     @RequestMapping(value = "register", method = RequestMethod.POST)
-    public String regiter(HttpServletRequest req, MerchantEntity merchantEntity) {
+    public String register(HttpServletRequest req, MerchantEntity merchantEntity) {
         merchantService.insertMerchant(merchantEntity);
         HttpSession sess = req.getSession();
         sess.setAttribute("merchant", merchantEntity);
@@ -32,7 +32,7 @@ public class MerchantReloginController {
     }
 
     @RequestMapping(value = "toLogin")
-    public String tologin(HttpServletRequest req, UserEntity userEntity) {
+    public String toLogin(HttpServletRequest req, UserEntity userEntity) {
 
         return "merchant/to_login";
     }
