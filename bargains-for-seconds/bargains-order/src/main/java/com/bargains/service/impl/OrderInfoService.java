@@ -49,7 +49,6 @@ public class OrderInfoService implements MessageListener {
             orderEntity.setProductQuantity(Integer.valueOf(stock));
             orderService.insertOrder(orderEntity);
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         System.out.println("the order information is : " + message.toString());

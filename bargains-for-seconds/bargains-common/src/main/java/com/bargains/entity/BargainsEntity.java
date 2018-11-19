@@ -29,6 +29,10 @@ public class BargainsEntity implements Serializable {
 
     private Date endTime;
 
+    private String startTimeStr;
+
+    private String endTimeStr;
+
     private Integer count;
 
     private Integer stock;
@@ -83,11 +87,11 @@ public class BargainsEntity implements Serializable {
         this.bargainsPrice = bargainsPrice;
     }
 
-    public Integer getMerchant() {
+    public Integer getMerchantId() {
         return merchantId;
     }
 
-    public void setMerchant(Integer merchantId) {
+    public void setMerchantId(Integer merchantId) {
         this.merchantId = merchantId;
     }
 
@@ -129,6 +133,22 @@ public class BargainsEntity implements Serializable {
 
     public void setEndTime(Date endTime) {
         this.endTime = endTime;
+    }
+
+    public String getStartTimeStr() {
+        return startTimeStr;
+    }
+
+    public void setStartTimeStr(String startTimeStr) {
+        this.startTimeStr = startTimeStr;
+    }
+
+    public String getEndTimeStr() {
+        return endTimeStr;
+    }
+
+    public void setEndTimeStr(String endTimeStr) {
+        this.endTimeStr = endTimeStr;
     }
 
     public Integer getCount() {

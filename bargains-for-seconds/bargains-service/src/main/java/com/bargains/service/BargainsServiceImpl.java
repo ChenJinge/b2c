@@ -21,22 +21,6 @@ public class BargainsServiceImpl implements BargainsService {
 
     public void applyProduct(BargainsEntity bargainsEntity) {
 
-        String startTime = bargainsEntity.getStartTime().toString();
-        String endTime = bargainsEntity.getEndTime().toString();
-        DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
-
-        try {
-
-            Date startTimeDate = dateformat.parse(startTime);
-            bargainsEntity.setStartTime(startTimeDate);
-            Date endTimeDate = dateformat.parse(endTime);
-            bargainsEntity.setEndTime(endTimeDate);
-
-        } catch (ParseException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
         bargainsEntity.setApplyDate(new Date());
         bargainsEntity.setAuditStatus(1);
 
