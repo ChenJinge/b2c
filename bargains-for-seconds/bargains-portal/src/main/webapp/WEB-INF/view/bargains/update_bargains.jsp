@@ -16,7 +16,7 @@
     商品原价:<input name="originalPrice" value="${bargains.originalPrice }"></br>
     秒杀开始时间:<input name="startTime" value="${startTime }"></br>
     秒杀结束时间:<input name="endTime" value="${endTime}"></br>
-    秒杀商品数量:<input name="productQuantity" value="${bargains.productQuantity }"></br>
+    秒杀商品数量:<input name="productQuantity" value="${bargains.count }"></br>
     库存:<input name="stock" value="${bargains.stock }"></br>
     描述:<input name="description" value="${bargains.description }"></br>
     <input type="button" value="提交" onclick="submit(this)">

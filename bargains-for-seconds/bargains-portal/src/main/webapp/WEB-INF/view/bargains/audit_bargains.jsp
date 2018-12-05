@@ -10,17 +10,17 @@
 <form action="updateBargainsAuditStatus" method="post">
     <input name="id" value="${bargains.id }" type="hidden">
     商品id:${bargains.productId }"</br>
-    商家id:${bargains.msmerchantId }"</br>
+    商家id:${bargains.merchantId }"</br>
     商品标题:${bargains.title }</br>
     商品图片地址:${bargains.picture }</br>
     秒杀价格:${bargains.bargainsPrice }</br>
     商品原价:${bargains.originalPrice }</br>
     秒杀开始时间:${startTime }</br>
     秒杀结束时间:${endTime}</br>
-    秒杀商品数量:${bargains.productQuantity }</br>
+    秒杀商品数量:${bargains.count }</br>
     库存:${bargains.stock }</br>
     描述:${bargains.description }</br>
-    审核通过:<input type="radio" name="state" value="2">审核不通过:<input type="radio" name="state" value="3">
+    审核通过:<input type="radio" name="auditStatus" value="2">审核不通过:<input type="radio" name="state" value="3">
     <input type="button" value="提交" onclick="submit(this)">
 </form>
 </body>

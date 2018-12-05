@@ -31,7 +31,7 @@
                                                      pattern="yyyy-MM-dd HH:mm:dd"/></span></td>
             <td><span id="endtime"><fmt:formatDate value="${bargains.endTime}" pattern="yyyy-MM-dd HH:mm:dd"/></span>
             </td>
-            <td>${bargains.productQuantity}</td>
+            <td>${bargains.count}</td>
             <td>${bargains.stock}</td>
         </tr>
     </table>

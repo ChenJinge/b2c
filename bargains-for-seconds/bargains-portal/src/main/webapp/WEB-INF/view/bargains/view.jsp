@@ -18,7 +18,7 @@
     秒杀商品的审核时间: ${bargains.auditStatus }</br>
     秒杀的开始时间: ${bargains.startTime }</br>
     秒杀的结束时间: ${bargains.endTime }</br>
-    秒杀数量: ${bargains.productQauntity }</br>
+    秒杀数量: ${bargains.count }</br>
     秒杀的库存: ${bargains.stock }</br>
     秒杀的描述: ${bargains.description }</br>
 </form>

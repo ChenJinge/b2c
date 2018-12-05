@@ -7,7 +7,7 @@
     <title>Insert title here</title>
 </head>
 <body>
-<form action="/addProduct" method="post">
+<form action="addProduct" method="post">
     <input name="productId" type="hidden" value="${productId}">
     <input name="merchantId" type="hidden" value="${merchantId}">
     商品产地:<input name="originPlace"></br>

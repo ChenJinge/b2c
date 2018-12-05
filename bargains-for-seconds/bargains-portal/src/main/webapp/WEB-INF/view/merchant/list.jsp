@@ -8,7 +8,7 @@
     <title>Insert title here</title>
 </head>
 <body>
-<center><a href="toAdd">a添加商家</a></center>
+<center><a href="toAdd">添加商家</a></center>
 <table border="2">
     <tr>
         <td>商家的姓名</td>

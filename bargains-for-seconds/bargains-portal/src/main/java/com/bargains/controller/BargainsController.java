@@ -41,12 +41,12 @@ public class BargainsController {
             bargainsEntity.setStartTime(startTime);
             bargainsEntity.setEndTime(endTime);
             bargainsService.applyProduct(bargainsEntity);
-            return "redirect:listProduct";
+            return "redirect:listBargains";
         }catch (Exception e ){
             e.printStackTrace();
         }
 
-        return "redirect:listProduct";
+        return "redirect:listBargains";
 
     }
 

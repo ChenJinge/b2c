@@ -7,7 +7,7 @@
     <title>Insert title here</title>
 </head>
 <body>
-<form action="payorder">
+<form action="payOrder">
     商品名称：${bargains.title}
     购买数量：${productQuantity}
     支付总额：${payAmount}

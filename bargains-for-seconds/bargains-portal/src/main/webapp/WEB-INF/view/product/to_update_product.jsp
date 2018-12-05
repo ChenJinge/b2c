@@ -10,7 +10,7 @@
 <form action="updateProduct" method="post">
     <input name="productId" type="hidden" value="${product.productId}">
     <input name="merchantId" type="hidden" value="${product.merchantId}">
-    商品产地:<input name="productplace" value="${product.originplace }"></br>
+    商品产地:<input name="productplace" value="${product.originPlace }"></br>
     商品名称:<input name="productname" value="${product.name }"></br>
     商品品牌:<input name="brandname" value="${product.brandName }"></br>
     商品重量:<input name="productweight" value="${product.weight }"></br>

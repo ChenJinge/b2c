@@ -18,7 +18,7 @@
         <td>商家id</td>
         <td>秒杀原价</td>
         <td>申请时间</td>
-        <td>转态</td>
+        <td>状态</td>
         <td>秒杀开始时间</td>
         <td>秒杀结束时间</td>
         <td>秒杀商品数</td>
@@ -30,7 +30,7 @@
         <tr>
             <td>${item.productId }</td>
             <td>${item.title }</td>
-            <td>${item.picture }</td>
+            <td><img src="${item.picture }" style="width:100px;" ></td>
             <td>${item.bargainsPrice }</td>
             <td>${item.merchantId }</td>
             <td>${item.originalPrice }</td>
@@ -38,16 +38,17 @@
             <td>${item.auditStatus }</td>
             <td>${item.startTime }</td>
             <td>${item.endTime }</td>
-            <td>${item.productQuantity }</td>
+            <td>${item.count }</td>
             <td>${item.stock }</td>
             <td>${item.description }</td>
-            productId,int merchantId
-            <td><a href="toupdateBargains?id=${item.id}">修改</a>||<a href="deleteBargainsById?id=${item.id}">删除</a>||<a
-                    href="/bargains/queryBargainsById?id=${item.id}">查看</a>||<a
-                    href="/bargains/toUpdateBargainsAuditStatus?id=${item.id}">审核</a>
-                ||<a href="/product/toAddProduct?productId=${item.id}&&merchantId=${item.merchantId}">添加商品详情</a>||<a
-                        href="/product/queryProductById?productId=${item.id}">查看商品详情</a>||<a
-                        href="/product/toUpdateProduct?productId=${item.id}">修改商品详情</a>
+            <td>
+                <a href="toUpdateBargains?id=${item.id}">修改</a>||
+                <a href="deleteBargainsById?id=${item.id}">删除</a>||
+                <a href="/bargains/queryBargainsById?id=${item.id}">查看</a>||
+                <a href="/bargains/toUpdateBargainsAuditStatus?id=${item.id}">审核</a>||
+                <a href="/product/toAddProduct?productId=${item.id}&merchantId=${item.merchantId}">添加商品详情</a>||
+                <a href="/product/queryProductById?productId=${item.id}">查看商品详情</a>||
+                <a href="/product/toUpdateProduct?productId=${item.id}">修改商品详情</a>
             </td>
         </tr>
     </c:forEach>

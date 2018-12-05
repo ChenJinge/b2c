@@ -114,7 +114,7 @@ public class PageHomeController {
                 "var minutes = Math.floor(leave1/(60*1000));" + "\n" +
                 "var leave2 = leave1%(60*1000)" + "\n" +
                 "var seconds = Math.floor(leave2/1000)" + "\n" +
-                "$(\"#remainnoties\").html(\"��� \"+days+\" ��\"+ hours + \" Сʱ\" + minutes + \" ����\"+seconds+\"��\");" + "\n" +
+                "$(\"#remainnoties\").html(\"距离活动结束只剩： \"+days+\" 天\"+ hours + \" 时\" + minutes + \" 分\"+seconds+\"秒\");" + "\n" +
                 "}else{" + "\n" +
                 "$(\"#remainnoties\").html(\"\");" + "\n" +
                 "$(\"#sellbnt\").removeAttr(\"disabled\");" + "\n" +

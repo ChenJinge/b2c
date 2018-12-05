@@ -8,7 +8,6 @@
     <title>Insert title here</title>
 </head>
 <body>
-<center><a href="toAdd">添加商家</a></center>
 <table border="2">
     <tr>
         <td>支付金额</td>
